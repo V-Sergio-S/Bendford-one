@@ -1,0 +1,83 @@
+
+.text {
+
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 108%; /* 27px */
+
+  color: $white;
+
+  &--main {
+    width: 415px;
+    margin-top: 13px;
+  }
+
+  &--register {
+    width: 223px;
+    margin-bottom: 19px;
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  &--form {
+    margin-top: 20px;
+    font-size: 13px;
+    font-weight: 400;
+  }
+
+  &--item {
+    margin-top: 12px;
+    text-align: center;
+    font-family: Ubuntu, 'sans-serif';
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 130%; /* 16.9px */
+
+    color: $black;
+  }
+
+  &--item-benefit {
+    width: 370px;
+    margin-top: 9px;
+    font-size: 17px;
+    font-weight: 400;
+
+    color: $black;
+  }
+
+  &--our-teachers {
+
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 123.5%;
+
+    color: $black;
+  }
+
+  &--comment {
+    width: 316px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 123.5%; /* 18.525px */
+
+    color: $black;
+  }
+
+  &--comment-status {
+    width: 86px;
+
+    color: $textStatus;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 123.5%; /* 16.055px */
+  }
+
+  &--always-question {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 167%; /* 28.39px */
+
+    color: $black;
+  }
+
+}

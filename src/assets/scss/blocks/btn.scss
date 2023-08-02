@@ -1,0 +1,82 @@
+
+.btn {
+  padding: 13px 26px;
+
+  border: 2px solid transparent;
+  border-radius: 17px;
+
+  background: $yellow;
+  color: $black;
+
+  font-family: Myriad, 'sans-serif';
+  font-size: 17px;
+  font-weight: 600;
+
+  cursor: pointer;
+  text-decoration: none;
+  transition: .4s ease background, .4s ease color, .4s ease border;
+
+  &--header {
+    display: inline-flex;
+
+    border-radius: 23px;
+
+    &:hover {
+      background: transparent;
+      border: 2px solid $yellow;
+
+      color: $yellow;
+
+    }
+  }
+
+  &--main {
+    display: inline-flex;
+    padding: 13px 24px;
+
+
+    &:hover {
+      border: 2px solid $yellow;
+
+      background: transparent;
+      color: $yellow;
+
+    }
+  }
+
+  &--form {
+    display: inline-flex;
+    width: 270px;
+    height: 47px;
+
+    border-radius: 17px;
+
+    &:hover {
+      border: 2px solid $yellow;
+
+      background: transparent;
+      color: $yellow;
+
+    }
+  }
+
+  &--footer {
+    display: inline-flex;
+    width: 270px;
+    height: 47px;
+
+    border-radius: 17px;
+
+    background: $purpuric;
+
+    &:hover {
+      border: 2px solid $purpuric;
+
+      background: transparent;
+      color: $purpuric;
+
+    }
+  }
+
+
+}

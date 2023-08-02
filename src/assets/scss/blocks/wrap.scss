@@ -1,0 +1,41 @@
+
+.wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.wrap__holder {
+  position: relative;
+  width: 470px;
+
+  &--always-question {
+    width: 580px;
+  }
+}
+
+.wrap__title-icon {
+
+    &--benefits {
+      position: absolute;
+      top: calc(0% - 60px);
+      left: calc(96% - 47px);
+    }
+
+  &--our-teachers {
+    position: absolute;
+    top: calc(100% + 7px);
+    left: calc(13% - 7px);
+  }
+
+  &--comments {
+    position: absolute;
+    top: calc(100% + 7px);
+    left: calc(11% - 7px);
+  }
+
+  &--always-question {
+    position: absolute;
+    top: calc(100% + 7px);
+    left: calc(28% - 7px);
+  }
+}

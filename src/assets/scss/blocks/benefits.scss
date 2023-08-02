@@ -1,0 +1,44 @@
+
+.benefits {
+  padding: 84px 0 93px 0;
+  background-color: $white;
+}
+
+.benefits__container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  justify-content: space-around;
+}
+
+.benefits__maternity {
+  position: sticky;
+  top: 200px;
+
+}
+
+.benefits__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.benefits__item {
+  margin-bottom: 30px;
+
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.benefits__item-text {
+  margin-right: 10px;
+}
+
+.benefits__svg-container {
+  width: 100%;
+  margin-right: 30px;
+}
+

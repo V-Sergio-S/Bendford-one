@@ -1,0 +1,40 @@
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.menu__list {
+  position: relative;
+  list-style: none;
+
+  &:hover .menu__link,
+  &:hover .menu__svg path{
+    stroke: $yellow;
+    color: $yellow;
+  }
+
+}
+
+.menu__list:not(:last-child) {
+  margin-right: 63px;
+}
+
+.menu__link {
+  text-decoration: none;
+
+  font-family: Myriad, 'sans-serif';
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 108%; /* 17.28px */
+
+  color: $black;
+  transition: .4s ease color;
+}
+
+.menu__svg {
+  margin-left: 6px;
+}
+.menu__svg path {
+  transition: .4s ease stroke;
+}

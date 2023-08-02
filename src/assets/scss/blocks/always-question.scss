@@ -1,0 +1,122 @@
+
+.always-question {
+  padding: 79px 0 76px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+
+}
+
+.always-question__tabs {
+  position: relative;
+  width: 846px;
+  margin: 87px 0 76px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.always-question__tab {
+  position: relative;
+  width: 100%;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: calc(100% - 1px);
+    left: calc(0% - 11px);
+    width: 770px;
+    border-bottom: 1px solid $borderTab;
+  }
+
+}
+
+.always-question__wrap {
+  width: 100%;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.always-question__button {
+  position: relative;
+  width: 37px;
+  height: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid $buttonTab;
+  border-radius: 50%;
+  background: transparent;
+
+  cursor: pointer;
+  transition: .4s ease background;
+
+
+  &:hover{
+    background: $buttonTab;
+  }
+
+  &:hover .always-question__hor {
+    border: 1px solid $white;
+    transform: rotate(-45deg);
+  }
+
+  &:hover .always-question__vert {
+    border: 1px solid $white;
+    transform: rotate(45deg);
+  }
+  &--active{
+    background: $buttonTab;
+  }
+
+}
+
+.always-question__vert {
+  position: absolute;
+  width: 22px;
+  height: 2px;
+  top: calc(50% - 1px);
+  left: calc(50% - 10px);
+
+  transform: rotate(90deg);
+  border: 1px solid $black;
+  transition: .4s ease border, .4s ease transform;
+
+  &--active{
+    border: 1px solid $white;
+    transform: rotate(45deg);
+  }
+}
+
+.always-question__hor {
+  position: absolute;
+  width: 22px;
+  height: 2px;
+  top: calc(50% - 1px);
+  left: calc(50% - 10px);
+
+  border: 1px solid $black;
+  transition: .4s ease border, .4s ease transform;
+
+  &--active{
+    border: 1px solid $white;
+    transform: rotate(-45deg);
+  }
+}
+
+.always-question__info {
+  width: 603px;
+  //display: block;
+  display: none;
+  margin-bottom: 40px;
+}

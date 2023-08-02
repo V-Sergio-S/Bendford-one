@@ -1,0 +1,46 @@
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+}
+
+.form__input {
+  padding: 9px 0 9px 10px;
+  margin-bottom: 13px;
+  border: 0;
+  width: 270px;
+  height: 36px;
+  outline: 0;
+
+  border-radius: 11px;
+  background: $white;
+
+
+  font-family: Myriad, 'sans-serif';
+  font-size: 15px;
+  font-weight: 400;
+
+  color: $holder;
+  transition: all .2s ease;
+
+  &:focus ~ .form__label,
+  &:not(:focus):valid ~ .form__label{
+    top: 12px;
+  }
+
+  &:valid,
+  &:focus {
+    height: auto;
+  }
+
+}
+
+.form__privacy {
+  color: $indigo;
+}
+
+.form__action{
+  margin-top: 89px;
+}

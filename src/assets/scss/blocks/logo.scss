@@ -1,0 +1,12 @@
+.logo {
+  margin-right: 61px;
+
+  @media screen and ( max-width: $mobile-bp) {
+    margin-right: 25px;
+    margin-left: 25px;
+  }
+
+  @media screen and ( max-width: $tapik-bp) {
+    margin: 0;
+  }
+}

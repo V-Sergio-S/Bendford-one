@@ -1,0 +1,107 @@
+
+.interrogation {
+  padding: 100px 0 67px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.interrogation__card {
+  position: relative;
+  padding: 38px;
+  width: 770px;
+  height: 393px;
+
+  z-index: 1;
+
+}
+
+.interrogation__card__item-decoration {
+  position: relative;
+}
+
+.interrogation__card__item-element {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 770px;
+  height: 393px;
+
+  border-radius: 20px;
+  background: linear-gradient(349deg, #FBFBFB 0%, #FFF 100%);
+  z-index: -1;
+}
+
+.interrogation__card__item-element:first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 770px;
+    height: 393px;
+    transform: rotate(-3.78deg);
+
+    border-radius: 20px;
+    background: linear-gradient(351deg, #E4E4E4 0%, #F4F4F4 48.97%, #FFF 100%);
+    z-index: -2;
+}
+
+.interrogation__card__item-element:last-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 770px;
+  height: 393px;
+  transform: rotate(4.49deg);
+
+  background: linear-gradient(351deg, #EAEAEA 0%, #F4F4F4 48.97%, #FFF 100%);
+  box-shadow: (0px 13px 26px rgba(0, 0, 0, .1));
+  z-index: -3;
+}
+
+.interrogation__image {
+  position: absolute;
+  top: calc(-7% - 50px);
+  left: calc(101% - 3px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.interrogation__img-big {
+  width: 30px;
+  height: 78px;
+  transform: rotate(10deg);
+}
+
+.interrogation__img-small {
+  width: 55px;
+  height: 95px;
+  transform: rotate(-13deg);
+}
+
+.interrogation__question {
+  margin-bottom: 75px;
+}
+
+.interrogation__choice {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.interrogation__input {
+  width: 146px;
+  height: 48px;
+  margin: 10px;
+  padding: 9px 16px;
+
+  cursor: pointer;
+  border-radius: 14px;
+  border: 1px solid $buttonInterrogation;
+  background: $white;
+
+  &:hover {
+    border: 1px solid $yellow;
+  }
+}

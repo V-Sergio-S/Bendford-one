@@ -1,0 +1,25 @@
+
+.yep-images {
+  position: absolute;
+  z-index: -1;
+
+  &--comments {
+    top: calc(47% - 695px);
+    right: calc(45% - 683px);
+  }
+
+  &--card-section {
+    bottom: calc(0% - 695px);
+    left: calc(39% - 683px);
+  }
+
+  &--always-question {
+    top: calc(100% - 695px);
+    left: calc(41% - 683px);
+  }
+}
+
+.yep__img {
+  width: 100%;
+  height: 100%;
+}

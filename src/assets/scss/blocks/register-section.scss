@@ -1,0 +1,49 @@
+
+.register-section {
+  padding: 104px 0 53px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.register-section__wrap {
+  position: relative;
+  padding-right: 28px;
+  padding-bottom: 27px;
+  border-radius: 20px;
+  background: url(../images/path-to.png), lightgray -0.206px -7px / 100.098% 101.591% no-repeat;
+  background-size: 65%;
+}
+
+.register-section__box {
+  max-width: 770px;
+  height: 413px;
+  padding: 6px 54px 0 0;
+
+  border-radius: 20px;
+  background: linear-gradient(341deg, #F6D365 0%, #FBB471 50%, #FF8A68 100%);
+  box-shadow: 0 13px 26px 0 rgba(0, 0, 0, 0.6);
+}
+
+.registration-section__dust-jacket {
+  display: flex;
+}
+
+.register-section__icon {
+  position: absolute;
+  top: calc(0% - 62px);
+  right: calc(0% - 86px);
+}
+
+.registration-section__form {
+  //max-width: 375px;
+  padding: 27px 0 33px 33px;
+}
+
+.register-section__view {
+  //max-width: 271px;
+  //height: 407px;
+}
+
+.register-section__img {
+  //width: 100%;
+}
