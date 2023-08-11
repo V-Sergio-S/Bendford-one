@@ -6,13 +6,24 @@
 
   color: $white;
 
+  @media screen and ( max-width: $tapik-bp) {
+    font-size: 20px;
+  }
+
   &--main {
-    width: 488px;
-    margin-top: 96px;
+    max-width: 488px;
+
+    @media screen and ( max-width: $tapik-bp) {
+      font-size: 37px;
+    }
   }
 
   &--register {
     font-size: 42px;
+
+    @media screen and ( max-width: $tapik-bp) {
+      font-size: 34px;
+    }
   }
 
   &--about {
@@ -22,6 +33,10 @@
     font-size: 36px;
 
     color: $black;
+
+    @media screen and ( max-width: $tapik-bp) {
+      font-size: 30px;
+    }
   }
 
   &--item {
@@ -32,6 +47,10 @@
     line-height: 100%; /* 42px */
 
     color: $black;
+
+    @media screen and ( max-width: $tapik-bp) {
+      font-size: 34px;
+    }
   }
 
   &--benefits {
@@ -41,13 +60,21 @@
     font-size: 36px;
 
     color: $black;
+
+    @media screen and ( max-width: $tapik-bp) {
+      font-size: 30px;
+    }
   }
 
   &--item-benefit {
-    width: 337px;
+    max-width: 337px;
     font-size: 24px;
 
     color: $black;
+
+    @media screen and ( max-width: $tapik-bp) {
+      font-size: 18px;
+    }
   }
 
   &--card-section {
@@ -56,6 +83,10 @@
     line-height: 100%; /* 30px */
 
     color: $black;
+
+    @media screen and ( max-width: $tapik-bp) {
+      font-size: 20px;
+    }
   }
 
   &--our-teachers {
@@ -63,6 +94,10 @@
     font-size: 36px;
 
     color: $black;
+
+    @media screen and ( max-width: $tapik-bp) {
+      font-size: 30px;
+    }
   }
 
   &--name-teachers {
@@ -83,13 +118,37 @@
     line-height: 123.5%; /* 19.76px */
 
     color: $black;
+
+    @media screen and ( max-width: $laptop-bp) {
+      font-size: 14px;
+    }
   }
 
   &--always-question {
-    width: 668px;
+    width: 90%;
+
     font-size: 32px;
     font-weight: 700;
     color: $black;
+
+    @media screen and ( max-width: $mobile-bp) {
+      font-size: 24px;
+    }
+
+    @media screen and ( max-width: $tapik-bp) {
+      font-size: 15px;
+    }
+  }
+
+  &--always-question-title {
+    max-width: 668px;
+    font-size: 32px;
+    font-weight: 700;
+    color: $black;
+
+    @media screen and ( max-width: $tapik-bp) {
+      font-size: 26px;
+    }
   }
 
   &--interrogation {
@@ -98,4 +157,5 @@
 
     color: $black;
   }
+
 }

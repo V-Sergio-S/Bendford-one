@@ -2,15 +2,22 @@
 .wrap {
   display: flex;
   justify-content: center;
+
 }
 
 .wrap__holder {
   position: relative;
-  width: 470px;
+  max-width: 470px;
 
   &--always-question {
-    width: 580px;
+    max-width: 580px;
   }
+}
+
+.wrap__animation {
+  animation-name: slalom;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
 }
 
 .wrap__title-icon {
@@ -19,6 +26,11 @@
       position: absolute;
       top: calc(0% - 60px);
       left: calc(96% - 47px);
+
+      @media screen and ( max-width: $tapik-bp) {
+        top: calc(-40% - 60px);
+        left: calc(55% - 47px);
+      }
     }
 
   &--our-teachers {
@@ -37,5 +49,10 @@
     position: absolute;
     top: calc(100% + 7px);
     left: calc(28% - 7px);
+
+    @media screen and ( max-width: $tapik-bp) {
+      top: calc(100% + 7px);
+      left: calc(11% - 7px);
+    }
   }
 }

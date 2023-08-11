@@ -9,19 +9,17 @@
   flex-wrap: wrap;
   align-items: start;
   justify-content: space-around;
-}
 
-.benefits__maternity {
-  position: sticky;
-  top: 200px;
-
+  @media screen and ( max-width: $laptop-bp) {
+    justify-content: center;
+  }
 }
 
 .benefits__info {
   display: flex;
   flex-direction: column;
   justify-content: start;
-  align-items: center;
+  align-items: start;
 }
 
 .benefits__item {
@@ -38,7 +36,32 @@
 }
 
 .benefits__svg-container {
-  width: 100%;
+  max-width: 100%;
   margin-right: 30px;
+
+  @media screen and ( max-width: $tapik-bp) {
+    margin-right: 10px;
+  }
+}
+
+.benefits__image {
+  cursor: pointer;
+
+  @media screen and ( max-width: $tapik-bp) {
+    width: 100%;
+  }
+}
+
+.benefits__image-img {
+  width: 100%;
+
+
+  @media screen and ( max-width: $mobile-bp) {
+    margin: 0 25px ;
+  }
+
+  @media screen and ( max-width: $tapik-bp) {
+    margin: 0;
+  }
 }
 

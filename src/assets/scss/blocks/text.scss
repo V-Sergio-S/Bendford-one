@@ -8,15 +8,23 @@
   color: $white;
 
   &--main {
-    width: 415px;
+    max-width: 415px;
     margin-top: 13px;
+
+    @media screen and ( max-width: $tapik-bp) {
+      font-size: 18px;
+    }
   }
 
   &--register {
-    width: 223px;
+    max-width: 223px;
     margin-bottom: 19px;
     font-size: 20px;
     font-weight: 400;
+
+    @media screen and ( max-width: $tapik-bp) {
+      font-size: 18px;
+    }
   }
 
   &--form {
@@ -37,12 +45,13 @@
   }
 
   &--item-benefit {
-    width: 370px;
+    max-width: 370px;
     margin-top: 9px;
     font-size: 17px;
     font-weight: 400;
 
     color: $black;
+
   }
 
   &--our-teachers {
@@ -55,12 +64,16 @@
   }
 
   &--comment {
-    width: 316px;
+    max-width: 316px;
     font-size: 15px;
     font-weight: 400;
     line-height: 123.5%; /* 18.525px */
 
     color: $black;
+
+    @media screen and ( max-width: $laptop-bp) {
+      font-size: 12px;
+    }
   }
 
   &--comment-status {

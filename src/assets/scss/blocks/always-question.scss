@@ -10,7 +10,7 @@
 
 .always-question__tabs {
   position: relative;
-  width: 846px;
+  max-width: 846px;
   margin: 87px 0 76px;
   display: flex;
   flex-direction: column;
@@ -32,8 +32,12 @@
     position: absolute;
     top: calc(100% - 1px);
     left: calc(0% - 11px);
-    width: 770px;
+    width: calc(90% - 70px);
     border-bottom: 1px solid $borderTab;
+
+    @media screen and ( max-width: $tapik-bp) {
+      width: calc(100% - 70px);
+    }
   }
 
 }
@@ -44,6 +48,11 @@
   display: flex;
   align-items: start;
   justify-content: space-between;
+}
+
+.always-question__holder {
+  width: 20%;
+  margin-left: 5px;
 }
 
 .always-question__button {
@@ -58,60 +67,31 @@
   border-radius: 50%;
   background: transparent;
 
+  transform: rotate(-45deg);
   cursor: pointer;
-  transition: .4s ease background;
+  transition: .4s ease background, .4s ease transform;
 
 
-  &:hover{
+  &:hover {
     background: $buttonTab;
+    transform: rotate(0);
   }
 
-  &:hover .always-question__hor {
-    border: 1px solid $white;
-    transform: rotate(-45deg);
+  &:hover .always__question__cross,
+  &--active .always__question__cross {
+    stroke: white;
   }
 
-  &:hover .always-question__vert {
-    border: 1px solid $white;
-    transform: rotate(45deg);
-  }
-  &--active{
+  &--active {
     background: $buttonTab;
+    transform: rotate(0);
   }
 
-}
-
-.always-question__vert {
-  position: absolute;
-  width: 22px;
-  height: 2px;
-  top: calc(50% - 1px);
-  left: calc(50% - 10px);
-
-  transform: rotate(90deg);
-  border: 1px solid $black;
-  transition: .4s ease border, .4s ease transform;
-
-  &--active{
-    border: 1px solid $white;
-    transform: rotate(45deg);
+  @media screen and ( max-width: $mobile-bp) {
+    width: 33px;
+    height: 33px;
   }
-}
 
-.always-question__hor {
-  position: absolute;
-  width: 22px;
-  height: 2px;
-  top: calc(50% - 1px);
-  left: calc(50% - 10px);
-
-  border: 1px solid $black;
-  transition: .4s ease border, .4s ease transform;
-
-  &--active{
-    border: 1px solid $white;
-    transform: rotate(-45deg);
-  }
 }
 
 .always-question__info {

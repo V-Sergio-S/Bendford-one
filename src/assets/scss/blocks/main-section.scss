@@ -8,9 +8,20 @@
   background-position: center;
   background-size: cover;
 
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+
   overflow: hidden;
 }
 
 .main-section__action {
   margin-top: 47px;
+}
+
+.main-section__wrapper {
+  margin-top: 96px;
+
+  @media screen and ( max-width: $tapik-bp) {
+    margin-top: 160px;
+  }
 }

@@ -48,6 +48,7 @@
   max-height: 112px;
   overflow: hidden;
   position: relative;
+  transition: all .4s ease-in;
 
   @include breakpoint($tablet-bp){
     max-height: 110px;
@@ -89,7 +90,7 @@
   content: 'Читать полностью';
 }
 .our-teachers__read-checker:checked ~ .our-teachers__read-checker-button:before {
-  content: 'свернуть';
+  content: 'Свернуть';
 }
 .our-teachers__read-checker-button {
   display: inline-block;

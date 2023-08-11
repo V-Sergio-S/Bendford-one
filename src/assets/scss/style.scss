@@ -1,3 +1,5 @@
+@import 'blocks/vendor/swiper-bundle.scss';
+@import 'blocks/vendor/animate.scss';
 @import 'blocks/vendor/normalize.scss';
 @import 'blocks/vendor/mixin.scss';
 @import 'blocks/vendor/var.scss';
@@ -33,22 +35,12 @@
     font-weight: 400;
 }
 
-@keyframes loader-rotate {
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes loader-bounce {
-
-    0%,
-    100% {
-        transform: scale(0);
-    }
-
-    50% {
-        transform: scale(1);
-    }
+@keyframes slalom {
+    0%   {transform: translate(0, 0);}
+    25%  {transform: translate(10px, 20px);}
+    50%  {transform: translate(20px, 10px);}
+    75%  {transform: translate(10px, 20px);}
+    100% {transform: translate(0, 0);}
 }
 
 body {

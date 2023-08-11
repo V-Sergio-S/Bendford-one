@@ -10,7 +10,7 @@
   padding-right: 28px;
   padding-bottom: 27px;
   border-radius: 20px;
-  background: url(../images/path-to.png), lightgray -0.206px -7px / 100.098% 101.591% no-repeat;
+  background: url(../images/path-to.png), lightgray -0.206px -7px / 100% 101% no-repeat;
   background-size: 65%;
 }
 
@@ -18,32 +18,58 @@
   max-width: 770px;
   height: 413px;
   padding: 6px 54px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   border-radius: 20px;
   background: linear-gradient(341deg, #F6D365 0%, #FBB471 50%, #FF8A68 100%);
   box-shadow: 0 13px 26px 0 rgba(0, 0, 0, 0.6);
+
+  @media screen and ( max-width: $tablet-bp) {
+    height: 100%;
+    padding: 0;
+  }
 }
 
 .registration-section__dust-jacket {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .register-section__icon {
   position: absolute;
   top: calc(0% - 62px);
   right: calc(0% - 86px);
+
+  @media screen and ( max-width: $laptop-bp) {
+    top: calc(100% - 62px);
+    right: calc(0% - 86px);
+  }
+
+  @media screen and ( max-width: $tablet-bp) {
+    top: calc(100% - 62px);
+    right: calc(9% - 86px);
+  }
+
+  @media screen and ( max-width: $mobile-bp) {
+    top: calc(100% - 62px);
+    right: calc(16% - 86px);
+  }
+
+  @media screen and ( max-width: $tapik-bp) {
+    top: calc(100% - 62px);
+    right: calc(27% - 86px);
+  }
 }
 
 .registration-section__form {
-  //max-width: 375px;
   padding: 27px 0 33px 33px;
-}
 
-.register-section__view {
-  //max-width: 271px;
-  //height: 407px;
-}
 
-.register-section__img {
-  //width: 100%;
+  @media screen and ( max-width: $tablet-bp) {
+    padding: 10px 5px 10px 10px;
+  }
 }

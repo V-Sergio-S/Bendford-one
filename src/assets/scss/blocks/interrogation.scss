@@ -4,16 +4,24 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media screen and ( max-width: $mobile-bp) {
+    display: none;
+  }
 }
 
 .interrogation__card {
   position: relative;
   padding: 38px;
-  width: 770px;
+  max-width: 770px;
   height: 393px;
 
   z-index: 1;
 
+  @media screen and ( max-width: $tablet-bp) {
+    padding: 18px;
+    height: 100%;
+  }
 }
 
 .interrogation__card__item-decoration {
@@ -90,7 +98,12 @@
   flex-wrap: wrap;
 }
 
+.interrogation__wrap-choice {
+  position: relative;
+}
+
 .interrogation__input {
+  appearance: none;
   width: 146px;
   height: 48px;
   margin: 10px;
@@ -100,8 +113,31 @@
   border-radius: 14px;
   border: 1px solid $buttonInterrogation;
   background: $white;
+  transition: transform .3s ease-in, border .3s ease-in ;
+
+
+
+  &:checked {
+    border: 1px solid $yellow;
+    transform: scale(1.02);
+  }
+
+  &:checked ~ .interrogation__label {
+    color: $yellow;
+    transform: scale(1.02);
+  }
 
   &:hover {
     border: 1px solid $yellow;
   }
+}
+
+.interrogation__label {
+  position: absolute;
+  top: calc(50% - 12px);
+  left: calc(50% - 46px);
+
+  cursor: pointer;
+  color: $black;
+  transition: transform .3s ease-in, color .2s ease-in ;
 }

@@ -1,8 +1,8 @@
 {
-    "name": "brainscloud",
+    "name": "Bendford",
     "version": "1.0.0",
-    "description": "brainscloud",
-    "author": "brainscloud",
+    "description": "studying english",
+    "author": "VSS_Magic",
     "devDependencies": {
         "@babel/core": "^7.16.0",
         "@babel/preset-env": "^7.16.4",
@@ -23,13 +23,18 @@
         "gulp-strip-css-comments": "^2.0.0",
         "gulp-uglify": "^3.0.2",
         "panini": "^1.7.2",
+        "sass": "^1.43.4",
         "webpack": "^5.64.3",
-        "webpack-stream": "^7.0.0",
-        "sass": "^1.43.4"
+        "webpack-stream": "^7.0.0"
     },
     "browserslist": [
         "last 1 version",
         "> 1%",
         "IE 10"
-    ]
+    ],
+    "dependencies": {
+        "animate.css": "^4.1.1",
+        "swiper": "^10.1.0",
+        "wow.js": "^1.2.2"
+    }
 }
