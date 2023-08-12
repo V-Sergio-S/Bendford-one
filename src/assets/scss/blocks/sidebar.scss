@@ -1,0 +1,59 @@
+.sidebar{
+  width: 100%;
+  max-width: 25rem;
+  margin: 3rem 0 0 3rem;
+  border: .3rem solid $yellow;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, .6);
+  box-shadow: 0 13px 26px 0 rgba(0, 0, 0, .6);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  height: calc(100vh - 7rem);
+  transform: translateY(-150%);
+  transition: transform .4s linear;
+
+  @include breakpoint ($tablet-bp) {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+    overflow: auto;
+    top: 50px;
+    height: calc(100vh - 500px);
+    transform: translateY(-150%);
+    transition: transform .4s linear;
+
+    .show-sidebar & {
+      transform: translateY(0%);
+
+    }
+  }
+
+}
+
+.sidebar__content{
+  padding: 0 30px;
+
+  @include breakpoint ($tablet-bp) {
+    flex-grow: 1;
+  }
+
+}
+
+.sidebar__mask{
+  @include breakpoint ($tablet-bp) {
+
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba($yellow, .9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+
+  }
+}

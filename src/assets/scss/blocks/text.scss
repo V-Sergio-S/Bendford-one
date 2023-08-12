@@ -91,6 +91,23 @@
     line-height: 167%; /* 28.39px */
 
     color: $black;
+
+    @media screen and ( max-width: $tablet-bp) {
+      font-size: 15px;
+    }
+
+    @media screen and ( max-width: $tapik-bp) {
+      font-size: 13px;
+    }
+  }
+
+  &--year {
+    margin-left: 57px;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 167%; /* 28.39px */
+
+    color: $black;
   }
 
 }

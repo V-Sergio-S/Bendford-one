@@ -1,6 +1,6 @@
 
 .always-question {
-  padding: 79px 0 76px 0;
+  padding: 79px 0 442px 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -95,8 +95,15 @@
 }
 
 .always-question__info {
-  width: 603px;
-  //display: block;
-  display: none;
+  width: 80%;
   margin-bottom: 40px;
+  display: none;
+
+  &--block {
+    display: block;
+  }
+
+  @media screen and ( max-width: $tapik-bp) {
+    width: 90%;
+  }
 }

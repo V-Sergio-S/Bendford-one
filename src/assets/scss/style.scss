@@ -49,6 +49,11 @@ body {
     background-color: $white;
     font-weight: 400;
     font-size: 17px;
+
+    &.no-scroll,
+    &.show-sidebar {
+        overflow: hidden;
+    }
 }
 
 @import 'blocks/main.scss';
@@ -74,6 +79,8 @@ body {
 @import 'blocks/comments.scss';
 @import 'blocks/always-question.scss';
 @import 'blocks/interrogation';
+@import 'blocks/sidebar';
+@import 'blocks/footer';
 
 
 

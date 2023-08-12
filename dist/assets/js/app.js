@@ -29,13 +29,23 @@ eval("\r\n\r\n\n\n//# sourceURL=webpack://Bendford/./src/assets/js/app.js?");
 
 /***/ }),
 
-/***/ "./src/assets/js/scroll.js":
+/***/ "./src/assets/js/header.js":
 /*!*********************************!*\
-  !*** ./src/assets/js/scroll.js ***!
+  !*** ./src/assets/js/header.js ***!
   \*********************************/
 /***/ (function() {
 
-eval("\r\nconst scroll = document.querySelectorAll('[data-scroll]');\r\n\r\nfor (let i = 0; i < scroll.length; i++) {\r\n    const scrollId = scroll[i];\r\n    scrollId.onclick = function (e) {\r\n        if (e.target) {\r\n        e.preventDefault();\r\n        }\r\n        let $this = e.currentTarget;\r\n        let scrollId = $this.getAttribute('data-scroll');\r\n        let scrollItem = document.getElementById(scrollId);\r\n        scrollItem.scrollIntoView({behavior: 'smooth'});\r\n    }\r\n}\n\n//# sourceURL=webpack://Bendford/./src/assets/js/scroll.js?");
+eval("\r\nwindow.addEventListener('scroll', function() {\r\n    const header = document.getElementById('header')\r\n    const headerScroll = document.getElementById('header-scroll')\r\n\r\n    if (pageYOffset > 850) {\r\n        header.classList.add('header__container--transform')\r\n        headerScroll.classList.add('header__container-scroll--transform')\r\n\r\n    } else {\r\n        header.classList.remove('header__container--transform')\r\n        headerScroll.classList.remove('header__container-scroll--transform')\r\n    }\r\n})\n\n//# sourceURL=webpack://Bendford/./src/assets/js/header.js?");
+
+/***/ }),
+
+/***/ "./src/assets/js/mobile-nav.js":
+/*!*************************************!*\
+  !*** ./src/assets/js/mobile-nav.js ***!
+  \*************************************/
+/***/ (function() {
+
+eval("\r\nconst burger = document.querySelector('[data-burger]');\r\nconst sidebar = document.getElementById('sidebar');\r\nconst scroll = document.querySelectorAll('[data-scroll]');\r\nconst body = document.body;\r\n\r\nburger.addEventListener('click', event =>{\r\n    if (body.classList.contains('show-sidebar')){\r\n        closeSidebar();\r\n    }\r\n    else {\r\n        showsidebar();\r\n    }\r\n});\r\n\r\nfunction showsidebar(){\r\n    let mask = document.createElement('div');\r\n    mask.classList.add('sidebar__mask');\r\n    mask.addEventListener('click', closeSidebar);\r\n    body.classList.add('show-sidebar');\r\n}\r\n\r\nfunction closeSidebar(){\r\n    body.classList.remove('show-sidebar');\r\n    document.querySelector('.sidebar__mask').remove();\r\n}\r\n\r\nfunction scrollMenu (e) {\r\n\r\n    let $this = e.currentTarget;\r\n    let scrollId = $this.getAttribute('data-scroll');\r\n    let scrollItem = document.getElementById(scrollId);\r\n    scrollItem.scrollIntoView({behavior: 'smooth'});\r\n\r\n}\r\n\r\nfor (let i = 0; i < scroll.length; i++) {\r\n    const scrollId = scroll[i];\r\n    scrollId.addEventListener('click', (e)=>{\r\n        if (e.target) {\r\n            e.preventDefault();\r\n        }\r\n        scrollMenu (e)\r\n\r\n        if (body.classList.contains('show-sidebar')){\r\n            closeSidebar();\r\n        }\r\n\r\n    })\r\n}\r\n\n\n//# sourceURL=webpack://Bendford/./src/assets/js/mobile-nav.js?");
 
 /***/ }),
 
@@ -47,6 +57,16 @@ eval("\r\nconst scroll = document.querySelectorAll('[data-scroll]');\r\n\r\nfor 
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var swiper_bundle__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper/bundle */ \"./node_modules/swiper/swiper-bundle.mjs\");\n\r\n\r\n\r\nconst benefits__swiper = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__[\"default\"]('.swiper--benefits', {\r\n    centeredSlides: true,\r\n    effect: \"coverflow\",\r\n    speed: 1000,\r\n    autoplay: {\r\n        delay: 5500,\r\n        disableOnInteraction: false\r\n    },\r\n});\r\n\r\nconst comments__swiper = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__[\"default\"](\".swiper--comments\", {\r\n    slidesPerView: 3,\r\n    navigation: {\r\n        nextEl: \".comments__arrow--next\",\r\n        prevEl: \".comments__arrow--prev\",\r\n        clickable: true,\r\n    },\r\n    breakpoints: {\r\n        \"@0.00\": {\r\n            slidesPerView: 1,\r\n        },\r\n        \"@0.95\": {\r\n            slidesPerView: 1,\r\n        },\r\n        \"@1.25\": {\r\n            slidesPerView: 2,\r\n        },\r\n        \"@1.75\": {\r\n            slidesPerView: 3,\r\n        },\r\n    },\r\n});\r\n\r\n\n\n//# sourceURL=webpack://Bendford/./src/assets/js/swiper.js?");
+
+/***/ }),
+
+/***/ "./src/assets/js/tabs.js":
+/*!*******************************!*\
+  !*** ./src/assets/js/tabs.js ***!
+  \*******************************/
+/***/ (function() {
+
+eval("\r\nconst tabsButton = document.querySelectorAll('[data-tabs]')\r\n\r\n    tabsButton.forEach(button => {\r\n\r\n        button.onclick = function (e) {\r\n            e.stopPropagation()\r\n\r\n            let buttonCurrent = e.currentTarget\r\n            console.log(buttonCurrent)\r\n            let currentIdElement = buttonCurrent.getAttribute('data-tabs')\r\n            console.log(currentIdElement)\r\n            let tabsInfo = document.getElementById(currentIdElement)\r\n            tabsInfo.classList.toggle('always-question__info--block')\r\n            button.classList.toggle('always-question__button--active')\r\n        }\r\n\r\n    })\n\n//# sourceURL=webpack://Bendford/./src/assets/js/tabs.js?");
 
 /***/ }),
 
@@ -497,8 +517,10 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
 /******/ 	__webpack_require__("./src/assets/js/app.js");
-/******/ 	__webpack_require__("./src/assets/js/scroll.js");
+/******/ 	__webpack_require__("./src/assets/js/header.js");
+/******/ 	__webpack_require__("./src/assets/js/mobile-nav.js");
 /******/ 	__webpack_require__("./src/assets/js/swiper.js");
+/******/ 	__webpack_require__("./src/assets/js/tabs.js");
 /******/ 	var __webpack_exports__ = __webpack_require__("./src/assets/js/wow.js");
 /******/ 	
 /******/ })()
