@@ -21,11 +21,24 @@
     stroke: $yellow;
     color: $yellow;
   }
+
+  &:not(:first-child) {
+    margin-left: 63px;
+
+    @media screen and ( max-width: $tapik-bp) {
+        margin-left: 0;
+    }
+
+  }
+
+  @media screen and ( max-width: $tapik-bp) {
+    &:not(:last-child) {
+      margin-left: 0;
+    }
+  }
 }
 
-.menu__list:not(:first-child) {
-  margin-left: 63px;
-}
+
 
 .menu__link {
   text-decoration: none;

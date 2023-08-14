@@ -1,9 +1,8 @@
 .sidebar{
   width: 100%;
-  max-width: 25rem;
-  margin: 3rem 0 0 3rem;
-  border: .3rem solid $yellow;
-  border-radius: 1rem;
+  max-width: 250px;
+  margin: 40px 0 0 40px;
+  border-radius: 0 0 14px 14px;
   background: rgba(255, 255, 255, .6);
   box-shadow: 0 13px 26px 0 rgba(0, 0, 0, .6);
   backdrop-filter: blur(10px);
@@ -11,19 +10,26 @@
   top: 0;
   left: 0;
   z-index: 5;
-  height: calc(100vh - 7rem);
-  transform: translateY(-150%);
+  height: calc(100vh - 350px);
+  transform: translateY(-500%);
   transition: transform .4s linear;
+
+  @include breakpoint ($tapik-bp) {
+    max-width: 250px;
+    margin: 40px 0 0 35px;
+  }
 
   @include breakpoint ($tablet-bp) {
     display: flex;
     flex-direction: column;
     padding-bottom: 30px;
     overflow: auto;
-    top: 50px;
-    height: calc(100vh - 500px);
-    transform: translateY(-150%);
+    top: 49px;
     transition: transform .4s linear;
+
+    @include breakpoint ($tapik-bp) {
+      top: 42px;
+    }
 
     .show-sidebar & {
       transform: translateY(0%);

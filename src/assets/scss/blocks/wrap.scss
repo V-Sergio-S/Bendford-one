@@ -27,7 +27,7 @@
       top: calc(0% - 60px);
       left: calc(96% - 47px);
 
-      @media screen and ( max-width: $tapik-bp) {
+      @media screen and ( max-width: $mobile-bp) {
         top: calc(-40% - 60px);
         left: calc(55% - 47px);
       }

@@ -2,6 +2,10 @@
 .about {
   padding: 53px 0 84px 0;
   background: $about;
+
+  @media screen and ( max-width: $mobile-bp) {
+    padding: 53px 0 140px 0;
+  }
 }
 
 .about__wrap {

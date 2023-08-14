@@ -60,23 +60,23 @@
     }
   }
 
-  &--footer {
-    display: inline-flex;
-    width: 270px;
-    height: 47px;
-
-    border-radius: 17px;
-
-    background: $purpuric;
-
-    &:hover {
-      border: 2px solid $purpuric;
-
-      background: transparent;
-      color: $purpuric;
-
-    }
-  }
+  //&--footer {
+  //  display: inline-flex;
+  //  width: 270px;
+  //  height: 47px;
+  //
+  //  border-radius: 17px;
+  //
+  //  background: $purpuric;
+  //
+  //  &:hover {
+  //    border: 2px solid $purpuric;
+  //
+  //    background: transparent;
+  //    color: $purpuric;
+  //
+  //  }
+  //}
 
 
 }
