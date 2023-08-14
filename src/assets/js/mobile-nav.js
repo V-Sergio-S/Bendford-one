@@ -3,6 +3,7 @@
 
     const burger = document.querySelectorAll('[data-burger]');
     const sidebar = document.getElementById('sidebar');
+    const page = document.getElementById('page');
     const scroll = document.querySelectorAll('[data-scroll]');
     const body = document.body;
 
@@ -22,14 +23,15 @@
 
     function showsidebar(){
         let mask = document.createElement('div');
-        mask.classList.add('sidebar__mask');
+        mask.classList.add('page__mask');
         mask.addEventListener('click', closeSidebar);
+        page.appendChild(mask);
         body.classList.add('show-sidebar');
     }
 
     function closeSidebar(){
         body.classList.remove('show-sidebar');
-        document.querySelector('.sidebar__mask').remove();
+        document.querySelector('.page__mask').remove();
     }
 
     function scrollMenu (e) {

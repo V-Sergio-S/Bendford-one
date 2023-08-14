@@ -68,8 +68,8 @@
 
 .interrogation__image {
   position: absolute;
-  top: calc(-7% - 50px);
-  left: calc(101% - 3px);
+  top: calc(-7% - 42px);
+  left: calc(94% - 47px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -94,50 +94,46 @@
 .interrogation__choice {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
 .interrogation__wrap-choice {
-  position: relative;
+  width: 146px;
+  height: 48px;
+  margin: 9px 9px 24px 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 
 .interrogation__input {
-  appearance: none;
-  width: 146px;
-  height: 48px;
-  margin: 10px;
-  padding: 9px 16px;
-
-  cursor: pointer;
-  border-radius: 14px;
-  border: 1px solid $buttonInterrogation;
-  background: $white;
-  transition: transform .3s ease-in, border .3s ease-in ;
-
-
-
-  &:checked {
-    border: 1px solid $yellow;
-    transform: scale(1.02);
-  }
+  display: none;
 
   &:checked ~ .interrogation__label {
     color: $yellow;
+    border: 1px solid $yellow;
     transform: scale(1.02);
   }
 
-  &:hover {
-    border: 1px solid $yellow;
-  }
 }
 
 .interrogation__label {
-  position: absolute;
-  top: calc(50% - 12px);
-  left: calc(50% - 46px);
+  width: 100%;
+  padding: 9px 16px;
+
+  text-align: center;
+
+  border-radius: 14px;
+  border: 1px solid $buttonInterrogation;
+  background: $white;
 
   cursor: pointer;
   color: $black;
   transition: transform .3s ease-in, color .2s ease-in ;
+
+  &:hover {
+    border: 1px solid $yellow;
+  }
 }

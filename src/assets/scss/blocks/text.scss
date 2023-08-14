@@ -2,7 +2,6 @@
 .text {
 
   font-size: 25px;
-  font-weight: 600;
   line-height: 108%; /* 27px */
 
   color: $white;
@@ -10,6 +9,9 @@
   &--main {
     max-width: 415px;
     margin-top: 13px;
+
+    font-family: MYRIAD, 'sans-serif';
+    font-weight: 400;
 
     @media screen and ( max-width: $tapik-bp) {
       font-size: 18px;
@@ -19,8 +21,11 @@
   &--register {
     max-width: 223px;
     margin-bottom: 19px;
-    font-size: 20px;
+
+    font-family: MYRIAD, 'sans-serif';
     font-weight: 400;
+    font-size: 20px;
+
 
     @media screen and ( max-width: $tapik-bp) {
       font-size: 18px;
@@ -30,6 +35,8 @@
   &--form {
     margin-top: 20px;
     font-size: 13px;
+
+    font-family: MYRIAD, 'sans-serif';
     font-weight: 400;
   }
 
@@ -47,8 +54,11 @@
   &--item-benefit {
     max-width: 370px;
     margin-top: 9px;
-    font-size: 17px;
+
+    font-family: MYRIAD, 'sans-serif';
     font-weight: 400;
+    font-size: 17px;
+
 
     color: $black;
 
@@ -56,8 +66,9 @@
 
   &--our-teachers {
 
-    font-size: 15px;
+    font-family: MYRIAD, 'sans-serif';
     font-weight: 400;
+    font-size: 15px;
     line-height: 123.5%;
 
     color: $black;
@@ -65,8 +76,10 @@
 
   &--comment {
     max-width: 316px;
-    font-size: 15px;
+
+    font-family: MYRIAD, 'sans-serif';
     font-weight: 400;
+    font-size: 15px;
     line-height: 123.5%; /* 18.525px */
 
     color: $black;
@@ -79,15 +92,20 @@
   &--comment-status {
     width: 86px;
 
-    color: $textStatus;
-    font-size: 13px;
+
+
+    font-family: MYRIAD, 'sans-serif';
     font-weight: 400;
+    font-size: 13px;
     line-height: 123.5%; /* 16.055px */
+
+    color: $textStatus;
   }
 
   &--always-question {
-    font-size: 17px;
+    font-family: MYRIAD, 'sans-serif';
     font-weight: 400;
+    font-size: 17px;
     line-height: 167%; /* 28.39px */
 
     color: $black;
@@ -103,8 +121,10 @@
 
   &--year {
     margin-left: 57px;
-    font-size: 17px;
+
+    font-family: MYRIAD, 'sans-serif';
     font-weight: 400;
+    font-size: 17px;
     line-height: 167%; /* 28.39px */
 
     color: $black;

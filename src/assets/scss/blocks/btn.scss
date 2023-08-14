@@ -8,9 +8,9 @@
   background: $yellow;
   color: $black;
 
-  font-family: Myriad, 'sans-serif';
-  font-size: 17px;
+  font-family: MYRIAD, 'sans-serif';
   font-weight: 600;
+  font-size: 17px;
 
   cursor: pointer;
   text-decoration: none;
@@ -20,6 +20,9 @@
     display: inline-flex;
 
     border-radius: 23px;
+
+    font-family: MYRIAD, 'sans-serif';
+    font-weight: 600;
 
     &:hover {
       background: transparent;
@@ -34,6 +37,8 @@
     display: inline-flex;
     padding: 13px 24px;
 
+    font-family: MYRIAD, 'sans-serif';
+    font-weight: 600;
 
     &:hover {
       border: 2px solid $yellow;
@@ -50,6 +55,8 @@
     height: 47px;
 
     border-radius: 17px;
+    font-family: MYRIAD, 'sans-serif';
+    font-weight: 600;
 
     &:hover {
       border: 2px solid $yellow;
@@ -59,24 +66,5 @@
 
     }
   }
-
-  //&--footer {
-  //  display: inline-flex;
-  //  width: 270px;
-  //  height: 47px;
-  //
-  //  border-radius: 17px;
-  //
-  //  background: $purpuric;
-  //
-  //  &:hover {
-  //    border: 2px solid $purpuric;
-  //
-  //    background: transparent;
-  //    color: $purpuric;
-  //
-  //  }
-  //}
-
 
 }

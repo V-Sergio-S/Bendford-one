@@ -15,7 +15,12 @@
   left: calc(50% - 365px);
 
   @media screen and ( max-width: $laptop-bp) {
-    top: calc(-9% - 206px);
+    top: calc(-24% - 206px);
+    left: calc(30% - 207px);
+  }
+
+  @media screen and ( max-width: $tablet-bp) {
+    top: calc(-14% - 206px);
     left: calc(50% - 207px);
   }
 
@@ -64,14 +69,16 @@
 
 .registration-section__dust-jacket {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 
   &--position {
     position: relative;
     z-index: 1;
+  }
 
+  &--wrap {
+    flex-wrap: wrap;
   }
 }
 
@@ -103,10 +110,6 @@
 
 .registration-section__form {
   padding: 27px 0 33px 33px;
-  //display: flex;
-  //align-items: center;
-  //justify-content: space-around;
-
 
   @media screen and ( max-width: $tablet-bp) {
     padding: 10px 5px 10px 10px;

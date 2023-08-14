@@ -17,7 +17,7 @@
   backdrop-filter: blur(10px);
 
   transition: transform 1s cubic-bezier(.93,.04,.61,.24);
-  z-index: 2;
+  z-index: 5;
 
   &--transform {
     height: 150px;
@@ -39,7 +39,7 @@
   transform: translateY(-5500px);
   border-radius: 89px;
   transition: transform 1s cubic-bezier(.93,.04,.61,.24);
-  z-index: 2;
+  z-index: 5;
 
   &--transform {
     transform: translateY(0);
