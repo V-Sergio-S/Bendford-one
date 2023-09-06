@@ -4,11 +4,15 @@
 }
 
 .our-teachers__cards {
+  position: relative;
+  width: 100%;
   margin-top: 46px;
   display: flex;
   align-items: start;
 
-  @media screen and ( max-width: $laptop-bp) {
+  z-index: 2;
+
+  @include breakpoint ($laptop-bp) {
     flex-wrap: wrap;
     justify-content: space-around;
   }

@@ -1,7 +1,11 @@
 
 .benefits {
-  padding: 84px 0 93px 0;
+  padding: 84px 0 83px 0;
   background-color: $white;
+
+  @include breakpoint ($mobile-bp) {
+    padding: 54px 0 53px 0;
+  }
 }
 
 .benefits__container {
@@ -10,7 +14,7 @@
   align-items: start;
   justify-content: space-around;
 
-  @media screen and ( max-width: $laptop-bp) {
+  @include breakpoint ($laptop-bp) {
     justify-content: center;
   }
 }
@@ -29,38 +33,50 @@
   align-items: center;
   justify-content: space-between;
 
+  @include breakpoint ($tapik-bp) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
 }
 
 .benefits__item-text {
   margin-right: 10px;
+
+  @include breakpoint ($tapik-bp) {
+    margin-right: 0;
+    margin-top: 10px;
+  }
 }
 
 .benefits__svg-container {
   max-width: 100%;
   margin-right: 30px;
 
-  @media screen and ( max-width: $tapik-bp) {
-    margin-right: 10px;
+  @include breakpoint ($tapik-bp) {
+    margin-right: 0;
+    margin-bottom: 10px;
   }
 }
 
 .benefits__image {
   cursor: pointer;
 
-  @media screen and ( max-width: $tapik-bp) {
+  @include breakpoint ($mobile-bp) {
     width: 100%;
   }
 }
 
 .benefits__image-img {
   width: 100%;
+  max-width: 500px;
 
 
-  @media screen and ( max-width: $mobile-bp) {
+  @include breakpoint ($mobile-bp) {
     margin: 0 25px ;
   }
 
-  @media screen and ( max-width: $tapik-bp) {
+  @include breakpoint ($tapik-bp) {
     margin: 0;
   }
 }

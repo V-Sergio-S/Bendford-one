@@ -11,27 +11,27 @@
 
 .register-section__wrap-position {
   position: absolute;
-  top: calc(-13% - 206px);
+  top: calc(-21% - 206px);
   left: calc(50% - 365px);
 
-  @media screen and ( max-width: $laptop-bp) {
+  @include breakpoint ( $laptop-bp) {
     top: calc(-24% - 206px);
     left: calc(30% - 207px);
   }
 
-  @media screen and ( max-width: $tablet-bp) {
+  @include breakpoint ( $tablet-bp) {
     top: calc(-14% - 206px);
     left: calc(50% - 207px);
   }
 
-  @media screen and ( max-width: $mobile-bp) {
-    top: calc(-7% - 206px);
+  @include breakpoint ( $mobile-bp) {
+    top: calc(-12% - 206px);
     left: calc(50% - 207px);
   }
 
-  @media screen and ( max-width: $tapik-bp) {
-    top: calc(-6% - 206px);
-    left: calc(66% - 207px);
+  @include breakpoint ( $tapik-bp) {
+    top: calc(-15% - 228px);
+    left: calc(51% - 150px);
   }
 }
 
@@ -43,15 +43,16 @@
   background: url(../images/path-to.png), lightgray -0.206px -7px / 100% 101% no-repeat;
   background-size: 65%;
 
+  @include breakpoint ( $tapik-bp) {
+    padding-right: 18px;
+    padding-bottom: 17px;
+  }
+
 }
 
 .register-section__box {
   max-width: 770px;
-  height: 413px;
-  padding: 6px 54px 0 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: 450px;
 
   border-radius: 20px;
   background: linear-gradient(341deg, #F6D365 0%, #FBB471 50%, #FF8A68 100%);
@@ -61,9 +62,8 @@
     background: linear-gradient(353deg, #FFD347 0%, #E87265 50.52%, #D11483 100%);
   }
 
-  @media screen and ( max-width: $tablet-bp) {
+  @include breakpoint ( $tablet-bp) {
     height: 100%;
-    padding: 0;
   }
 }
 
@@ -78,6 +78,7 @@
   }
 
   &--wrap {
+    justify-content: center;
     flex-wrap: wrap;
   }
 }
@@ -87,32 +88,36 @@
   top: calc(0% - 62px);
   right: calc(0% - 65px);
 
-  @media screen and ( max-width: $laptop-bp) {
+  @include breakpoint ( $laptop-bp) {
     top: calc(100% - 62px);
     right: calc(0% - 65px);
   }
 
-  @media screen and ( max-width: $tablet-bp) {
+  @include breakpoint ( $tablet-bp) {
     top: calc(100% - 62px);
     right: calc(9% - 65px);
   }
 
-  @media screen and ( max-width: $mobile-bp) {
+  @include breakpoint ( $mobile-bp) {
     top: calc(100% - 62px);
     right: calc(16% - 65px);
   }
 
-  @media screen and ( max-width: $tapik-bp) {
+  @include breakpoint ( $tapik-bp) {
     top: calc(100% - 62px);
     right: calc(27% - 65px);
   }
 }
 
 .registration-section__form {
-  padding: 27px 0 33px 33px;
+  padding: 33px;
 
-  @media screen and ( max-width: $tablet-bp) {
-    padding: 10px 5px 10px 10px;
+  @include breakpoint ( $tablet-bp) {
+    padding: 25px 5px 10px 15px;
+  }
+
+  @include breakpoint ( $tapik-bp) {
+    padding: 20px 5px 5px 10px;
   }
 }
 
@@ -123,7 +128,7 @@
   &--footer {
     width: 393px;
 
-    @media screen and ( max-width: $tablet-bp) {
+    @include breakpoint ( $tablet-bp) {
       display: none;
     }
   }
@@ -138,17 +143,17 @@
     left: calc(75% - 196px);
     z-index: -1;
 
-    @media screen and ( max-width: $tablet-bp) {
+    @include breakpoint ( $tablet-bp) {
       top: calc(41% - 205px);
       left: calc(75% - 196px);
     }
 
-    @media screen and ( max-width: $mobile-bp) {
+    @include breakpoint ( $mobile-bp) {
       top: calc(-8% - 206px);
       left: calc(84% - 365px);
     }
 
-    @media screen and ( max-width: $tapik-bp) {
+    @include breakpoint ( $tapik-bp) {
       top: calc(-6% - 206px);
       left: calc(115% - 365px);
     }

@@ -1,17 +1,21 @@
 
 .always-question {
-  padding: 79px 0 442px 0;
+  padding: 170px 0 342px 0;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: visible;
+
+  @include breakpoint ($mobile-bp) {
+    padding: 70px 0 242px 0;
+  }
 
 }
 
 .always-question__tabs {
   position: relative;
   max-width: 846px;
-  margin: 87px 0 76px;
+  margin: 67px 0 76px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,7 +39,7 @@
     width: calc(90% - 70px);
     border-bottom: 1px solid $borderTab;
 
-    @media screen and ( max-width: $tapik-bp) {
+    @include breakpoint ($tapik-bp) {
       width: calc(100% - 70px);
     }
   }
@@ -48,15 +52,16 @@
   display: flex;
   align-items: start;
   justify-content: space-between;
+
 }
 
 .always-question__holder {
   width: 20%;
-  margin-left: 5px;
 }
 
 .always-question__button {
   position: relative;
+  margin-left: 5px;
   width: 37px;
   height: 37px;
   display: flex;
@@ -65,7 +70,7 @@
 
   border: 1px solid $buttonTab;
   border-radius: 50%;
-  background: transparent;
+  background-color: transparent;
 
   transform: rotate(-45deg);
   cursor: pointer;
@@ -73,7 +78,7 @@
 
 
   &:hover {
-    background: $buttonTab;
+    background-color: $buttonTab;
     transform: rotate(0);
   }
 
@@ -83,11 +88,11 @@
   }
 
   &--active {
-    background: $buttonTab;
+    background-color: $buttonTab;
     transform: rotate(0);
   }
 
-  @media screen and ( max-width: $mobile-bp) {
+  @include breakpoint ($mobile-bp) {
     width: 33px;
     height: 33px;
   }
@@ -103,7 +108,7 @@
     display: block;
   }
 
-  @media screen and ( max-width: $tapik-bp) {
+  @include breakpoint ($tapik-bp) {
     width: 90%;
   }
 }

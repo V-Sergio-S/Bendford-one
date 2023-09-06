@@ -21,7 +21,7 @@
 .main-section__wrapper {
   margin-top: 96px;
 
-  @media screen and ( max-width: $tapik-bp) {
+  @include breakpoint ($tapik-bp) {
     margin-top: 160px;
   }
 }

@@ -11,7 +11,9 @@
             let currentIdElement = buttonCurrent.getAttribute('data-tabs')
             let tabsInfo = document.getElementById(currentIdElement)
             tabsInfo.classList.toggle('always-question__info--block')
-            button.classList.toggle('always-question__button--active')
+            buttonCurrent.firstElementChild.classList.toggle('title--always-question--active')
+            buttonCurrent.firstElementChild.nextElementSibling.firstElementChild.classList.toggle('always-question__button--active')
+
         }
 
     })

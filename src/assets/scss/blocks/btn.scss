@@ -13,8 +13,18 @@
   font-size: 17px;
 
   cursor: pointer;
+  white-space: normal;
+  outline: none;
   text-decoration: none;
   transition: .4s ease background, .4s ease color, .4s ease border;
+
+  &:hover {
+    background: transparent;
+    border: 2px solid $yellow;
+
+    color: $yellow;
+
+  }
 
   &--header {
     display: inline-flex;
@@ -24,13 +34,6 @@
     font-family: MYRIAD, 'sans-serif';
     font-weight: 600;
 
-    &:hover {
-      background: transparent;
-      border: 2px solid $yellow;
-
-      color: $yellow;
-
-    }
   }
 
   &--main {
@@ -40,30 +43,27 @@
     font-family: MYRIAD, 'sans-serif';
     font-weight: 600;
 
-    &:hover {
-      border: 2px solid $yellow;
-
-      background: transparent;
-      color: $yellow;
-
-    }
   }
 
   &--form {
-    display: inline-flex;
-    width: 270px;
+    width: 260px;
     height: 47px;
 
     border-radius: 17px;
     font-family: MYRIAD, 'sans-serif';
     font-weight: 600;
 
-    &:hover {
-      border: 2px solid $yellow;
 
-      background: transparent;
-      color: $yellow;
+  }
 
+  &--modal {
+    max-width: 355px;
+    height: 56px;
+    padding: 17px 90px;
+
+    @include breakpoint ($mobile-bp) {
+      height: 52px;
+      padding: 13px 70px;
     }
   }
 

@@ -251,7 +251,7 @@
 .swiper {
   margin: 0 5px;
 
-  &--comments {
+  &--length {
     width: 100%;
     overflow: visible;
   }
@@ -259,6 +259,11 @@
   &--benefits {
     max-width: 500px;
   }
+
+  &--card {
+    margin: 0;
+  }
+
 }
 
 .swiper-slide {
@@ -266,7 +271,10 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
 
+.swiper-slide-active {
+  opacity: 1 !important;
 }
 
 

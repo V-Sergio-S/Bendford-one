@@ -5,34 +5,32 @@
 
   color: $white;
 
-  @media screen and ( max-width: $tapik-bp) {
+  @include breakpoint ( $tapik-bp) {
     font-size: 20px;
   }
 
   &--main {
     max-width: 488px;
-
-    font-family: MYRIAD, 'sans-serif';
     font-weight: 700;
 
-    @media screen and ( max-width: $tapik-bp) {
+    @include breakpoint ( $tapik-bp) {
       font-size: 37px;
     }
   }
 
   &--register {
-    font-size: 42px;
     margin-bottom: 20px;
+    max-width: 474px;
 
-    font-family: MYRIAD, 'sans-serif';
+    font-size: 42px;
     font-weight: 700;
 
-    @media screen and ( max-width: $mobile-bp) {
+    @include breakpoint ( $mobile-bp) {
       font-size: 38px;
     }
 
-    @media screen and ( max-width: $tapik-bp) {
-      font-size: 32px;
+    @include breakpoint ( $tapik-bp) {
+      font-size: 30px;
     }
   }
 
@@ -40,31 +38,26 @@
     margin-bottom:40px;
     max-width: 520px;
 
-    font-family: MYRIAD, 'sans-serif';
     font-weight: 700;
 
-    @media screen and ( max-width: $mobile-bp) {
+    @include breakpoint ( $mobile-bp) {
       max-width: 469px;
     }
   }
 
   &--about {
-    margin-bottom:50px;
-
     text-align: center;
-    font-family: MYRIAD, 'sans-serif';
     font-weight: 700;
     font-size: 36px;
 
     color: $black;
 
-    @media screen and ( max-width: $tapik-bp) {
+    @include breakpoint ( $tapik-bp) {
       font-size: 30px;
     }
   }
 
   &--item {
-
     text-align: center;
     font-family: Ubuntu, 'sans-serif';
     font-size: 42px;
@@ -72,7 +65,7 @@
 
     color: $black;
 
-    @media screen and ( max-width: $tapik-bp) {
+    @include breakpoint ( $tapik-bp) {
       font-size: 34px;
     }
   }
@@ -81,59 +74,53 @@
     margin-bottom: 37px;
 
     text-align: center;
-    font-family: MYRIAD, 'sans-serif';
     font-weight: 700;
     font-size: 36px;
 
     color: $black;
 
-    @media screen and ( max-width: $tapik-bp) {
+    @include breakpoint ( $tapik-bp) {
       font-size: 30px;
     }
   }
 
   &--item-benefit {
     max-width: 337px;
-    font-family: MYRIAD, 'sans-serif';
+
     font-weight: 700;
     font-size: 24px;
 
     color: $black;
 
-    @media screen and ( max-width: $tapik-bp) {
+    @include breakpoint ( $tapik-bp) {
       font-size: 18px;
     }
   }
 
   &--card-section {
     font-size: 30px;
-    font-family: MYRIAD, 'sans-serif';
     font-weight: 400;
     line-height: 100%; /* 30px */
 
     color: $black;
 
-    @media screen and ( max-width: $tapik-bp) {
+    @include breakpoint ( $tapik-bp) {
       font-size: 20px;
     }
   }
 
   &--our-teachers {
-
-    font-family: MYRIAD, 'sans-serif';
     font-weight: 700;
     font-size: 36px;
 
     color: $black;
 
-    @media screen and ( max-width: $tapik-bp) {
+    @include breakpoint ( $tapik-bp) {
       font-size: 30px;
     }
   }
 
   &--name-teachers {
-
-    font-family: MYRIAD, 'sans-serif';
     font-size: 15px;
     font-weight: 600;
     line-height: 123.5%; /* 18.525px */
@@ -141,17 +128,40 @@
     color: $black;
   }
 
+  &--management {
+    width: 100%;
+    height: 50px;
+
+    font-size: 17px;
+    font-weight: 700;
+    line-height: normal;
+
+    color: $black;
+  }
+
+  &--management-main {
+    margin: 0 0 45px 20px;
+
+    font-size: 36px;
+    font-weight: 700;
+
+    color: $black;
+
+    @include breakpoint ( $mobile-bp) {
+      font-size: 24px;
+    }
+  }
+
   &--comment-name {
     width: 107px;
 
-    font-family: MYRIAD, 'sans-serif';
     font-size: 16px;
     font-weight: 600;
     line-height: 123.5%; /* 19.76px */
 
     color: $black;
 
-    @media screen and ( max-width: $laptop-bp) {
+    @include breakpoint ( $laptop-bp) {
       font-size: 14px;
     }
   }
@@ -159,17 +169,28 @@
   &--always-question {
     width: 90%;
 
-    font-family: MYRIAD, 'sans-serif';
     font-weight: 700;
     font-size: 32px;
 
     color: $black;
 
-    @media screen and ( max-width: $mobile-bp) {
+    cursor: pointer;
+
+    transition: color .4s ease-in;
+
+    &:hover {
+      color: $yellow;
+    }
+
+    &--active {
+      color: $yellow;
+    }
+
+    @include breakpoint ( $mobile-bp) {
       font-size: 24px;
     }
 
-    @media screen and ( max-width: $tapik-bp) {
+    @include breakpoint ( $tapik-bp) {
       font-size: 15px;
     }
   }
@@ -177,23 +198,99 @@
   &--always-question-title {
     max-width: 668px;
 
-    font-family: MYRIAD, 'sans-serif';
     font-weight: 700;
     font-size: 32px;
 
     color: $black;
 
-    @media screen and ( max-width: $tapik-bp) {
+    @include breakpoint ( $tapik-bp) {
       font-size: 26px;
     }
   }
 
   &--interrogation {
-    font-family: MYRIAD, 'sans-serif';
     font-size: 32px;
     font-weight: 400;
 
     color: $black;
+
+    @include breakpoint ( $tablet-bp) {
+      font-size: 26px;
+    }
+
+    @include breakpoint ( $tapik-bp) {
+      text-align: center;
+      font-size: 18px;
+    }
+  }
+
+  &--privacy {
+    font-size: 30px;
+    font-weight: 700;
+
+    color: $black;
+
+    @include breakpoint ( $mobile-bp) {
+      font-size: 20px;
+      font-weight: 600;
+    }
+  }
+
+  &--modal {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    font-size: 29px;
+    font-weight: 600;
+    line-height: 100%; /* 29px */
+
+    color: $white;
+    z-index: 1;
+
+    @include breakpoint ( $mobile-bp) {
+      font-size: 18px;
+    }
+  }
+
+  &--card {
+    max-width: 668px;
+
+    font-weight: 700;
+    font-size: 36px;
+
+    color: $black;
+
+    @include breakpoint ( $tapik-bp) {
+      font-size: 26px;
+    }
+  }
+
+  &--additional{
+    margin-top: 50px;
+
+    font-weight: 700;
+    font-size: 34px;
+    text-align: center;
+
+    color: $black;
+
+    @include breakpoint ( $tapik-bp) {
+      font-size: 26px;
+    }
+  }
+
+
+  &--document {
+    margin-bottom: 45px;
+
+    font-size: 36px;
+    font-weight: 700;
+
+    color: $black;
+
+    @include breakpoint ( $mobile-bp) {
+      font-size: 24px;
+    }
   }
 
 }

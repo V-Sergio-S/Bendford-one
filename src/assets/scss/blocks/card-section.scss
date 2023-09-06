@@ -1,14 +1,19 @@
 
 .card-section {
   padding: 93px 0 100px;
+
+  @include breakpoint ($mobile-bp) {
+    padding: 54px 0 60px 0;
+  }
 }
 
 .card-section__items {
   position: relative;
+  margin-top: 65px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .card-section__item {
@@ -39,7 +44,10 @@
 }
 
 .card-section__img {
-  width: 100%;
+  width: 340px;
+  height: 252px;
+
+  border-radius: 15px; 
 }
 
 .card-section__info {

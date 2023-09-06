@@ -10,7 +10,7 @@
   top: 0;
   left: 0;
   z-index: 5;
-  height: calc(100vh - 350px);
+  height: calc(100vh - 230px);
   transform: translateY(-500%);
   transition: transform .4s linear;
 
@@ -28,7 +28,7 @@
     transition: transform .4s linear;
 
     @include breakpoint ($tapik-bp) {
-      top: 42px;
+      top: 43px;
     }
 
     .show-sidebar & {

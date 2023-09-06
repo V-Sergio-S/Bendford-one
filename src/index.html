@@ -5,22 +5,21 @@ title: Bendford
 
 
 <!--main-section-->
-<section class="main-section wow animate__animated animate__fadeIn">
+<section class="main-section">
 
     <div class="container  main-section__container">
         <div class="main-section__wrapper  wow animate__animated animate__fadeInDownBig">
             <h1 class="title  title--main">Школа иностранных языков Bendfort</h1>
-            <p class="text  text--main">Английский с фокусом на Вас и Вашего ребенка! Научим говорить, писать,
-                слушать и думать на английском</p>
+            <p class="text  text--main">Более 8 языков с фокусом на Вас и Вашего ребенка! Научим говорить, писать, слушать и думать на иностранном языке!</p>
         </div>
         <div class="main-section__action  wow animate__animated animate__bounceInUp">
-            <button class="btn  btn--main" data-scroll="scroll-register">Записаться на пробный урок</button>
+            <button class="btn  btn--main" data-scroll="scroll-middle-register">Записаться на пробный урок</button>
         </div>
     </div><!--container end-->
 </section>
 
 <!--register-section-->
-<section class="register-section  wow animate__animated animate__backInLeft" id="scroll-register">
+<section class="register-section"  id="scroll-register">
     <div class="container">
         <div class="register-section__wrap">
             <div class="wrap__animation">
@@ -51,11 +50,17 @@ title: Bendford
                     <div class="registration-section__form">
                         <h2 class="title  title--register">Учитесь с выгодой!</h2>
                         <p class="text  text--register">Получите скидку 10% на весь период обучения</p>
-                        <form class="form">
-                            <input class="form__input" type="text" name="name" placeholder="Как вас зовут?">
-                            <input class="form__input" type="text" name="phone" placeholder="+7 ___-___-__">
-                            <input class="form__input" type="text" name="email" placeholder="Ваш E-mail">
-                            <input class="btn btn--form" type="submit" value="Получить">
+                        <form class="form" data-form="form">
+                            <input class="form__input-interrogation" type="text"
+                                   value="Заявка на скидку 10%:">
+                            <input class="form__input" type="text"  name="Имя" placeholder="Как вас зовут?" >
+                            <input class="form__input" type="text"  name="Телефон" placeholder="+7 ___-___-__-__" >
+                            <input class="form__input" type="text"  name="Email" placeholder="Ваш E-mail" >
+                            <input class="btn btn--form  wow animate__animated animate__rubberBand" type="submit"
+                                   value="Получить" data-button>
+                            <div class="text text--form"  data-privacy="privacy">Политика конфиденциальности
+
+                            </div>
                         </form>
                     </div>
                     <div class="register-section__view  wow animate__animated animate__fadeIn">
@@ -71,7 +76,7 @@ title: Bendford
 <!--about-->
 <section class="about">
     <div class="container">
-        <h2 class="title  title--about">Школа которая любит Вас!</h2>
+        <h2 class="title  title--about">Школа, которая любит Вас!</h2>
         <div class="about__wrap">
             <div class="about__item  wow animate__animated animate__backInLeft">
                 <div class="about__item-decoration">
@@ -122,51 +127,40 @@ title: Bendford
 </section>
 
 <!--benefits-->
-<section class="benefits" id="scroll-benefits">
+<section class="benefits"  id="scroll-benefits">
     <div class="container">
         <div class="wrap">
             <div class="wrap__holder">
-                <h2 class="title title--benefits">Школа английского которая остаётся в сердце </h2>
-                    <svg class="wrap__title-icon  wrap__title-icon--benefits  wrap__animation" width="86" height="89" viewBox="0 0 86 89"
-                         fill="none"
-                         xmlns="http://www.w3.org/2000/svg">
-                        <path class="wrap__title-icon  wrap__title-icon--benefits"
-                              d="M42.4559 85.7548C44.8041 80.7616 44.1621 75.3392 41.7588 70.4775C39.3555 65.6158 35.1268 61.9103 30.8522 58.6166C22.6517 52.3007 13.9832 46.1863 8.65375 37.2863C4.34249 30.0856 2.96656 21.0542 6.9476 13.4155C8.74549 9.96415 11.5616 7.03834 15.3225 5.51412C19.7897 3.69206 24.8715 4.04245 29.3662 5.57543C40.6122 9.39475 46.3177 20.5549 49.3815 30.8215C49.9685 32.8012 53.335 33.0114 53.8029 30.8215C54.7018 26.6079 55.5824 22.2368 57.9307 18.505C59.7377 15.6318 62.7647 12.9863 66.3605 12.522C69.9563 12.0577 73.4236 14.1777 75.7719 16.7618C78.4045 19.6526 79.9731 23.4018 80.7986 27.116C82.5323 34.9036 80.6703 43.1554 76.5058 49.9706C72.3688 56.742 66.1678 62.1994 59.2148 66.299C50.9867 71.152 40.0526 75.2692 37.9887 85.4657C37.7502 86.622 38.3281 87.8308 39.5939 88.1637C40.713 88.4616 42.1808 87.8046 42.4193 86.6307C44.2722 77.4767 55.0503 74.034 62.306 69.619C69.5618 65.2041 76.5608 58.9407 80.9179 51.4335C85.5043 43.5408 87.2564 34.1064 85.0549 25.2589C83.1102 17.4451 77.1019 8.29101 67.7181 8.08953C62.5812 7.97565 58.0132 10.9715 55.0412 14.7733C51.6839 19.0744 50.473 24.5056 49.3815 29.6651H53.8029C50.7758 19.4949 45.4462 8.948 35.4661 3.49059C26.3666 -1.48504 14.1392 -1.59892 6.6633 6.14483C0.260616 12.7761 -1.36306 22.8762 1.08611 31.4084C4.02143 41.6224 12.1119 49.7165 20.4409 56.2952C25.3668 60.1846 30.8063 63.6273 34.9158 68.3664C38.4015 72.3871 40.8965 78.4928 38.5116 83.5823C38.0071 84.6598 38.1814 85.9387 39.3372 86.5782C40.3187 87.1213 41.9697 86.876 42.4742 85.7898L42.4559 85.7548Z"
-                              fill="#F7D70A"/>
-                    </svg>
+                <h2 class="title title--benefits">Школа английского, которая остаётся в сердце </h2>
+                <svg class="wrap__title-icon  wrap__title-icon--benefits  wrap__animation" width="86" height="89" viewBox="0 0 86 89"
+                     fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path class="wrap__title-icon  wrap__title-icon--benefits"
+                          d="M42.4559 85.7548C44.8041 80.7616 44.1621 75.3392 41.7588 70.4775C39.3555 65.6158 35.1268 61.9103 30.8522 58.6166C22.6517 52.3007 13.9832 46.1863 8.65375 37.2863C4.34249 30.0856 2.96656 21.0542 6.9476 13.4155C8.74549 9.96415 11.5616 7.03834 15.3225 5.51412C19.7897 3.69206 24.8715 4.04245 29.3662 5.57543C40.6122 9.39475 46.3177 20.5549 49.3815 30.8215C49.9685 32.8012 53.335 33.0114 53.8029 30.8215C54.7018 26.6079 55.5824 22.2368 57.9307 18.505C59.7377 15.6318 62.7647 12.9863 66.3605 12.522C69.9563 12.0577 73.4236 14.1777 75.7719 16.7618C78.4045 19.6526 79.9731 23.4018 80.7986 27.116C82.5323 34.9036 80.6703 43.1554 76.5058 49.9706C72.3688 56.742 66.1678 62.1994 59.2148 66.299C50.9867 71.152 40.0526 75.2692 37.9887 85.4657C37.7502 86.622 38.3281 87.8308 39.5939 88.1637C40.713 88.4616 42.1808 87.8046 42.4193 86.6307C44.2722 77.4767 55.0503 74.034 62.306 69.619C69.5618 65.2041 76.5608 58.9407 80.9179 51.4335C85.5043 43.5408 87.2564 34.1064 85.0549 25.2589C83.1102 17.4451 77.1019 8.29101 67.7181 8.08953C62.5812 7.97565 58.0132 10.9715 55.0412 14.7733C51.6839 19.0744 50.473 24.5056 49.3815 29.6651H53.8029C50.7758 19.4949 45.4462 8.948 35.4661 3.49059C26.3666 -1.48504 14.1392 -1.59892 6.6633 6.14483C0.260616 12.7761 -1.36306 22.8762 1.08611 31.4084C4.02143 41.6224 12.1119 49.7165 20.4409 56.2952C25.3668 60.1846 30.8063 63.6273 34.9158 68.3664C38.4015 72.3871 40.8965 78.4928 38.5116 83.5823C38.0071 84.6598 38.1814 85.9387 39.3372 86.5782C40.3187 87.1213 41.9697 86.876 42.4742 85.7898L42.4559 85.7548Z"
+                          fill="#F7D70A"/>
+                </svg>
             </div>
-        </div>
+        </div><!--wrap end-->
         <div class="benefits__container">
             <div class="benefits__info">
                 <div class="benefits__item">
                     <div class="benefits__svg-container">
-                        <svg class="benefits__item-icon" width="67" height="70" viewBox="0 0 67 70" fill="none"
-                             xmlns="http://www.w3.org/2000/svg">
-                            <path class="benefits__item-icon"
-                                  d="M34.9222 27.089L42.9823 7.76677C43.405 6.7545 44.9002 6.76388 45.3082 7.78083L52.8284 26.536"
-                                  stroke="#F7D70A" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"/>
-                            <path class="benefits__item-icon" d="M37.7074 20.6263H50.1311" stroke="#F7D70A"
-                                  stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"/>
-                            <path class="benefits__item-icon"
-                                  d="M60.5807 32.1574L60.6198 38.4231C60.5807 39.1261 59.7256 39.4893 59.1587 39.0417L51.7339 33.2048C50.8714 32.5276 49.7915 32.1574 48.675 32.1574H27.683C24.8464 32.1574 22.5474 29.9524 22.5474 27.2319V6.93961C22.5474 4.21913 24.8464 2.01416 27.683 2.01416H60.9618C63.7984 2.01416 66.0974 4.21913 66.0974 6.93961V27.2296C66.0974 29.95 63.4172 32.155 60.5807 32.155V32.1574Z"
-                                  stroke="#F7D70A" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"/>
-                            <path class="benefits__item-icon"
-                                  d="M22.5815 26.8499H7.13561C4.29905 26.8499 2 29.0548 2 31.7753V52.0653C2 54.7857 4.68019 56.9907 7.51675 56.9907L7.47766 63.2565C7.51675 63.9595 8.37187 64.3227 8.9387 63.8751L16.3636 58.0381C17.226 57.3609 18.3059 56.9907 19.4225 56.9907H40.4145C43.251 56.9907 45.5501 54.7857 45.5501 52.0653V32.408"
-                                  stroke="#F7D70A" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"/>
-                            <path class="benefits__item-icon" d="M14.1574 37.0663H32.1833" stroke="#F7D70A"
-                                  stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"/>
-                            <path d="M31.6458 51.2779C31.6458 51.2779 19.3394 50.036 19.3394 37.1975"
-                                  stroke="#F7D70A"
-                                  stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"/>
-                            <path d="M14.1574 51.2779C14.1574 51.2779 26.4638 50.036 26.4638 37.1975"
-                                  stroke="#F7D70A"
-                                  stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"/>
+                        <svg width="79" height="76" viewBox="0 0 79 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M46.9222 30.0762L54.9823 10.754C55.405 9.74169 56.9002 9.75106 57.3082 10.768L64.8284 29.5232" stroke="#F7D70A" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"/>
+                            <path d="M49.7074 23.6135H62.1311" stroke="#F7D70A" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"/>
+                            <path d="M71.5529 36.2007L71.5915 43.1021C71.5529 43.8763 70.7086 44.2764 70.149 43.7834L62.8178 37.3544C61.9663 36.6085 60.9 36.2007 59.7976 36.2007H39.0707C36.27 36.2007 34 33.7721 34 30.7757V8.42506C34 5.42863 36.27 3 39.0707 3H71.9293C74.73 3 77 5.42863 77 8.42506V30.7731C77 33.7695 74.3537 36.1982 71.5529 36.1982V36.2007Z" stroke="#F7D70A" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"/>
+                            <path d="M33.7942 32H18.1887C15.3228 32 13 34.488 13 37.5577V60.4523C13 63.522 15.7079 66.01 18.5737 66.01L18.5342 73.0801C18.5737 73.8733 19.4377 74.2831 20.0104 73.7781L27.512 67.1919C28.3833 66.4278 29.4744 66.01 30.6025 66.01H51.8113C54.6772 66.01 57 63.522 57 60.4523V38.2716" stroke="#F7D70A" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"/>
+                            <path d="M4 20L17 23" stroke="#F7D70A" stroke-width="3" stroke-linecap="round"/>
+                            <path d="M2 6L19 18" stroke="#F7D70A" stroke-width="3" stroke-linecap="round"/>
+                            <path d="M17 2L23 14" stroke="#F7D70A" stroke-width="3" stroke-linecap="round"/>
+                            <path d="M26.1574 44H44.1833" stroke="#F7D70A" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"/>
+                            <path d="M43.6458 58.2116C43.6458 58.2116 31.3394 56.9697 31.3394 44.1312" stroke="#F7D70A" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"/>
+                            <path d="M26.1574 58.2116C26.1574 58.2116 38.4638 56.9697 38.4638 44.1312" stroke="#F7D70A" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"/>
                         </svg>
                     </div>
                     <div class="benefits__item-text">
                         <h4 class="title title--item-benefit">Широкий выбор языков</h4>
-                        <p class="text text--item-benefit">Английский, немецкий, итальянский, японский, китайский,
-                            корейский, греческий - ассортимент на любой вкус</p>
+                        <p class="text text--item-benefit">Английский, немецкий, итальянский, японский, китайский, корейский, греческий - ассортимент на любой вкус</p>
                     </div>
                 </div>
                 <div class="benefits__item">
@@ -189,36 +183,25 @@ title: Bendford
                     </div>
                     <div class="benefits__item-text">
                         <h4 class="title title--item-benefit">Обучение с фокусом на Вас и Вашего ребенка</h4>
-                        <p class="text text--item-benefit">В школе, из дома, или из любой точки мира</p>
+                        <p class="text text--item-benefit">В школе, из дома, из любой точки мира</p>
                     </div>
                 </div>
                 <div class="benefits__item">
                     <div class="benefits__svg-container">
-                        <svg class="benefits__item-icon" width="67" height="70" viewBox="0 0 67 70" fill="none"
-                             xmlns="http://www.w3.org/2000/svg">
-                            <path d="M51.8678 22.2831C51.3938 22.3534 51.042 22.7377 51.0445 23.1947L51.0787 29.8143C51.0396 30.5172 50.1845 30.8804 49.6176 30.4329L42.1927 23.3915C41.3303 22.7143 40.2504 22.3441 39.1338 22.3441H18.1419C15.3053 22.3441 13.0062 20.1391 13.0062 17.4186V7.25138C13.0062 4.5309 15.3053 2.32593 18.1419 2.32593H51.4207C54.2573 2.32593 56.5563 4.5309 56.5563 7.25138V17.421C56.5563 19.8743 54.377 21.9106 51.8678 22.2855V22.2831Z"
-                                  stroke="#F7D70A" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"/>
-                            <path d="M22.9012 15.5907C24.0711 15.5907 25.0195 14.6812 25.0195 13.5592C25.0195 12.4372 24.0711 11.5276 22.9012 11.5276C21.7314 11.5276 20.783 12.4372 20.783 13.5592C20.783 14.6812 21.7314 15.5907 22.9012 15.5907Z"
-                                  stroke="#F7D70A" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"/>
-                            <path d="M34.8094 15.5907C35.9793 15.5907 36.9277 14.6812 36.9277 13.5592C36.9277 12.4372 35.9793 11.5276 34.8094 11.5276C33.6395 11.5276 32.6911 12.4372 32.6911 13.5592C32.6911 14.6812 33.6395 15.5907 34.8094 15.5907Z"
-                                  stroke="#F7D70A" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"/>
-                            <path d="M46.7151 15.5907C47.885 15.5907 48.8334 14.6812 48.8334 13.5592C48.8334 12.4372 47.885 11.5276 46.7151 11.5276C45.5452 11.5276 44.5969 12.4372 44.5969 13.5592C44.5969 14.6812 45.5452 15.5907 46.7151 15.5907Z"
-                                  stroke="#F7D70A" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"/>
-                            <path d="M33.3582 31.9443C33.3582 31.9443 23.4265 23.5649 8.41551 27.4945C7.79249 27.6585 7.36249 28.2022 7.36249 28.8208V62.1226C7.36249 63.0365 8.27869 63.702 9.19244 63.4442C12.9599 62.378 22.1145 60.9627 32.5983 67.8799C32.8793 68.065 33.2604 67.8729 33.2629 67.5448C33.2775 62.2257 33.3582 31.5202 33.3582 31.9419V31.9443Z"
-                                  stroke="#F7D70A" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"/>
-                            <path d="M33.2629 68.3273H3.69277C2.57379 68.3273 1.66492 67.458 1.66492 66.3824V33.7085C1.66492 32.6354 2.57134 31.7637 3.69277 31.7637H7.33803"
-                                  stroke="#F7D70A" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"/>
-                            <path d="M52.0217 26.5009C53.9543 26.618 56.0066 26.9297 58.164 27.4944C58.787 27.6584 59.217 28.202 59.217 28.8206V62.1225C59.217 63.0364 58.3008 63.7018 57.387 63.4441C53.6196 62.3779 44.4649 60.9626 33.9811 67.8798C33.7002 68.0649 33.319 67.8728 33.3166 67.5447C33.3019 62.2256 33.2213 31.52 33.2213 31.9418C33.2213 31.9418 37.729 28.1388 45.2614 26.8594"
-                                  stroke="#F7D70A" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"/>
-                            <path d="M33.3191 68.3273H62.8891C64.0081 68.3273 64.917 67.458 64.917 66.3824V33.7085C64.917 32.6354 64.0106 31.7637 62.8891 31.7637H59.2439"
-                                  stroke="#F7D70A" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"/>
+                        <svg width="67" height="70" viewBox="0 0 67 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M51.8678 22.2831C51.3938 22.3534 51.042 22.7377 51.0445 23.1947L51.0787 29.8143C51.0396 30.5172 50.1845 30.8804 49.6176 30.4329L42.1927 23.3915C41.3303 22.7143 40.2504 22.3441 39.1338 22.3441H18.1419C15.3053 22.3441 13.0062 20.1391 13.0062 17.4186V7.25138C13.0062 4.5309 15.3053 2.32593 18.1419 2.32593H51.4207C54.2573 2.32593 56.5563 4.5309 56.5563 7.25138V17.421C56.5563 19.8743 54.377 21.9106 51.8678 22.2855V22.2831Z" stroke="#F7D70A" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"/>
+                            <path d="M22.9012 15.5907C24.0711 15.5907 25.0195 14.6812 25.0195 13.5592C25.0195 12.4372 24.0711 11.5276 22.9012 11.5276C21.7314 11.5276 20.783 12.4372 20.783 13.5592C20.783 14.6812 21.7314 15.5907 22.9012 15.5907Z" stroke="#F7D70A" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"/>
+                            <path d="M34.8094 15.5907C35.9793 15.5907 36.9277 14.6812 36.9277 13.5592C36.9277 12.4372 35.9793 11.5276 34.8094 11.5276C33.6395 11.5276 32.6911 12.4372 32.6911 13.5592C32.6911 14.6812 33.6395 15.5907 34.8094 15.5907Z" stroke="#F7D70A" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"/>
+                            <path d="M46.7151 15.5907C47.885 15.5907 48.8334 14.6812 48.8334 13.5592C48.8334 12.4372 47.885 11.5276 46.7151 11.5276C45.5452 11.5276 44.5969 12.4372 44.5969 13.5592C44.5969 14.6812 45.5452 15.5907 46.7151 15.5907Z" stroke="#F7D70A" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"/>
+                            <path d="M33.3582 31.9443C33.3582 31.9443 23.4265 23.5649 8.41551 27.4945C7.79249 27.6585 7.36249 28.2022 7.36249 28.8208V62.1226C7.36249 63.0365 8.27869 63.702 9.19244 63.4442C12.9599 62.378 22.1145 60.9627 32.5983 67.8799C32.8793 68.065 33.2604 67.8729 33.2629 67.5448C33.2775 62.2257 33.3582 31.5202 33.3582 31.9419V31.9443Z" stroke="#F7D70A" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"/>
+                            <path d="M33.2629 68.3273H3.69277C2.57379 68.3273 1.66492 67.458 1.66492 66.3824V33.7085C1.66492 32.6354 2.57134 31.7637 3.69277 31.7637H7.33803" stroke="#F7D70A" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"/>
+                            <path d="M52.0217 26.5009C53.9543 26.618 56.0066 26.9297 58.164 27.4944C58.787 27.6584 59.217 28.202 59.217 28.8206V62.1225C59.217 63.0364 58.3008 63.7018 57.387 63.4441C53.6196 62.3779 44.4649 60.9626 33.9811 67.8798C33.7002 68.0649 33.319 67.8728 33.3166 67.5447C33.3019 62.2256 33.2213 31.52 33.2213 31.9418C33.2213 31.9418 37.729 28.1388 45.2614 26.8594" stroke="#F7D70A" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"/>
+                            <path d="M33.3191 68.3273H62.8891C64.0081 68.3273 64.917 67.458 64.917 66.3824V33.7085C64.917 32.6354 64.0106 31.7637 62.8891 31.7637H59.2439" stroke="#F7D70A" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"/>
                         </svg>
                     </div>
                     <div class="benefits__item-text">
                         <h4 class="title title--item-benefit">Удобная платформа обучения</h4>
-                        <p class="text text--item-benefit">Все под рукой: учебные материалы, домашние задания, чат с
-                            преподавателями. Вы и Ваш ребенок можете учиться в школе, из дома или из любой точки
-                            мира!</p>
+                        <p class="text text--item-benefit">Все под рукой: учебные материалы, домашние задания, чат с преподавателями.</p>
                     </div>
                 </div>
                 <div class="benefits__item">
@@ -301,10 +284,10 @@ title: Bendford
 <main class="main">
 
     <!--card-section-->
-    <section class="card-section" id="scroll-card">
+    <section class="card-section"  id="scroll-card">
         <div class="container">
             <div class="card-section__items">
-                <div class="card-section__item  wow animate__animated animate__bounceInDown">
+                <div class="card-section__item  wow animate__animated animate__bounceInDown" data-card="0-zero">
                     <div class="card-section__images">
                         <img class="card-section__img" src="assets/images/card_1.png" alt="учись удобно">
                     </div>
@@ -312,7 +295,7 @@ title: Bendford
                         <p class="title title--card-section">Иностранный язык для младших классов</p>
                     </div>
                 </div>
-                <div class="card-section__item  wow animate__animated animate__bounceInDown">
+                <div class="card-section__item  wow animate__animated animate__bounceInDown"  data-card="1-one">
                     <div class="card-section__images">
                         <img class="card-section__img" src="assets/images/card_2.png" alt="учись удобно">
                     </div>
@@ -320,7 +303,7 @@ title: Bendford
                         <p class="title title--card-section">Обучение для взрослых</p>
                     </div>
                 </div>
-                <div class="card-section__item  wow animate__animated animate__bounceInDown">
+                <div class="card-section__item  wow animate__animated animate__bounceInDown"  data-card="2-two">
                     <div class="card-section__images">
                         <img class="card-section__img" src="assets/images/card_3.png" alt="учись удобно">
                     </div>
@@ -329,7 +312,7 @@ title: Bendford
                             для средней школы</p>
                     </div>
                 </div>
-                <div class="card-section__item  wow animate__animated animate__bounceInUp">
+                <div class="card-section__item  wow animate__animated animate__bounceInUp"  data-card="3-thri">
                     <div class="card-section__images">
                         <img class="card-section__img" src="assets/images/card_4.png" alt="учись удобно">
                     </div>
@@ -337,20 +320,12 @@ title: Bendford
                         <p class="title title--card-section">Иностранный язык для дошколят</p>
                     </div>
                 </div>
-                <div class="card-section__item  wow animate__animated animate__bounceInUp">
+                <div class="card-section__item  wow animate__animated animate__bounceInUp"  data-card="4-four">
                     <div class="card-section__images">
                         <img class="card-section__img" src="assets/images/card_5.png" alt="учись удобно">
                     </div>
                     <div class="card-section__info">
                         <p class="title title--card-section">Подготовка к ЕГЭ/ОГЭ</p>
-                    </div>
-                </div>
-                <div class="card-section__item  wow animate__animated animate__bounceInUp">
-                    <div class="card-section__images">
-                        <img class="card-section__img" src="assets/images/card_6.png" alt="учись удобно">
-                    </div>
-                    <div class="card-section__info">
-                        <p class="title title--card-section">Иностранный язык онлайн</p>
                     </div>
                 </div>
                 <div class="yep-images  yep-images--card-section">
@@ -389,45 +364,207 @@ title: Bendford
                               fill="#F7D70A"/>
                     </svg>
                 </div>
-                <div class="interrogation__question">
-                    <p class="title title--interrogation">Какой язык Вы рассматриваете для изучения?</p>
-                </div>
-                <div class="interrogation__choice">
-                    <div class="interrogation__wrap-choice">
-                        <input class="interrogation__input" type="radio"
-                                                                     value="Английский" id="english"
-                                                                     name="choice-english">
-                        <label class="interrogation__label" for="english">Английский</label>
+                <div class="interrogation__questions">
+                    <div class="form__choice" data-question="Какой язык Вы рассматриваете для изучения?">
+                        <div class="form__info">
+                            <p class="title  title--interrogation">Какой язык Вы рассматриваете для изучения?</p>
+                        </div>
+                        <div class="form__wrap-choice">
+                            <input class="form__input-interrogation" type="radio"
+                                   value="Английский" id="english"
+                                   name="Какой язык Вы рассматриваете для изучения?">
+                            <label class="form__label-interrogation" for="english">Английский</label>
+                        </div>
+                        <div class="form__wrap-choice">
+                            <input class="form__input-interrogation" type="radio"
+                                   value="Немецкий" id="deutsch" name="Какой язык Вы рассматриваете для изучения?">
+                            <label class="form__label-interrogation" for="deutsch">Немецкий</label>
+                        </div>
+                        <div class="form__wrap-choice">
+                            <input class="form__input-interrogation" type="radio"
+                                   value="Итальянский" id="italian" name="Какой язык Вы рассматриваете для изучения?">
+                            <label class="form__label-interrogation" for="italian">Итальянский</label>
+                        </div>
+                        <div class="form__wrap-choice">
+                            <input class="form__input-interrogation" type="radio"
+                                   value="Японский" id="japanese" name="Какой язык Вы рассматриваете для изучения?">
+                            <label class="form__label-interrogation" for="japanese">Японский</label>
+                        </div>
+                        <div class="form__wrap-choice">
+                            <input class="form__input-interrogation" type="radio"
+                                   value="Китайский" id="chinece" name="Какой язык Вы рассматриваете для изучения?">
+                            <label class="form__label-interrogation" for="chinece">Китайский</label>
+                        </div>
+                        <div class="form__wrap-choice">
+                            <input class="form__input-interrogation" type="radio"
+                                   value="Корейский" id="korean" name="Какой язык Вы рассматриваете для изучения?">
+                            <label class="form__label-interrogation" for="korean">Корейский</label>
+                        </div>
+                        <div class="form__wrap-choice">
+                            <input class="form__input-interrogation" type="radio"
+                                   value="Греческий" id="greek" name="Какой язык Вы рассматриваете для изучения?">
+                            <label class="form__label-interrogation" for="greek">Греческий</label>
+                        </div>
                     </div>
-                    <div class="interrogation__wrap-choice">
-                        <input class="interrogation__input" type="radio"
-                                                                     value="Немецкий" id="deutsch" name="choice-english">
-                        <label class="interrogation__label" for="deutsch">Немецкий</label>
+                    <div class="form__choice" data-question="Для кого рассматриваете возможность обучения?">
+                        <div class="form__info">
+                            <p class="title  title--interrogation">Для кого рассматриваете возможность обучения?</p>
+                        </div>
+                        <div class="form__wrap-choice">
+                            <input class="form__input-interrogation" type="radio"
+                                   value="Для себя" id="owen"
+                                   name="Для кого рассматриваете возможность обучения?">
+                            <label class="form__label-interrogation" for="owen">Для себя</label>
+                        </div>
+                        <div class="form__wrap-choice">
+                            <input class="form__input-interrogation" type="radio"
+                                   value="Для ребенка" id="my-child" name="Для кого рассматриваете возможность обучения?">
+                            <label class="form__label-interrogation" for="my-child">Для ребенка</label>
+                        </div>
+
                     </div>
-                    <div class="interrogation__wrap-choice">
-                        <input class="interrogation__input" type="radio"
-                                                                     value="Итальянский" id="italian" name="choice-english">
-                        <label class="interrogation__label" for="italian">Итальянский</label>
+                    <div class="form__choice" data-question="Был ли у Вас опыт изучения желаемого языка?">
+                        <div class="form__info">
+                            <p class="title  title--interrogation">Был ли у Вас опыт изучения желаемого языка?</p>
+                        </div>
+                        <div class="form__wrap-choice">
+                            <input class="form__input-interrogation" type="radio"
+                                   value="Да, занимаюсь им уже продолжительное время" id="yes"
+                                   name="Был ли у Вас опыт изучения желаемого языка?">
+                            <label class="form__label-interrogation" for="yes">Да, занимаюсь им уже продолжительное время</label>
+                        </div>
+                        <div class="form__wrap-choice">
+                            <input class="form__input-interrogation" type="radio"
+                                   value="Да, ходил в языковую школу, помню базу" id="base" name="Был ли у Вас опыт изучения желаемого языка?">
+                            <label class="form__label-interrogation" for="base">Да, ходил в языковую школу, помню базу</label>
+                        </div>
+                        <div class="form__wrap-choice">
+                            <input class="form__input-interrogation" type="radio"
+                                   value="Да, но только в школе, мало что помню" id="forget" name="Был ли у Вас опыт изучения желаемого языка?">
+                            <label class="form__label-interrogation" for="forget">Да, но только в школе, мало что помню</label>
+                        </div>
+                        <div class="form__wrap-choice">
+                            <input class="form__input-interrogation" type="radio"
+                                   value="Да, но совсем ничего не помню" id="forgotten" name="Был ли у Вас опыт изучения желаемого языка?">
+                            <label class="form__label-interrogation" for="forgotten">Да, но совсем ничего не помню</label>
+                        </div>
+                        <div class="form__wrap-choice">
+                            <input class="form__input-interrogation" type="radio"
+                                   value="Нет, не было" id="no-experience" name="Был ли у Вас опыт изучения желаемого языка?">
+                            <label class="form__label-interrogation" for="no-experience">Нет, не было</label>
+                        </div>
+                        <div class="form__wrap-choice">
+                            <input class="form__input-interrogation" type="radio"
+                                   value="Другое" id="othered" name="Был ли у Вас опыт изучения желаемого языка?">
+                            <label class="form__label-interrogation" for="othered">Другое</label>
+                        </div>
                     </div>
-                    <div class="interrogation__wrap-choice">
-                        <input class="interrogation__input" type="radio"
-                                                                     value="Японский" id="japanese" name="choice-english">
-                        <label class="interrogation__label" for="japanese">Японский</label>
+                    <div class="form__choice" data-question="Был ли опыт изучения языка у Вашего ребенка?">
+                        <div class="form__info">
+                            <p class="title  title--interrogation">Был ли опыт изучения языка у Вашего ребенка?</p>
+                        </div>
+                        <div class="form__wrap-choice">
+                            <input class="form__input-interrogation" type="radio"
+                                   value="Да, занимались в школе и на курсах, есть база" id="have-base"
+                                   name="Был ли опыт изучения языка у Вашего ребенка?">
+                            <label class="form__label-interrogation" for="have-base">Да, занимались в школе и на курсах, есть база</label>
+                        </div>
+                        <div class="form__wrap-choice">
+                            <input class="form__input-interrogation" type="radio"
+                                   value="Да, учили только в школе, но требуется помощь" id="need-help" name="Был ли опыт изучения языка у Вашего ребенка?">
+                            <label class="form__label-interrogation" for="need-help">Да, учили только в школе, но требуется помощь</label>
+                        </div>
+                        <div class="form__wrap-choice">
+                            <input class="form__input-interrogation" type="radio"
+                                   value="Нет, не было" id="not-have" name="Был ли опыт изучения языка у Вашего ребенка?">
+                            <label class="form__label-interrogation" for="not-have">Нет, не было</label>
+                        </div>
+                        <div class="form__wrap-choice">
+                            <input class="form__input-interrogation" type="radio"
+                                   value="Другое" id="different" name="Был ли опыт изучения языка у Вашего ребенка?">
+                            <label class="form__label-interrogation" for="different">Другое</label>
+                        </div>
                     </div>
-                    <div class="interrogation__wrap-choice">
-                        <input class="interrogation__input" type="radio"
-                                                                     value="Китайский" id="chinece" name="choice-english">
-                        <label class="interrogation__label" for="chinece">Китайский</label>
+                    <div class="form__choice" data-question="Для чего вы хотели бы изучать иностранный язык?">
+                        <div class="form__info">
+                            <p class="title  title--interrogation">Для чего вы хотели бы изучать иностранный язык?</p>
+                        </div>
+                        <div class="form__wrap-choice">
+                            <input class="form__input-interrogation" type="radio"
+                                   value="Нет определенной цели, для саморазвития" id="have-no-aim"
+                                   name="Для чего вы хотели бы изучать иностранный язык?">
+                            <label class="form__label-interrogation" for="have-no-aim">Нет определенной цели, для саморазвития</label>
+                        </div>
+                        <div class="form__wrap-choice">
+                            <input class="form__input-interrogation" type="radio"
+                                   value="Для путешествий" id="for-journey" name="Для чего вы хотели бы изучать иностранный язык?">
+                            <label class="form__label-interrogation" for="for-journey">Для путешествий</label>
+                        </div>
+                        <div class="form__wrap-choice">
+                            <input class="form__input-interrogation" type="radio"
+                                   value="Для переезда в другую страну" id="for-country" name="Для чего вы хотели бы изучать иностранный язык?">
+                            <label class="form__label-interrogation" for="for-country">Для переезда в другую страну</label>
+                        </div>
+                        <div class="form__wrap-choice">
+                            <input class="form__input-interrogation" type="radio"
+                                   value="Для работы" id="for-job" name="Для чего вы хотели бы изучать иностранный язык?">
+                            <label class="form__label-interrogation" for="for-job">Для работы</label>
+                        </div>
+                        <div class="form__wrap-choice">
+                            <input class="form__input-interrogation" type="radio"
+                                   value="Другое" id="for-othered" name="Для чего вы хотели бы изучать иностранный язык?">
+                            <label class="form__label-interrogation" for="for-othered">Другое</label>
+                        </div>
                     </div>
-                    <div class="interrogation__wrap-choice">
-                        <input class="interrogation__input" type="radio"
-                                                                     value="Корейский" id="korean" name="choice-english">
-                        <label class="interrogation__label" for="korean">Корейский</label>
+                    <div class="form__choice" data-question="Для чего Вы хотели бы чтобы Ваш ребенок изучал иностранный язык?">
+                        <div class="form__info">
+                            <p class="title  title--interrogation">Для чего Вы хотели бы чтобы Ваш ребенок изучал
+                                иностранный язык?</p>
+                        </div>
+                        <div class="form__wrap-choice">
+                            <input class="form__input-interrogation" type="radio"
+                                   value="Заложить хорошую языковую базу для будущего" id="future"
+                                   name="Для чего Вы хотели бы чтобы Ваш ребенок изучал иностранный язык?">
+                            <label class="form__label-interrogation" for="future">Заложить хорошую языковую базу для будущего</label>
+                        </div>
+                        <div class="form__wrap-choice">
+                            <input class="form__input-interrogation" type="radio"
+                                   value="Улучшить школьную успеваемость" id="academic-performance" name="Для чего Вы хотели бы чтобы Ваш ребенок изучал иностранный язык?">
+                            <label class="form__label-interrogation" for="academic-performance">Улучшить школьную успеваемость</label>
+                        </div>
+                        <div class="form__wrap-choice">
+                            <input class="form__input-interrogation" type="radio"
+                                   value="Подготовить ребенка к занятиям в школе" id="preparation" name="Для чего Вы хотели бы чтобы Ваш ребенок изучал иностранный язык?">
+                            <label class="form__label-interrogation" for="preparation">Подготовить ребенка к занятиям в школе</label>
+                        </div>
+                        <div class="form__wrap-choice">
+                            <input class="form__input-interrogation" type="radio"
+                                   value="Другое" id="for-different" name="Для чего Вы хотели бы чтобы Ваш ребенок изучал иностранный язык?">
+                            <label class="form__label-interrogation" for="for-different">Другое</label>
+                        </div>
                     </div>
-                    <div class="interrogation__wrap-choice">
-                        <input class="interrogation__input" type="radio"
-                                                                     value="Греческий" id="greek" name="choice-english">
-                        <label class="interrogation__label" for="greek">Греческий</label>
+                    <div class="form__choice" data-question="finish">
+                        <form class="form__question" data-form="form" id="form-quiz">
+                            <div class="form__info">
+                                <p class="title  title--interrogation">Оставьте контактные данные,
+                                    чтобы мы выслали Вам чек-лист</p>
+                            </div>
+                            <div class="form__wrap-choice">
+                                <input class="form__input-interrogation" type="radio"
+                                       value="Заявка опросник:">
+                                <input class="form__form-input" type="text"placeholder="Как вас зовут?" id="nameQuiz" name="Имя">
+                            </div>
+                            <div class="form__wrap-choice">
+                                <input class="form__form-input" type="text" placeholder="+7 ___-___-__" id="phoneQuiz" name="Телефон">
+                            </div>
+                            <div class="form__action">
+                                <input class="form__form-input  form__form-input--button" type="submit" value="Получить">
+                            </div>
+                            <div class="form__info">
+                                <p class="text text--interrogation-form"  data-privacy="privacy">Политика конфиденциальности
+                                </p>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -441,107 +578,202 @@ title: Bendford
                 <div class="wrap__holder">
                     <h2 class="title title--our-teachers">Наши преподаватели</h2>
                     <div class="wrap__animation">
-                        <svg class="wrap__title-icon  wrap__title-icon--our-teachers" width="223" height="19"
+                        <svg class="wrap__title-icon  wrap__title--our-teachers" width="223" height="19"
                              viewBox="0 0 223 19" fill="none"
                              xmlns="http://www.w3.org/2000/svg">
-                            <path class="wrap__title-icon  wrap__title-icon--our-teachers"
+                            <path class="wrap__title-icon  wrap__title--our-teachers"
                                   d="M2 17C46.7093 2.12012 163.368 -2.79323 221 7.30555"
                                   stroke="#F7D70A" stroke-width="3" stroke-linecap="round"/>
                         </svg>
                     </div>
                 </div>
-            </div><!--wrap end-->
+            </div><!--war end-->
             <div class="our-teachers__cards">
-                <div class="our-teachers__card  wow animate__animated animate__bounceInLeft">
-                    <div class="our-teachers__card-photo">
-                        <img src="assets/images/image-avatar.png" alt="Наш преподаватель" class="our-teachers__img">
-                    </div>
-                    <div class="our-teachers__description">
-                        <div class="our-teachers__head">
-                            <h5 class="title title--name-teachers">Ковалева Евгения Николаевна</h5>
-                            <p class="text text--our-teachers">Опыт преподавания: 15 лет</p>
-                        </div>
-                        <div class="our-teachers__info">
-                            <input class="our-teachers__read-checker" type="checkbox" id="read-more-checker_1">
-                            <div class="our-teachers__holder">
-                                <p class="text text--our-teachers">Работала устным и письменным переводчиком
-                                    в первые два года по окончании университета. После этого - преподавателем, так как
-                                    поняла,
-                                    что учить английскому ...
-                                </p>
-                                <div class="our-teachers__bottom"></div>
+                <div class="swiper swiper--length  swiper--our-teachers">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="our-teachers__card">
+                                <div class="our-teachers__card-photo">
+                                    <img class="our-teachers__img" src="assets/images/teacher_1.png"
+                                         alt="Наш преподаватель">
+                                </div>
+                                <div class="our-teachers__description">
+                                    <div class="our-teachers__head">
+                                        <h5 class="title title--name-teachers">Ковалева Евгения Николаевна</h5>
+                                        <p class="text text--our-teachers">Опыт преподавания: 15 лет</p>
+                                    </div>
+                                    <div class="our-teachers__info">
+                                        <input class="our-teachers__read-checker" type="checkbox"
+                                               id="read-more-checker_1">
+                                        <div class="our-teachers__holder">
+                                            <p class="text text--our-teachers">
+                                                Работала устным и письменным переводчиком в первые два года по окончании
+                                                университета. После этого - преподавателем, так как поняла, что учить
+                                                английскому</p>
+                                            <div class="our-teachers__bottom"></div>
+                                        </div>
+                                        <label class="our-teachers__read-checker-button"
+                                               for="read-more-checker_1"></label>
+                                    </div>
+                                </div>
                             </div>
-                            <label class="our-teachers__read-checker-button" for="read-more-checker_1"></label>
                         </div>
-                    </div>
-                </div>
-                <div class="our-teachers__card  wow animate__animated animate__bounceInUp">
-                    <div class="our-teachers__card-photo">
-                        <img src="assets/images/image-avatar.png" alt="Наш преподаватель" class="our-teachers__img">
-                    </div>
-                    <div class="our-teachers__description">
-                        <div class="our-teachers__head">
-                            <h5 class="title title--name-teachers">Ковалева Евгения Николаевна</h5>
-                            <p class="text text--our-teachers">Опыт преподавания: 15 лет</p>
-                        </div>
-                        <div class="our-teachers__info">
-                            <input class="our-teachers__read-checker" type="checkbox" id="read-more-checker_2">
-                            <div class="our-teachers__holder">
-                                <p class="text text--our-teachers">Работала устным и письменным переводчиком
-                                    в первые два года по окончании университета. После этого - преподавателем, так как
-                                    поняла,
-                                    что учить английскому ...
-                                </p>
-                                <div class="our-teachers__bottom"></div>
+                        <div class="swiper-slide">
+                            <div class="our-teachers__card">
+                                <div class="our-teachers__card-photo">
+                                    <img class="our-teachers__img" src="assets/images/teacher_2.png"
+                                         alt="Наш преподаватель">
+                                </div>
+                                <div class="our-teachers__description">
+                                    <div class="our-teachers__head">
+                                        <h5 class="title title--name-teachers">Образ Анна Юрьевна</h5>
+                                        <p class="text text--our-teachers">Опыт преподавания: 6 лет</p>
+                                    </div>
+                                    <div class="our-teachers__info">
+                                        <input class="our-teachers__read-checker" type="checkbox"
+                                               id="read-more-checker_2">
+                                        <div class="our-teachers__holder">
+                                            <p class="text text--our-teachers">
+                                                Я занималась организацией разговорного клуба итальянского языка в г.
+                                                Краснодаре
+                                                с 2016 г. по настоящее время. Неоднократно участвовала в качестве
+                                                переводчика на
+                                                выставках в Италии</p>
+                                            <div class="our-teachers__bottom"></div>
+                                        </div>
+                                        <label class="our-teachers__read-checker-button"
+                                               for="read-more-checker_2"></label>
+                                    </div>
+                                </div>
                             </div>
-                            <label class="our-teachers__read-checker-button" for="read-more-checker_2"></label>
                         </div>
-                    </div>
-                </div>
-                <div class="our-teachers__card  wow animate__animated animate__bounceInRight">
-                    <div class="our-teachers__card-photo">
-                        <img src="assets/images/image-avatar.png" alt="Наш преподаватель" class="our-teachers__img">
-                    </div>
-                    <div class="our-teachers__description">
-                        <div class="our-teachers__head">
-                            <h5 class="title title--name-teachers">Ковалева Евгения Николаевна</h5>
-                            <p class="text text--our-teachers">Опыт преподавания: 15 лет</p>
-                        </div>
-                        <div class="our-teachers__info">
-                            <input class="our-teachers__read-checker" type="checkbox" id="read-more-checker_3">
-                            <div class="our-teachers__holder">
-                                <p class="text text--our-teachers">Работала устным и письменным переводчиком
-                                    в первые два года по окончании университета. После этого - преподавателем, так как
-                                    поняла,
-                                    что учить английскому ...
-                                </p>
-                                <div class="our-teachers__bottom"></div>
+                        <div class="swiper-slide">
+                            <div class="our-teachers__card">
+                                <div class="our-teachers__card-photo">
+                                    <img class="our-teachers__img" src="assets/images/teacher_3.png"
+                                         alt="Наш преподаватель">
+                                </div>
+                                <div class="our-teachers__description">
+                                    <div class="our-teachers__head">
+                                        <h5 class="title title--name-teachers">Толстова Анна Александровна</h5>
+                                        <p class="text text--our-teachers">Опыт преподавания: 5 лет</p>
+                                    </div>
+                                    <div class="our-teachers__info">
+                                        <input class="our-teachers__read-checker" type="checkbox"
+                                               id="read-more-checker_3">
+                                        <div class="our-teachers__holder">
+                                            <p class="text text--our-teachers">
+                                                Постоянно проживала в Италии в период 2001-2014 г. Опыт работы в
+                                                качестве
+                                                переводчика (документы, переговоры, телефонные разговоры) - с 2018 г. по
+                                                настоящее время; преподавателем - с 2018 года
+                                            </p>
+                                            <div class="our-teachers__bottom"></div>
+                                        </div>
+                                        <label class="our-teachers__read-checker-button"
+                                               for="read-more-checker_3"></label>
+                                    </div>
+                                </div>
                             </div>
-                            <label class="our-teachers__read-checker-button" for="read-more-checker_3"></label>
                         </div>
-                    </div>
-                </div>
-                <div class="our-teachers__card  wow animate__animated animate__bounceInDown">
-                    <div class="our-teachers__card-photo">
-                        <img src="assets/images/image-avatar.png" alt="Наш преподаватель" class="our-teachers__img">
-                    </div>
-                    <div class="our-teachers__description">
-                        <div class="our-teachers__head">
-                            <h5 class="title title--name-teachers">Ковалева Евгения Николаевна</h5>
-                            <p class="text text--our-teachers">Опыт преподавания: 15 лет</p>
-                        </div>
-                        <div class="our-teachers__info">
-                            <input class="our-teachers__read-checker" type="checkbox" id="read-more-checker_4">
-                            <div class="our-teachers__holder">
-                                <p class="text text--our-teachers">Работала устным и письменным переводчиком
-                                    в первые два года по окончании университета. После этого - преподавателем, так как
-                                    поняла,
-                                    что учить английскому ...
-                                </p>
-                                <div class="our-teachers__bottom"></div>
+                        <div class="swiper-slide">
+                            <div class="our-teachers__card">
+                                <div class="our-teachers__card-photo">
+                                    <img class="our-teachers__img" src="assets/images/teacher_4.png"
+                                         alt="Наш преподаватель">
+                                </div>
+                                <div class="our-teachers__description">
+                                    <div class="our-teachers__head">
+                                        <h5 class="title title--name-teachers">Сато Юлия Анатольевна</h5>
+                                        <p class="text text--our-teachers">Опыт преподавания: 17 лет</p>
+                                    </div>
+                                    <div class="our-teachers__info">
+                                        <input class="our-teachers__read-checker" type="checkbox"
+                                               id="read-more-checker_4">
+                                        <div class="our-teachers__holder">
+                                            <p class="text text--our-teachers">
+                                                Прожила в Японии 12 лет. Разговорной практики — более 20 лет. Провожу
+                                                как
+                                                индивидуальные, так и групповые занятия. В обучении стараюсь развивать
+                                                все
+                                                навыки, необходимые для освоения иностранного языка
+                                            </p>
+                                            <div class="our-teachers__bottom"></div>
+                                        </div>
+                                        <label class="our-teachers__read-checker-button"
+                                               for="read-more-checker_4"></label>
+                                    </div>
+                                </div>
                             </div>
-                            <label class="our-teachers__read-checker-button" for="read-more-checker_4"></label>
                         </div>
+                        <div class="swiper-slide">
+                            <div class="our-teachers__card">
+                                <div class="our-teachers__card-photo">
+                                    <img class="our-teachers__img" src="assets/images/teacher_5.png"
+                                         alt="Наш преподаватель">
+                                </div>
+                                <div class="our-teachers__description">
+                                    <div class="our-teachers__head">
+                                        <h5 class="title title--name-teachers">Миленина Альбина Дмитриевна</h5>
+                                        <p class="text text--our-teachers">Опыт преподавания: 3 года</p>
+                                    </div>
+                                    <div class="our-teachers__info">
+                                        <input class="our-teachers__read-checker" type="checkbox"
+                                               id="read-more-checker_5">
+                                        <div class="our-teachers__holder">
+                                            <p class="text text--our-teachers">
+                                                Стремлюсь не столько нафаршировать учеников знаниями насильно, сколько
+                                                воодушевить их учить французский язык на собственных стремлениях, так
+                                                как
+                                                для
+                                                меня главное – вдохновить студента и влюбить его в процесс
+                                            </p>
+                                            <div class="our-teachers__bottom"></div>
+                                        </div>
+                                        <label class="our-teachers__read-checker-button"
+                                               for="read-more-checker_5"></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="our-teachers__card">
+                                <div class="our-teachers__card-photo">
+                                    <img class="our-teachers__img" src="assets/images/teacher_6.png"
+                                         alt="Наш преподаватель">
+                                </div>
+                                <div class="our-teachers__description">
+                                    <div class="our-teachers__head">
+                                        <h5 class="title title--name-teachers">Хот Диана Инверовна</h5>
+                                        <p class="text text--our-teachers">Опыт преподавания: 3 года</p>
+                                    </div>
+                                    <div class="our-teachers__info">
+                                        <input class="our-teachers__read-checker" type="checkbox"
+                                               id="read-more-checker_6">
+                                        <div class="our-teachers__holder">
+                                            <p class="text text--our-teachers">
+                                                Я получаю искреннее удовольствие от изучения иностранных языков и
+                                                самообразования. Я интересуюсь изучением английского языка с самого
+                                                детства.
+                                                Я
+                                                всегда находила историю Англии от Альфреда Великого
+                                            </p>
+                                            <div class="our-teachers__bottom"></div>
+                                        </div>
+                                        <label class="our-teachers__read-checker-button"
+                                               for="read-more-checker_6"></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="arrow-wrap">
+                        <button class="arrow  our-teachers--arrow--prev">
+                            <img class="prev-img" src="assets/images/arrow-left.png" alt="предыдущее">
+                        </button>
+                        <button class="arrow  our-teachers--arrow--next">
+                            <img class="next-img" src="assets/images/arrow-right.png" alt="следующее">
+                        </button>
                     </div>
                 </div>
             </div><!--our-teachers__cards end-->
@@ -580,12 +812,17 @@ title: Bendford
                         <div class="registration-section__form">
                             <h2 class="title  title--register  title--other">Записаться на бесплатный
                                 пробный урок</h2>
-                            <form class="form">
-                                <input class="form__input" type="text" name="name" placeholder="Как вас зовут?">
-                                <input class="form__input" type="text" name="phone" placeholder="+7 ___-___-__">
-                                <input class="form__input" type="text" name="email" placeholder="Ваш E-mail">
+                            <form class="form" data-form="form">
+                                <input class="form__input-interrogation" type="text"
+                                       value="Заявка на бесплатный
+                                пробный урок:">
+                                <input class="form__input" type="text" name="Имя" placeholder="Как вас зовут?">
+                                <input class="form__input" type="text" name="Телефон" placeholder="+7 ___-___-__-__">
+                                <input class="form__input" type="text" name="Email" placeholder="Ваш E-mail">
                                 <input class="btn btn--form  wow animate__animated animate__rubberBand" type="submit"
-                                       value="Получить">
+                                       value="Получить" data-button>
+                                <div class="text text--form"  data-privacy="privacy">Политика конфиденциальности
+                                </div>
                             </form>
                         </div>
                         <div class="register-section__view  register-section__view--footer  wow animate__animated animate__fadeIn">
@@ -608,7 +845,7 @@ title: Bendford
                         <svg class="wrap__title-icon  wrap__title-icon--comments" width="223" height="19"
                              viewBox="0 0 223 19" fill="none"
                              xmlns="http://www.w3.org/2000/svg">
-                            <path class="wrap__title-icon  wrap__title-icon--our-teachers"
+                            <path class="wrap__title-icon  wrap__title-icon--comments"
                                   d="M2 17C46.7093 2.12012 163.368 -2.79323 221 7.30555"
                                   stroke="#F7D70A" stroke-width="3" stroke-linecap="round"/>
                         </svg>
@@ -619,135 +856,84 @@ title: Bendford
                 <div class="yep-images  yep-images--comments">
                     <img class="yep__img" src="assets/images/yep-vertical.png" alt="да">
                 </div>
-                <div class="swiper  swiper--comments">
+                <div class="swiper  swiper--length  swiper--comments">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="comments__card">
-                                <p class="text text--comment">Искала школу для дочки 7 лет. Оказалось, что очень
-                                    достойная
-                                    школа.
-                                    Занимаемся три месяца. Цена в среднем по рынку. Занимаемся утром по воскресеньям,
-                                    что
-                                    мне
-                                    очень
-                                    удобно. На новогодние праздники расписание уроков сделали под меня. Менеджер,
-                                    который
-                                    организовывает
-                                    уроки, молодец. Все четко, во время, всегда на связи, решает все вопросы. Так
-                                    наверное и
-                                    должно
-                                    быть, но в другой школе, в которой мы до этого занимались, уроки нам не переносили,
-                                    да и
-                                    были
-                                    они
-                                    хуже по содержанию. Как то мы заболели, урок перенесли, что очень важно.</p>
+                                <p class="text text--comment">Хорошие учителя хорошие кабинеты задают немного учителя всегда помогут, объяснят если что-то не понятно игры разговоры на английском
+                                    Рекомендую!!! Очень счастлива, что я там учусь</p>
                                 <div class="comment__author-photo">
-                                    <img src="assets/images/comment_1.png" alt="автор комментария"
-                                         class="comment__author-img">
-                                </div>
-                                <div class="comment__info">
-                                    <p class="title title--comment-name">Александр А.</p>
-                                    <p class="text text--comment-status">Ученик школы</p>
+                                    <div class="comment__info">
+                                        <p class="title title--comment-name">Ева М.</p>
+                                        <p class="text text--comment-status">Ученик школы</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="comments__card">
-                                <p class="text text--comment">Искала школу для дочки 7 лет. Оказалось, что очень
-                                    достойная
-                                    школа.
-                                    Занимаемся три месяца. Цена в среднем по рынку. Занимаемся утром по воскресеньям,
-                                    что
-                                    мне
-                                    очень
-                                    удобно. На новогодние праздники расписание уроков сделали под меня. Менеджер,
-                                    который
-                                    организовывает
-                                    уроки, молодец. Все четко, во время, всегда на связи, решает все вопросы. Так
-                                    наверное и
-                                    должно
-                                    быть, но в другой школе, в которой мы до этого занимались, уроки нам не переносили,
-                                    да и
-                                    были
-                                    они
-                                    хуже по содержанию. Как то мы заболели, урок перенесли, что очень важно.</p>
+                                <p class="text text--comment">Сын занимается третий год, и ещё попросил купить абонемент на всё лето на онлайн занятия.
+                                    В школе постоянно менялись учителя, и замены болеющим не находили по месяцу - занятия в "Bendfort" очень выручают, и помощь с домашками не требуется. Преподаватели - классные, и у каждого своя "изюминка", кроме английского, ребёнок узнаёт столько всего нового. Очень нравятся и мероприятия выходного дня, и когда на занятия приходит настоящий англичанин Энди, мистер Кинг, носитель языка</p>
                                 <div class="comment__author-photo">
-                                    <img src="assets/images/comment_2.png" alt="автор комментария"
-                                         class="comment__author-img">
-                                </div>
-                                <div class="comment__info">
-                                    <p class="title title--comment-name">Наталья Т.</p>
-                                    <p class="text text--comment-status">Ученик школы</p>
+                                    <div class="comment__info">
+                                        <p class="title title--comment-name">Ксения Т.</p>
+                                        <p class="text text--comment-status">мама ученика школы</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="comments__card">
-                                <p class="text text--comment">Искала школу для дочки 7 лет. Оказалось, что очень
-                                    достойная
-                                    школа.
-                                    Занимаемся три месяца. Цена в среднем по рынку. Занимаемся утром по воскресеньям,
-                                    что
-                                    мне
-                                    очень
-                                    удобно. На новогодние праздники расписание уроков сделали под меня. Менеджер,
-                                    который
-                                    организовывает
-                                    уроки, молодец. Все четко, во время, всегда на связи, решает все вопросы. Так
-                                    наверное и
-                                    должно
-                                    быть, но в другой школе, в которой мы до этого занимались, уроки нам не переносили,
-                                    да и
-                                    были
-                                    они
-                                    хуже по содержанию. Как то мы заболели, урок перенесли, что очень важно.</p>
+                                <p class="text text--comment">Мы пробовали в разных языковых школах нашего города, но больше всего нам понравилось именно в "Бендфорт". Тут работают все молодые педагоги с опытом, любят детей, но в то же время не дают послаблений! Вы лучшие!!! Учимся у вас уже 4 года и не жалеем!</p>
                                 <div class="comment__author-photo">
-                                    <img src="assets/images/comment_3.png" alt="автор комментария"
-                                         class="comment__author-img">
-                                </div>
-                                <div class="comment__info">
-                                    <p class="title title--comment-name">Олег И.</p>
-                                    <p class="text text--comment-status">Ученик школы</p>
+                                    <div class="comment__info">
+                                        <p class="title title--comment-name">Зинаида В. .</p>
+                                        <p class="text text--comment-status">мама ученика школы</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="comments__card">
-                                <p class="text text--comment">Искала школу для дочки 7 лет. Оказалось, что очень
-                                    достойная
-                                    школа.
-                                    Занимаемся три месяца. Цена в среднем по рынку. Занимаемся утром по воскресеньям,
-                                    что
-                                    мне
-                                    очень
-                                    удобно. На новогодние праздники расписание уроков сделали под меня. Менеджер,
-                                    который
-                                    организовывает
-                                    уроки, молодец. Все четко, во время, всегда на связи, решает все вопросы. Так
-                                    наверное и
-                                    должно
-                                    быть, но в другой школе, в которой мы до этого занимались, уроки нам не переносили,
-                                    да и
-                                    были
-                                    они
-                                    хуже по содержанию. Как то мы заболели, урок перенесли, что очень важно.</p>
+                                <p class="text text--comment">Сыну очень нравится! Учится два года и всегда с удовольствием ходит на занятия!! Очень позитивные преподаватели, которые умеют мотивировать и влюблять!
+                                    Благодаря занятиям здесь, в обычной школе язык даётся легко и с интересом! Надеюсь и дальше так пойдёт! Спасибо!!</p>
                                 <div class="comment__author-photo">
-                                    <img src="assets/images/comment_4.png" alt="автор комментария"
-                                         class="comment__author-img">
+                                    <div class="comment__info">
+                                        <p class="title title--comment-name">Татьяна Р.</p>
+                                        <p class="text text--comment-status">мама ученика школы</p>
+                                    </div>
                                 </div>
-                                <div class="comment__info">
-                                    <p class="title title--comment-name">Татьяна К.</p>
-                                    <p class="text text--comment-status">Ученик школы</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="comments__card">
+                                <p class="text text--comment">На первый год в этой школе. Когда начался в общеобразовательной школе английский стало понятно, что ребенок не понимает и на платных уроках тоже. Обратились в Бендфорт, ребенок с радостью учится и закрепляет школьные знания. Индивидуальный подход к детям. Очень радует </p>
+                                <div class="comment__author-photo">
+                                    <div class="comment__info">
+                                        <p class="title title--comment-name">Анна Т.</p>
+                                        <p class="text text--comment-status">мама ученика школы</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="comments__card">
+                                <p class="text text--comment">Мои дети учатся в ЯЦ Бендфорт, нам ооочень нравится! Лучшие педагоги, грамотный подход к детям! В школе улучшились результаты благодаря Бендфорту. Будем заниматься только у вас!!!! Спасибо вам!!!</p>
+                                <div class="comment__author-photo">
+                                    <div class="comment__info">
+                                        <p class="title title--comment-name">Зинаида В.</p>
+                                        <p class="text text--comment-status">мама ученика школы</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="comments--wrap-arrow">
-                        <button class="comments__arrow  comments__arrow--prev">
-                            <img class="comments__prev-img" src="assets/images/arrow-left.png" alt="предыдущее">
+                    <div class="arrow-wrap">
+                        <button class="arrow  comments__arrow--prev">
+                            <img class="prev-img" src="assets/images/arrow-left.png" alt="предыдущее">
                         </button>
-                        <button class="comments__arrow  comments__arrow--next">
-                            <img class="comments__next-img" src="assets/images/arrow-right.png" alt="следующее">
+                        <button class="arrow  comments__arrow--next">
+                            <img class="next-img" src="assets/images/arrow-right.png" alt="следующее">
                         </button>
                     </div>
                 </div>
@@ -757,7 +943,7 @@ title: Bendford
     </section>
 
     <!--always-question-->
-    <section class="always-question">
+    <section class="always-question"  id="scroll-question">
         <div class="container">
             <div class="wrap">
                 <div class="wrap__holder  wrap__holder--always-question">
@@ -776,10 +962,10 @@ title: Bendford
             <div class="always-question__tabs">
                 <div class="always-question__tabs">
                     <div class="always-question__tab">
-                        <div class="always-question__wrap">
+                        <div class="always-question__wrap" data-tabs="tab_1">
                             <div class="title  title--always-question">В чем особенность обучения в Bendfort?</div>
                             <div class="always-question__holder">
-                                <div class="always-question__button" data-tabs="tab_1">
+                                <div class="always-question__button">
                                     <svg class="always__question__cross" width="17" height="17" viewBox="0 0 17 17"
                                          fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path class="always__question__cross" d="M16 1L1 16" stroke="black"/>
@@ -789,15 +975,15 @@ title: Bendford
                             </div>
                         </div>
                         <div class="always-question__info" id="tab_1">
-                            <p class="text  text--always-question">Многолетний опыт. Большое количество языковых программ, форматов обучения, а также собственная программа адаптированная под каждый возраст и уровень владения языком. Благодаря регулярным занятия Вы уже за пару месяцев заметно улучшите свой английский!</p>
+                            <p class="text  text--always-question">Многолетний опыт. Большое количество языковых программ, форматов обучения, а также собственная программа адаптированная под каждый возраст и уровень владения языком. Благодаря регулярным занятиям Вы уже за пару месяцев заметно улучшите свой английский!</p>
                         </div>
 
                     </div>
                     <div class="always-question__tab">
-                        <div class="always-question__wrap">
-                            <div class="title  title--always-question">Есть ли тестирование уровня языка?</div>
+                        <div class="always-question__wrap" data-tabs="tab_2">
+                            <div class="title  title--always-question" >Есть ли тестирование уровня языка?</div>
                             <div class="always-question__holder">
-                                <div class="always-question__button" data-tabs="tab_2">
+                                <div class="always-question__button">
                                     <svg class="always__question__cross" width="17" height="17" viewBox="0 0 17 17"
                                          fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path class="always__question__cross" d="M16 1L1 16" stroke="black"/>
@@ -812,12 +998,12 @@ title: Bendford
 
                     </div>
                     <div class="always-question__tab">
-                        <div class="always-question__wrap">
+                        <div class="always-question__wrap" data-tabs="tab_3">
                             <div class="title  title--always-question">Какой уровень профессиональной
                                 подготовки у ваших преподавателей?
                             </div>
                             <div class="always-question__holder">
-                                <div class="always-question__button" data-tabs="tab_3">
+                                <div class="always-question__button">
                                     <svg class="always__question__cross" width="17" height="17" viewBox="0 0 17 17"
                                          fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path class="always__question__cross" d="M16 1L1 16" stroke="black"/>
@@ -827,15 +1013,15 @@ title: Bendford
                             </div>
                         </div>
                         <div class="always-question__info" id="tab_3">
-                            <p class="text  text--always-question">Наши преподаватели - наша гордость, конечно же все обладают высшим лингвистическим-педагогическим образованием. Перед началом работы в Bendfort каждый педагог проходит внутреннюю аттестацию и стажировку, мы уверены, что у нас работают - профессионалы!</p>
+                            <p class="text  text--always-question">Наши преподаватели - наша гордость, абсолютно все педагоги обладают высшим лингвистическим-педагогическим образованием. Перед началом работы в Bendfort каждый педагог проходит внутреннюю аттестацию и стажировку, мы уверены, что у нас работают - профессионалы!</p>
                         </div>
 
                     </div>
                     <div class="always-question__tab">
-                        <div class="always-question__wrap">
+                        <div class="always-question__wrap" data-tabs="tab_4">
                             <div class="title  title--always-question">Точно ли я достигну результата?</div>
                             <div class="always-question__holder">
-                                <div class="always-question__button" data-tabs="tab_4">
+                                <div class="always-question__button">
                                     <svg class="always__question__cross" width="17" height="17" viewBox="0 0 17 17"
                                          fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path class="always__question__cross" d="M16 1L1 16" stroke="black"/>
@@ -845,15 +1031,15 @@ title: Bendford
                             </div>
                         </div>
                         <div class="always-question__info" id="tab_4">
-                            <p class="text  text--always-question">Все зависит от цели, если Ваша цель — заговорить на английском, мы Вам точно поможем ее достигнуть. Теория вместе с практикой дают необыкновенный результат, зачастую, ученики сами удивляются своему прогресс обучаясь в Bendfort.</p>
+                            <p class="text  text--always-question">Все зависит от цели, если Ваша цель — заговорить на иностранном, мы Вам точно поможем ее достигнуть. Теория вместе с практикой дают необыкновенный результат, зачастую, ученики сами удивляются своему прогрессу, обучаясь в Bendfort.</p>
                         </div>
 
                     </div>
                     <div class="always-question__tab">
-                        <div class="always-question__wrap">
+                        <div class="always-question__wrap" data-tabs="tab_5">
                             <div class="title  title--always-question">Как именно мне отслеживать свой прогресс?</div>
                             <div class="always-question__holder">
-                                <div class="always-question__button" data-tabs="tab_5">
+                                <div class="always-question__button">
                                     <svg class="always__question__cross" width="17" height="17" viewBox="0 0 17 17"
                                          fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path class="always__question__cross" d="M16 1L1 16" stroke="black"/>
@@ -868,12 +1054,12 @@ title: Bendford
 
                     </div>
                     <div class="always-question__tab">
-                        <div class="always-question__wrap">
+                        <div class="always-question__wrap" data-tabs="tab_6">
                             <div class="title  title--always-question">Получу ли я сертификат после обучения,
                                 который подтвердит мои навыки?
                             </div>
                             <div class="always-question__holder">
-                                <div class="always-question__button" data-tabs="tab_6">
+                                <div class="always-question__button">
                                     <svg class="always__question__cross" width="17" height="17" viewBox="0 0 17 17"
                                          fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path class="always__question__cross" d="M16 1L1 16" stroke="black"/>
@@ -888,10 +1074,10 @@ title: Bendford
 
                     </div>
                     <div class="always-question__tab">
-                        <div class="always-question__wrap">
+                        <div class="always-question__wrap" data-tabs="tab_7">
                             <div class="title  title--always-question">Могу ли я взять паузу в обучении?</div>
                             <div class="always-question__holder">
-                                <div class="always-question__button" data-tabs="tab_7">
+                                <div class="always-question__button">
                                     <svg class="always__question__cross" width="17" height="17" viewBox="0 0 17 17"
                                          fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path class="always__question__cross" d="M16 1L1 16" stroke="black"/>
@@ -906,12 +1092,12 @@ title: Bendford
 
                     </div>
                     <div class="always-question__tab">
-                        <div class="always-question__wrap">
+                        <div class="always-question__wrap" data-tabs="tab_8">
                             <div class="title  title--always-question">Если мне не понравится обучение,
                                 я смогу вернуть деньги?
                             </div>
                             <div class="always-question__holder">
-                                <div class="always-question__button" data-tabs="tab_8">
+                                <div class="always-question__button">
                                     <svg class="always__question__cross" width="17" height="17" viewBox="0 0 17 17"
                                          fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path class="always__question__cross" d="M16 1L1 16" stroke="black"/>

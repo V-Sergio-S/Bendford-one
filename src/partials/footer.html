@@ -9,7 +9,7 @@
         <!--register-section-->
         <div class="register-section__wrap-position">
             <div class="register-section__wrap">
-                <div class="wrap__animation">
+                <div class="wrap__animation  wrap__animation--footer">
                     <div class="register-section__position">
                         <svg class="register-section__icon" width="109" height="131" viewBox="0 0 109 131"
                              fill="none"
@@ -40,12 +40,16 @@
                         <div class="registration-section__form">
                             <h2 class="title  title--register">Учитесь с выгодой!</h2>
                             <p class="text  text--register">Получите скидку 10% на весь период обучения</p>
-                            <form class="form">
-                                <input class="form__input" type="text" name="name" placeholder="Как вас зовут?">
-                                <input class="form__input" type="text" name="phone" placeholder="+7 ___-___-__">
-                                <input class="form__input" type="text" name="email" placeholder="Ваш E-mail">
-                                <input class="btn  btn--form  wow animate__animated animate__rubberBand" type="submit"
-                                       value="Получить">
+                            <form class="form" data-form="form">
+                                <input class="form__input-interrogation" type="text"
+                                value="Заявка на скидку 10%:">
+                                <input class="form__input" type="text" name="Имя" placeholder="Как вас зовут?">
+                                <input class="form__input" type="text" name="Телефон" placeholder="+7 ___-___-__-__">
+                                <input class="form__input" type="text" name="Email" placeholder="Ваш E-mail">
+                                <input class="btn btn--form  wow animate__animated animate__rubberBand" type="submit"
+                                        value="Получить" data-button>
+                                <div class="text text--form"  data-privacy="privacy">Политика конфиденциальности
+                                </div>
                             </form>
                         </div>
                         <div class="register-section__view  register-section__view--footer  wow animate__animated animate__fadeIn">
@@ -58,36 +62,44 @@
 
         <!--footer-->
         <div class="footer__nav">
-            <ul class="menu">
-                <li class="menu__list">
-                    <a href="#" class="menu__link" data-scroll="scroll-benefits">О школе</a>
-                    <svg class="menu__svg" width="13" height="9" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 1L6.5 7L12 1" stroke="black" stroke-linecap="round"/>
-                    </svg>
-                </li>
-                <li class="menu__list">
+            <ul class="menu  menu--footer">
+
+                <li class="menu__list  menu__list--footer">
                     <a href="#" class="menu__link" data-scroll="scroll-card">Наши услуги</a>
-                    <svg class="menu__svg" width="13" height="9" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 1L6.5 7L12 1" stroke="black" stroke-linecap="round"/>
-                    </svg>
+                </li>
+                <li class="menu__list  menu__list--footer">
+                    <a href="#" class="menu__link" data-scroll="scroll-question">Ответы на вопросы</a>
+                </li>
+                <li class="menu__list  menu__list--footer">
+                    <div class="menu__wrapp">
+                        <a href="#" class="menu__link" data-scroll="scroll-benefits">О школе</a>
+                        <svg class="menu__svg" width="13" height="9" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L6.5 7L12 1" stroke="black" stroke-linecap="round"/>
+                        </svg>
+                        <ul class="subnav  subnav--footer">
+                            <li class="menu__list">
+                                <a class="subnav_link" href="#" data-doc="doc">Cведения об образовательной организации</a>
+                            </li>
+                            <li class="menu__list">
+                                <a class="subnav_link" href="#" data-management="management">Руководство</a>
+                            </li>
+                        </ul>
+                    </div>
                 </li>
             </ul>
         </div>
         <div class="footer__socials">
             <div class="footer__social">
-                <a class="footer__image" href="#" target="_blank">
-                    <img class="footer__social-img" src="../assets/images/telegram.png" alt="телеграм" >
+                <a class="footer__image" href="https://t.me/+cCLknagaEsYwZjIy" target="_blank">
+                    <img class="footer__social-img" src="../assets/images/telegram.png" alt="телеграмм" >
                 </a>
-                <a class="footer__image" href="#" target="_blank">
+                <a class="footer__image" href="https://vk.com/bendfort_krasnodar" target="_blank">
                     <img class="footer__social-img" src="../assets/images/vk.png" alt="вк" >
-                </a>
-                <a class="footer__image" href="#" target="_blank">
-                    <img class="footer__social-img" src="../assets/images/youtube.png" alt="ютуб" >
                 </a>
             </div>
             <div class="footer__phone">
-                <a class="phone" href="tel:+7 (900)9999999" >+7 (900) 999-99-99</a>
-                <p class="text text--year">2023</p>
+                <a class="phone" href="tel:+78612139797" >+7 861 213-97-97</a>
+                <p class="text text--year" id="year-full"></p>
             </div>
         </div>
     </div>
