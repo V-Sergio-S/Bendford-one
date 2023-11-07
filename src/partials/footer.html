@@ -1,9 +1,5 @@
 <footer class="footer   footer--position" >
-
-    <div class="yep-images  yep-images--footer">
-        <img class="yep__img" src="../assets/images/yep-vertical-transform.png" alt="да">
-    </div>
-
+    <!--container-->
     <div class="container">
 
         <!--register-section-->
@@ -48,19 +44,20 @@
                                 <input class="form__input" type="text" name="Email" placeholder="Ваш E-mail">
                                 <input class="btn btn--form  wow animate__animated animate__rubberBand" type="submit"
                                         value="Получить" data-button>
-                                <div class="text text--form"  data-privacy="privacy">Политика конфиденциальности
+                                <div class="text text--form"  data-mod="privacy">Политика конфиденциальности
                                 </div>
                             </form>
                         </div>
-                        <div class="register-section__view  register-section__view--footer  wow animate__animated animate__fadeIn">
+                        <picture class="register-section__view  register-section__view--footer  wow animate__animated animate__fadeIn">
+                            <source class="register-section__img" type="image/webp" srcset="../assets/images/form-women.webp">
                             <img class="register-section__img" src="../assets/images/form-women.png"
                                  alt="Учитесь с выгодой">
-                        </div>
+                        </picture>
                     </div>
                 </div>
-            </div><!--register-section__wrap end--></div>
+            </div><!--register-section__wrap end-->
+        </div><!--register-section end-->
 
-        <!--footer-->
         <div class="footer__nav">
             <ul class="menu  menu--footer">
 
@@ -78,10 +75,7 @@
                         </svg>
                         <ul class="subnav  subnav--footer">
                             <li class="menu__list">
-                                <a class="subnav_link" href="#" data-doc="doc">Cведения об образовательной организации</a>
-                            </li>
-                            <li class="menu__list">
-                                <a class="subnav_link" href="#" data-management="management">Руководство</a>
+                                <a class="subnav_link" href="#" data-mod="doc">Cведения об образовательной организации</a>
                             </li>
                         </ul>
                     </div>
@@ -99,8 +93,8 @@
             </div>
             <div class="footer__phone">
                 <a class="phone" href="tel:+78612139797" >+7 861 213-97-97</a>
-                <p class="text text--year" id="year-full"></p>
+                <time class="text text--year" id="year-full"></time>
             </div>
         </div>
-    </div>
+    </div><!--container end-->
 </footer>

@@ -12,6 +12,9 @@
   background: var(--grey, $borderCard);
   backdrop-filter: blur(6px);
 
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+
   &:active {
     background: $arrowBg;
   }
@@ -29,4 +32,9 @@
   align-items: center;
   justify-content: space-between;
 
+}
+
+.arrow__img {
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
 }

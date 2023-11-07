@@ -37,10 +37,6 @@
 
 }
 
-.form__privacy {
-  color: $indigo;
-}
-
 .form__action{
   margin-top: 89px;
 }
@@ -91,7 +87,8 @@
   opacity: 0;
   z-index: -1;
 
-  &:checked ~ .form__label-interrogation {
+  &:checked,
+  &:active ~ .form__label-interrogation {
     color: $yellow;
     border: 1px solid $yellow;
     transform: scale(1.02);
@@ -116,10 +113,12 @@
   color: $black;
 
   cursor: pointer;
-  color: $black;
-  transition: transform .3s ease-in, color .2s ease-in ;
+  transition: transform .2s ease-in, color .2s ease-in ;
 
-  &:hover {
+  -webkit-tap-highlight-color: transparent;
+
+  &:hover,
+  &:active {
     border: 1px solid $yellow;
   }
 
@@ -144,9 +143,12 @@
 
   color: $black;
   outline: none;
-  transition: transform .3s ease-in, color .2s ease-in ;
+  transition: transform .2s ease-in, color .2s ease-in ;
+
+  -webkit-tap-highlight-color: transparent;
 
   &:hover,
+  &:active,
   &:focus {
     border: 1px solid $yellow;
   }

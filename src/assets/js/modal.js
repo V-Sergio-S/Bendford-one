@@ -1,20 +1,20 @@
 import Swiper from 'swiper/bundle';
 
-const privacy = document.getElementById('privacy');
-const modal = document.getElementById('modal');
-const doc = document.getElementById('doc');
-const trigger = document.querySelectorAll('[data-card]');
-const btnModal = document.querySelectorAll('[data-modal]');
-const btnClose = document.getElementById('close-modal');
+
+const trigger = document.querySelectorAll('[data-mod]');
+const btnScroll = document.querySelectorAll('[data-scroll]');
+const btnClose = document.querySelectorAll('[data-close]');
+const page = document.getElementById('page');
 const body = document.body;
 let scrollwindow = calcScroll();
 
 function scrollMenu (e) {
 
-  let $this = e.currentTarget;
-  let scrollId = $this.getAttribute('data-modal');
-  let scrollItem = document.getElementById(scrollId);
-  scrollItem.scrollIntoView({behavior: 'smooth'});
+    e.preventDefault();
+
+    let scrollId = e.currentTarget.getAttribute('data-scroll');
+    let scrollItem = document.getElementById(scrollId);
+    scrollItem.scrollIntoView({behavior: 'smooth'});
 
 }
 
@@ -31,63 +31,92 @@ function calcScroll () {
 
 }
 
-trigger.forEach(card => {
+function showWindow (element) {
 
-  card.onclick = function (e) {
+    let mask = document.createElement('div');
+    let attrElement = element.getAttribute('id')
+    mask.classList.add('page__mask');
+    mask.setAttribute('data-close', attrElement)
+    page.appendChild(mask)
+    mask.addEventListener('click', () => {
+        hiddenWindow (element)
+    } );
 
-    e.stopPropagation() 
-    
-    let cardCurrent = e.currentTarget
-    let currentIdElement = cardCurrent.getAttribute('data-card')
-    let modalBox = document.getElementById(currentIdElement)
-    let getAttr = modalBox.getAttribute('id')
-    let current = getAttr.split('-')
-    let number = current[0]
-
-    const card = new Swiper('.swiper--card', {
-        initialSlide: `${number}`,
-        speed: 1000,
-        effect: "fade",
-        fade: { crossFade: true },
-        navigation: {
-            nextEl: ".modal__pagination-arrow-click--right",
-            prevEl: ".modal__pagination-arrow-click--left",
-            clickable: true,
-        },
-    });
-
-    modal.classList.add('is-active')
-    body.classList.add('no-scroll');
+    element.classList.add('is-active')
+    body.classList.add('no-scroll')
     body.style.marginRight = `${scrollwindow}px`
 
-  }
-
-    btnClose.onclick = function () {
-      modal.classList.remove('is-active')
-      body.classList.remove('no-scroll');
-      body.style.marginRight = `0px`
-    }
-})
-
-for (let i = 0; i < btnModal.length; i++) {
-  const btnModalId = btnModal[i];
-  btnModalId.addEventListener('click', (e)=>{
-      if (e.target) {
-          e.preventDefault();
-      }
-      scrollMenu (e)
-
-      if (body.classList.contains('no-scroll')){
-        modal.classList.remove('is-active')
-        privacy.classList.remove('is-active')
-        doc.classList.remove('is-active')
-        body.classList.remove('no-scroll');
-        body.classList.remove('show-sidebar');
-        try {
-          document.querySelector('.page__mask').remove(); 
-        } catch{}
-        body.style.marginRight = `0px`
-      }
-
-  })
 }
+
+function hiddenWindow (element) {
+
+    document.querySelector('.page__mask').remove();
+    element.classList.remove('is-active')
+    body.classList.remove('no-scroll');
+    body.style.marginRight = `0px`
+
+}
+
+trigger.forEach(item => {
+    item.addEventListener('click', event => {
+        event.preventDefault();
+        let modalId = event.currentTarget.getAttribute('data-mod');
+        let modal = document.getElementById(modalId);
+
+        if (body.classList.contains('is-active') || body.classList.contains('no-scroll')) {
+
+            let currentModal = event.currentTarget.closest('.closest');
+            hiddenWindow(currentModal)
+            showWindow (modal)
+        } else {
+            showWindow (modal)
+        }
+
+
+        if (event.currentTarget.hasAttribute('data-numb')) {
+
+            let currentNumbElement = event.currentTarget.getAttribute('data-numb')
+            let modalBox = document.getElementById(currentNumbElement);
+            let getAttr = modalBox.getAttribute('id')
+            const card = new Swiper('.swiper--card', {
+                initialSlide: `${getAttr}`,
+                speed: 1000,
+                effect: "fade",
+                fade: { crossFade: true },
+                navigation: {
+                    nextEl: ".modal__pagination-arrow-click--right",
+                    prevEl: ".modal__pagination-arrow-click--left",
+                    clickable: true,
+                },
+            });
+        }
+
+    });
+});
+
+
+btnClose.forEach(item => {
+    item.addEventListener('click', event => {
+        let currentModal = event.currentTarget.closest('.closest');
+        hiddenWindow (currentModal)
+    });
+});
+
+btnScroll.forEach (scroll => {
+
+    scroll.addEventListener('click', event => {
+
+        let modalId = event.currentTarget.getAttribute('data-mod');
+        let modal = document.getElementById(modalId);
+
+        if (body.classList.contains('is-active') || body.classList.contains('no-scroll')) {
+
+            let currentModal = event.currentTarget.closest('.closest');
+            hiddenWindow(currentModal)
+            scrollMenu (event)
+        } else {
+            scrollMenu (event)
+        }
+    })
+
+})

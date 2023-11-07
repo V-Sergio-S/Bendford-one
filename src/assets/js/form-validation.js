@@ -3,7 +3,7 @@
     const forms = document.querySelectorAll('[data-form]')
 
     let body = document.body,
-    thanks = document.querySelector('[data-popup]'),
+    thanks = document.getElementById('popup'),
     popupTittle = document.querySelector('[data-title]'),
     popupText = document.querySelector('[data-text]'),
     popupPhone = document.querySelector('[data-tell-phone]');
@@ -99,7 +99,7 @@
         let formSend = function(form) {
             let data = serialize(form);
             let xhr = new XMLHttpRequest();
-            let url = 'mail/mail.php';
+            let url = "mail/mail.php";
 
             xhr.open('POST', url);
             xhr.setRequestHeader('Content-Type','application/x-www-form-urlencoded; charset=UTF-8');

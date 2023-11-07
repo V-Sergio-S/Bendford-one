@@ -1,18 +1,19 @@
-<section class="modal " id="modal">
+<section class="modal  closest" id="modal">
 <div class="modal__window">
     <div class="swiper  swiper--card">
-        <div class="close"  id="close-modal">
+        <div class="close"  data-close="modal">
             <svg class="close__svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M23 1.00049L1 23.0005" stroke="black" stroke-linecap="round"/>
                 <path d="M1 1.00049L23 23.0005" stroke="#33363F" stroke-linecap="round"/>
             </svg>
         </div>
         <div class="swiper-wrapper">
-            <div class="modal__box  swiper-slide"  id="0-zero">
-                <div class="modal__image">
+            <div class="modal__box  swiper-slide"  id="0">
+                <picture class="modal__image">
+                    <source class="modal__img" type="image/webp" srcset="../assets/images/modal_1.webp">
                     <img class="modal__img" src="../assets/images/modal_1.png" alt="Уроки для младших классов" >
-                    <div class="title title--modal">Уроки для младших классов</div>
-                </div>
+                    <p class="title title--modal">Уроки для младших классов</p>
+                </picture>
                 <div class="modal__info">
                     <div class="modal__schedule">
                         <svg class="modal__svg" width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -23,14 +24,14 @@
                             <path d="M15.5 24.5422V27.1256" stroke="#F7D70A" stroke-width="3" stroke-linecap="round"/>
                             <path d="M6.45801 15.5005L3.87467 15.5005" stroke="#F7D70A" stroke-width="3" stroke-linecap="round"/>
                             </svg>
-                            <p class="text text--modal">2 раза в неделю по 55 минут</p>
+                            <p class="text text--modal">2 раза в неделю по 60 минут</p>
                     </div>
                     <div class="modal__schedule">
                             <svg class="modal__svg" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M6.66699 17.0132C6.66699 15.2029 6.66699 14.2977 7.03294 13.5021C7.39889 12.7064 8.08615 12.1173 9.46066 10.9392L10.794 9.79631C13.2784 7.6668 14.5206 6.60205 16.0003 6.60205C17.48 6.60205 18.7222 7.6668 21.2067 9.79631L22.54 10.9392C23.9145 12.1173 24.6018 12.7064 24.9677 13.5021C25.3337 14.2977 25.3337 15.2029 25.3337 17.0132V22.6671C25.3337 25.1812 25.3337 26.4383 24.5526 27.2194C23.7716 28.0004 22.5145 28.0004 20.0003 28.0004H12.0003C9.48617 28.0004 8.22909 28.0004 7.44804 27.2194C6.66699 26.4383 6.66699 25.1812 6.66699 22.6671V17.0132Z" stroke="#F7D70A" stroke-width="3"/>
                             <path d="M19.3337 28.0005V21.0005C19.3337 20.4482 18.8859 20.0005 18.3337 20.0005H13.667C13.1147 20.0005 12.667 20.4482 12.667 21.0005V28.0005" stroke="#F7D70A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            <p class="text text--modal">Оффлайн</p>
+                            <p class="text text--modal">Офлайн</p>
                     </div>
                     <div class="modal__schedule">
                             <svg class="modal__svg" width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -42,19 +43,19 @@
                             </svg>
                             <p class="text text--modal">12 академических часов в месяц</p>
                     </div>
-                    <div class="text text--descripition">
-                        Интерактивные, игровые занятия в Языковом центре Bendfort помогут Вашему ребенку адаптироваться к изучению нового, но очень важного предмета - иностранного языка! В процессе обучения, преподаватели помогут Вашему ребенку освоить навыки чтения, письма и конечно же говорения! Практические занятия по лексике и грамматике помогут справиться с школьной программой и освоить культуру иностранной речи.
-                    </div>
-                    <div class="text text--specify">
+                    <p class="text text--descripition">
+                        Интерактивные, игровые занятия в Языковом центре Bendfort помогут Вашему ребенку адаптироваться к изучению нового, но очень важного предмета - иностранного языка! В процессе обучения, преподаватели помогут Вашему ребенку освоить навыки чтения, письма и конечно же говорения! Практические занятия по лексике и грамматике помогут справиться с школьной программой и освоить культуру иностранной речи.</p>
+                    <p class="text text--specify">
                         График занятий адаптирован для эффективного изучения английского, при этом не перегружая ребенка.
-                    </div>
+                    </p>
                 </div>
             </div>
-            <div class="modal__box  swiper-slide" id="1-one">
-                <div class="modal__image">
+            <div class="modal__box  swiper-slide" id="1">
+                <picture class="modal__image">
+                    <source class="modal__img" type="image/webp" srcset="../assets/images/modal_2.webp">
                     <img class="modal__img" src="../assets/images/modal_2.png" alt="Обучение для взрослых" >
-                    <div class="title title--modal">Обучение для взрослых</div>
-                </div>
+                    <p class="title title--modal">Обучение для взрослых</p>
+                </picture>
                 <div class="modal__info">
                     <div class="modal__schedule">
                         <svg class="modal__svg" width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -65,14 +66,14 @@
                             <path d="M15.5 24.5422V27.1256" stroke="#F7D70A" stroke-width="3" stroke-linecap="round"/>
                             <path d="M6.45801 15.5005L3.87467 15.5005" stroke="#F7D70A" stroke-width="3" stroke-linecap="round"/>
                         </svg>
-                        <p class="text text--modal">2 раза в неделю по 55 минут</p>
+                        <p class="text text--modal">2 раза в неделю по 60 минут</p>
                     </div>
                     <div class="modal__schedule">
                         <svg class="modal__svg" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M6.66699 17.0132C6.66699 15.2029 6.66699 14.2977 7.03294 13.5021C7.39889 12.7064 8.08615 12.1173 9.46066 10.9392L10.794 9.79631C13.2784 7.6668 14.5206 6.60205 16.0003 6.60205C17.48 6.60205 18.7222 7.6668 21.2067 9.79631L22.54 10.9392C23.9145 12.1173 24.6018 12.7064 24.9677 13.5021C25.3337 14.2977 25.3337 15.2029 25.3337 17.0132V22.6671C25.3337 25.1812 25.3337 26.4383 24.5526 27.2194C23.7716 28.0004 22.5145 28.0004 20.0003 28.0004H12.0003C9.48617 28.0004 8.22909 28.0004 7.44804 27.2194C6.66699 26.4383 6.66699 25.1812 6.66699 22.6671V17.0132Z" stroke="#F7D70A" stroke-width="3"/>
                             <path d="M19.3337 28.0005V21.0005C19.3337 20.4482 18.8859 20.0005 18.3337 20.0005H13.667C13.1147 20.0005 12.667 20.4482 12.667 21.0005V28.0005" stroke="#F7D70A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
-                        <p class="text text--modal">Оффлайн</p>
+                        <p class="text text--modal">Офлайн</p>
                     </div>
                     <div class="modal__schedule">
                         <svg class="modal__svg" width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -84,21 +85,22 @@
                         </svg>
                         <p class="text text--modal">12 академических часов в месяц</p>
                     </div>
-                    <div class="text text--descripition">
+                    <p class="text text--descripition">
                         Иностранный в современном мире - необходимость. Языковой центр Bendfort поможет в изучении иностранного языка под любые цели. Обучение ведется для любого уровня владения языком. Вас ожидают практические и теоретические занятия по улучшению грамматики, лексики. Снятие языкового барьера, увеличение словарного запаса, восприятие разговорной речи - результаты обучения в языковом центре!
-                    </div>
-                    <div class="text text--specify">
-                        Занятия ведутся в небольших группах, для отработки разговорных навыков
-                    </div>
+                    </p>
+                    <p class="text text--specify">
+                        Занятия ведутся в небольших группах, для отработки разговорных навыков!
+                    </p>
                 </div>
             </div>
-            <div class="modal__box  swiper-slide" id="2-two">
-                <div class="modal__image">
+            <div class="modal__box  swiper-slide" id="2">
+                <picture class="modal__image">
+                    <source class="modal__img" type="image/webp" srcset="../assets/images/modal_3.webp">
                     <img class="modal__img" src="../assets/images/modal_3.png" alt="Иностранный 
                     для средней школы" >
-                    <div class="title title--modal">Иностранный 
-                        для средней школы</div>
-                </div>
+                    <p class="title title--modal">Иностранный
+                        для средней школы</p>
+                </picture>
                 <div class="modal__info">
                     <div class="modal__schedule">
                         <svg class="modal__svg" width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -109,14 +111,14 @@
                             <path d="M15.5 24.5422V27.1256" stroke="#F7D70A" stroke-width="3" stroke-linecap="round"/>
                             <path d="M6.45801 15.5005L3.87467 15.5005" stroke="#F7D70A" stroke-width="3" stroke-linecap="round"/>
                         </svg>
-                        <p class="text text--modal">2 раза в неделю по 55 минут</p>
+                        <p class="text text--modal">2 раза в неделю по 60 минут</p>
                     </div>
                     <div class="modal__schedule">
                         <svg class="modal__svg" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M6.66699 17.0132C6.66699 15.2029 6.66699 14.2977 7.03294 13.5021C7.39889 12.7064 8.08615 12.1173 9.46066 10.9392L10.794 9.79631C13.2784 7.6668 14.5206 6.60205 16.0003 6.60205C17.48 6.60205 18.7222 7.6668 21.2067 9.79631L22.54 10.9392C23.9145 12.1173 24.6018 12.7064 24.9677 13.5021C25.3337 14.2977 25.3337 15.2029 25.3337 17.0132V22.6671C25.3337 25.1812 25.3337 26.4383 24.5526 27.2194C23.7716 28.0004 22.5145 28.0004 20.0003 28.0004H12.0003C9.48617 28.0004 8.22909 28.0004 7.44804 27.2194C6.66699 26.4383 6.66699 25.1812 6.66699 22.6671V17.0132Z" stroke="#F7D70A" stroke-width="3"/>
                             <path d="M19.3337 28.0005V21.0005C19.3337 20.4482 18.8859 20.0005 18.3337 20.0005H13.667C13.1147 20.0005 12.667 20.4482 12.667 21.0005V28.0005" stroke="#F7D70A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
-                        <p class="text text--modal">Оффлайн</p>
+                        <p class="text text--modal">Офлайн</p>
                     </div>
                     <div class="modal__schedule">
                         <svg class="modal__svg" width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -128,24 +130,24 @@
                         </svg>
                         <p class="text text--modal">12 академических часов в месяц</p>
                     </div>
-                    <div class="text text--descripition">
+                    <p class="text text--descripition">
                         Программы Языкового центра Bendfort адаптированы
                         под любой уровень владения языком. Образовательные курсы способствуют развитию навыков чтения, письма, говорения. Кроме снятия языкового барьера, увеличения словарного запаса, обучение способствует улучшению успеваемости в школе, а также развитию социальных
-                        и коммуникативных навыков
-                    </div>
-                    <div class="text text--specify">
-                        Также в Языковом центре Bendfort проводятся мастер-классы, тематические вечера, которые позволяют ребенку осваивать практический английский, развивая кругозор
-                        и желания изучения иностранных языков.
-                    </div>
+                        и коммуникативных навыков.
+                    </p>
+                    <p class="text text--specify">
+                        Также в Языковом центре Bendfort проводятся мастер-классы, тематические вечера, которые позволяют ребенку осваивать практический английский, развивая кругозор.
+                    </p>
                 </div>
             </div>
-            <div class="modal__box  swiper-slide" id="3-thri">
-                <div class="modal__image">
+            <div class="modal__box  swiper-slide" id="3">
+                <picture class="modal__image">
+                    <source class="modal__img" type="image/webp" srcset="../assets/images/modal_4.webp">
                     <img class="modal__img" src="../assets/images/modal_4.png" alt="Иностранный
                     для дошколят" >
-                    <div class="title title--modal">Иностранный
-                        для дошколят</div>
-                </div>
+                    <p class="title title--modal">Иностранный
+                        для дошколят</p>
+                </picture>
                 <div class="modal__info">
                     <div class="modal__schedule">
                         <svg class="modal__svg" width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -156,14 +158,14 @@
                             <path d="M15.5 24.5422V27.1256" stroke="#F7D70A" stroke-width="3" stroke-linecap="round"/>
                             <path d="M6.45801 15.5005L3.87467 15.5005" stroke="#F7D70A" stroke-width="3" stroke-linecap="round"/>
                         </svg>
-                        <p class="text text--modal">2 раза в неделю по 55 минут</p>
+                        <p class="text text--modal">2 раза в неделю по 45 минут</p>
                     </div>
                     <div class="modal__schedule">
                         <svg class="modal__svg" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M6.66699 17.0132C6.66699 15.2029 6.66699 14.2977 7.03294 13.5021C7.39889 12.7064 8.08615 12.1173 9.46066 10.9392L10.794 9.79631C13.2784 7.6668 14.5206 6.60205 16.0003 6.60205C17.48 6.60205 18.7222 7.6668 21.2067 9.79631L22.54 10.9392C23.9145 12.1173 24.6018 12.7064 24.9677 13.5021C25.3337 14.2977 25.3337 15.2029 25.3337 17.0132V22.6671C25.3337 25.1812 25.3337 26.4383 24.5526 27.2194C23.7716 28.0004 22.5145 28.0004 20.0003 28.0004H12.0003C9.48617 28.0004 8.22909 28.0004 7.44804 27.2194C6.66699 26.4383 6.66699 25.1812 6.66699 22.6671V17.0132Z" stroke="#F7D70A" stroke-width="3"/>
                             <path d="M19.3337 28.0005V21.0005C19.3337 20.4482 18.8859 20.0005 18.3337 20.0005H13.667C13.1147 20.0005 12.667 20.4482 12.667 21.0005V28.0005" stroke="#F7D70A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
-                        <p class="text text--modal">Оффлайн</p>
+                        <p class="text text--modal">Офлайн</p>
                     </div>
                     <div class="modal__schedule">
                         <svg class="modal__svg" width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -175,19 +177,20 @@
                         </svg>
                         <p class="text text--modal">12 академических часов в месяц</p>
                     </div>
-                    <div class="text text--descripition">
+                    <p class="text text--descripition">
                         Хотели бы подготовить ребенка к школе? Заложить качественную языковую базу? Языковой центр Bendfort в этом поможет! Преподаватели в игровой форме обучения помогут Вашему ребенку в развитии важных коммуникативных и познавательных навыков. Мы уверены, что сможем привить ребенку любовь к обучению языков, а также поможем получить прочные базовые знания английского!
-                    </div>
-                    <div class="text text--specify">
-                        Обучение ведётся на адаптированных под возраст учебных материалах
-                    </div>
+                    </p>
+                    <p class="text text--specify">
+                        Обучение ведётся на адаптированных под возраст учебных материалах!
+                    </p>
                 </div>
             </div>
-            <div class="modal__box  swiper-slide" id="4-four">
-                <div class="modal__image">
+            <div class="modal__box  swiper-slide" id="4">
+                <picture class="modal__image">
+                    <source class="modal__img" type="image/webp" srcset="../assets/images/modal_5.webp">
                     <img class="modal__img" src="../assets/images/modal_5.png" alt="Подготовка к ЕГЭ/ОГЭ" >
-                    <div class="title title--modal">Подготовка к ЕГЭ/ОГЭ</div>
-                </div>
+                    <p class="title title--modal">Подготовка к ЕГЭ/ОГЭ</p>
+                </picture>
                 <div class="modal__info">
                     <div class="modal__schedule">
                         <svg class="modal__svg" width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -198,14 +201,14 @@
                             <path d="M15.5 24.5422V27.1256" stroke="#F7D70A" stroke-width="3" stroke-linecap="round"/>
                             <path d="M6.45801 15.5005L3.87467 15.5005" stroke="#F7D70A" stroke-width="3" stroke-linecap="round"/>
                         </svg>
-                        <p class="text text--modal">2 раза в неделю по 55 минут</p>
+                        <p class="text text--modal">2 раза в неделю по 60 минут</p>
                     </div>
                     <div class="modal__schedule">
                         <svg class="modal__svg" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M6.66699 17.0132C6.66699 15.2029 6.66699 14.2977 7.03294 13.5021C7.39889 12.7064 8.08615 12.1173 9.46066 10.9392L10.794 9.79631C13.2784 7.6668 14.5206 6.60205 16.0003 6.60205C17.48 6.60205 18.7222 7.6668 21.2067 9.79631L22.54 10.9392C23.9145 12.1173 24.6018 12.7064 24.9677 13.5021C25.3337 14.2977 25.3337 15.2029 25.3337 17.0132V22.6671C25.3337 25.1812 25.3337 26.4383 24.5526 27.2194C23.7716 28.0004 22.5145 28.0004 20.0003 28.0004H12.0003C9.48617 28.0004 8.22909 28.0004 7.44804 27.2194C6.66699 26.4383 6.66699 25.1812 6.66699 22.6671V17.0132Z" stroke="#F7D70A" stroke-width="3"/>
                             <path d="M19.3337 28.0005V21.0005C19.3337 20.4482 18.8859 20.0005 18.3337 20.0005H13.667C13.1147 20.0005 12.667 20.4482 12.667 21.0005V28.0005" stroke="#F7D70A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
-                        <p class="text text--modal">Оффлайн</p>
+                        <p class="text text--modal">Офлайн</p>
                     </div>
                     <div class="modal__schedule">
                         <svg class="modal__svg" width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -217,17 +220,17 @@
                         </svg>
                         <p class="text text--modal">12 академических часов в месяц</p>
                     </div>
-                    <div class="text text--descripition">
+                    <p class="text text--descripition">
                         Успешная сдача ЕГЭ/ОГЭ - возможность, которую предоставляет Языковой центр Bendfort для всех будущих абитуриентов! Образовательная программа ориентирована на подготовку ко всем направлениям для сдачи экзаменов: лексика, грамматика, аудирование, чтение, говорение.
-                    </div>
-                    <div class="text text--specify">
+                    </p>
+                    <p class="text text--specify">
                         Занятия проводятся 2 раза в неделю, что позволяет оптимально проходить подготовку, не перегружая голову и успешно усваивая новые знания!
-                    </div>
+                    </p>
                 </div>
             </div>
         </div>
         <div class="modal__action">
-            <button class="btn btn--modal" data-modal="scroll-middle-register">Записаться</button>
+            <button class="btn btn--modal" data-scroll="scroll-middle-register">Записаться</button>
         </div>
         <div class="modal__pagination">
             <div class="modal__pagination-arrow-click  modal__pagination-arrow-click--left">

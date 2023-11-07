@@ -1,6 +1,6 @@
 
 .benefits {
-  padding: 84px 0 83px 0;
+  padding: 104px 0 73px 0;
   background-color: $white;
 
   @include breakpoint ($mobile-bp) {
@@ -64,20 +64,18 @@
 
   @include breakpoint ($mobile-bp) {
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
   }
 }
 
 .benefits__image-img {
   width: 100%;
-  max-width: 500px;
+  height: 100%;
 
-
-  @include breakpoint ($mobile-bp) {
-    margin: 0 25px ;
-  }
-
-  @include breakpoint ($tapik-bp) {
-    margin: 0;
-  }
+  border-radius: 25px;
+  object-fit: cover;
 }
 

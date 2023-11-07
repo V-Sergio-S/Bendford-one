@@ -22,24 +22,24 @@
     <meta property="og:description" content="Более 8 языков с фокусом на Вас и Вашего ребенка! Научим говорить, писать, слушать и думать на иностранном языке!">
     <meta property="og:image" content="https://krasnodar.bendfortschool.ru/assets/images/Logo.png">
     <meta property="og:url" content="https://krasnodar.bendfortschool.ru">
-    <meta property="og:site_name" content="Benford">
+    <meta property="og:site_name" content="Benfort">
     <meta name="author" content=" ooo tuorexpert">
     <meta name="copyright" content="https://tuorexpert.ru/">
     
-    <title>Bendford</title>
+    <title>Bendfort</title>
+    <script src="assets/js/app.js" defer></script>
 </head>
-<body>
-
-<div class="page" id="page">
+<body id="page">
                                                 <!--Header-->
     <header class="header">
         <div class="header__container" id="header">
         <div class="container">
             <div class="header__inner-menu">
                 <nav class="header__nav">
-                    <div class="logo">
+                    <picture class="logo">
+                        <source class="logo__img" type="image/webp" srcset="../assets/images/Logo.webp">
                         <img class="logo__img" src="../assets/images/Logo.png" alt="Логотип" >
-                    </div>
+                    </picture>
                     <ul class="menu">
                         <li class="menu__list  menu__list--main">
                             <div class="menu__wrapp">
@@ -49,10 +49,7 @@
                                 </svg>
                                 <ul class="subnav  subnav--main">
                                     <li class="menu__list">
-                                        <a class="subnav_link" href="#" data-doc="doc">Cведения об образовательной организации</a>
-                                    </li>
-                                    <li class="menu__list">
-                                        <a class="subnav_link" href="#" data-management="management">Руководство</a>
+                                        <a class="subnav_link" href="#" data-mod="doc">Cведения об образовательной организации</a>
                                     </li>
                                 </ul>
                             </div>
@@ -71,14 +68,15 @@
             </div><!--header__inner-menu end-->
             <div class="header__inner-mobile">
                 <div class="header__burger">
-                    <button class="burger" type="button" data-burger>
+                    <button class="burger" type="button" data-mod="sidebar">
                         <span>открыть навигацию</span>
                     </button>
                 </div>
                 <nav class="header__nav">
-                    <div class="logo">
+                    <picture class="logo">
+                        <source class="logo__img" type="image/webp" srcset="../assets/images/Logo.webp">
                         <img class="logo__img" src="../assets/images/Logo.png" alt="Логотип" >
-                    </div>
+                    </picture>
                 </nav>
                 <div class="header__inner-write">
                     <div class="header__action">
@@ -92,9 +90,10 @@
             <div class="container">
                 <div class="header__inner-menu">
                     <nav class="header__nav">
-                        <div class="logo">
+                        <picture class="logo">
+                            <source class="logo__img" type="image/webp" srcset="../assets/images/Logo.webp">
                             <img class="logo__img" src="../assets/images/Logo.png" alt="Логотип" >
-                        </div>
+                        </picture>
                         <ul class="menu">
                             <li class="menu__list  menu__list--main">
                                 <div class="menu__wrapp">
@@ -104,10 +103,7 @@
                                     </svg>
                                     <ul class="subnav  subnav--main">
                                         <li class="menu__list">
-                                            <a class="subnav_link" href="#" data-doc="doc">Cведение об образовательной организации</a>
-                                        </li>
-                                        <li class="menu__list">
-                                            <a class="subnav_link" href="#" data-management="management">Руководство</a>
+                                            <a class="subnav_link" href="#" data-mod="doc">Cведение об образовательной организации</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -126,14 +122,15 @@
                 </div><!--header__inner-menu end-->
                 <div class="header__inner-mobile">
                     <div class="header__burger">
-                        <button class="burger" type="button" data-burger>
+                        <button class="burger" type="button" data-mod="sidebar">
                             <span>открыть навигацию</span>
                         </button>
                     </div>
                     <nav class="header__nav">
-                        <div class="logo">
+                        <picture class="logo">
+                            <source class="logo__img" type="image/webp" srcset="../assets/images/Logo.webp">
                             <img class="logo__img" src="../assets/images/Logo.png" alt="Логотип" >
-                        </div>
+                        </picture>
                     </nav>
                     <div class="header__inner-write">
                         <div class="header__action">
@@ -144,7 +141,7 @@
             </div><!--container end-->
         </div><!--header__container end-->
     </header>
-    <aside class="sidebar" id="sidebar" >
+    <aside class="sidebar  closest" id="sidebar" >
         <div class="sidebar__content">
             <nav class="menu menu--mobile">
                 <ul class="menu menu--mobile" >
@@ -156,10 +153,7 @@
                             </svg>
                             <ul class="subnav  subnav--mobile">
                                 <li class="menu__list  menu__list--mobile">
-                                    <a class="subnav_link" href="#" data-doc="doc">Cведения об образовательной организации</a>
-                                </li>
-                                <li class="menu__list  menu__list--mobile">
-                                    <a class="subnav_link" href="#" data-management="management">Руководство</a>
+                                    <a class="subnav_link" href="#" data-mod="doc">Cведения об образовательной организации</a>
                                 </li>
                             </ul>
                         </div>
@@ -186,9 +180,10 @@
     <section class="main-section">
     
         <div class="container  main-section__container">
-            <div class="main-section__wrapper  wow animate__animated animate__fadeInDownBig">
+            <div class="main-section__wrapper">
                 <h1 class="title  title--main">Школа иностранных языков Bendfort</h1>
-                <p class="text  text--main">Более 8 языков с фокусом на Вас и Вашего ребенка! Научим говорить, писать, слушать и думать на иностранном языке!</p>
+                <p class="text  text--main">Более 8 языков с фокусом на Вас и Вашего ребенка! Научим говорить, писать,
+                    слушать и думать на иностранном языке!</p>
             </div>
             <div class="main-section__action  wow animate__animated animate__bounceInUp">
                 <button class="btn  btn--main" data-scroll="scroll-middle-register">Записаться на пробный урок</button>
@@ -197,7 +192,7 @@
     </section>
     
     <!--register-section-->
-    <section class="register-section"  id="scroll-register">
+    <section class="register-section" id="scroll-register">
         <div class="container">
             <div class="register-section__wrap">
                 <div class="wrap__animation">
@@ -231,20 +226,21 @@
                             <form class="form" data-form="form">
                                 <input class="form__input-interrogation" type="text"
                                        value="Заявка на скидку 10%:">
-                                <input class="form__input" type="text"  name="Имя" placeholder="Как вас зовут?" >
-                                <input class="form__input" type="text"  name="Телефон" placeholder="+7 ___-___-__-__" >
-                                <input class="form__input" type="text"  name="Email" placeholder="Ваш E-mail" >
+                                <input class="form__input" type="text" name="Имя" placeholder="Как вас зовут?">
+                                <input class="form__input" type="text" name="Телефон" placeholder="+7 ___-___-__-__">
+                                <input class="form__input" type="text" name="Email" placeholder="Ваш E-mail">
                                 <input class="btn btn--form  wow animate__animated animate__rubberBand" type="submit"
                                        value="Получить" data-button>
-                                <div class="text text--form"  data-privacy="privacy">Политика конфиденциальности
+                                <div class="text text--form" data-mod="privacy">Политика конфиденциальности
     
                                 </div>
                             </form>
                         </div>
-                        <div class="register-section__view  wow animate__animated animate__fadeIn">
+                        <picture class="register-section__view  wow animate__animated animate__fadeIn">
+                            <source class="register-section__img" type="image/webp" srcset="assets/images/form-women.webp">
                             <img class="register-section__img" src="assets/images/form-women.png"
                                  alt="Учитесь с выгодой">
-                        </div>
+                        </picture>
                     </div>
                 </div>
             </div><!--register-section__wrap end-->
@@ -305,12 +301,13 @@
     </section>
     
     <!--benefits-->
-    <section class="benefits"  id="scroll-benefits">
+    <section class="benefits" id="scroll-benefits">
         <div class="container">
             <div class="wrap">
                 <div class="wrap__holder">
-                    <h2 class="title title--benefits">Школа английского, которая остаётся в сердце </h2>
-                    <svg class="wrap__title-icon  wrap__title-icon--benefits  wrap__animation" width="86" height="89" viewBox="0 0 86 89"
+                    <h2 class="title title--benefits">Школа иностранных языков, которая остаётся в сердце </h2>
+                    <svg class="wrap__title-icon  wrap__title-icon--benefits  wrap__animation" width="86" height="89"
+                         viewBox="0 0 86 89"
                          fill="none"
                          xmlns="http://www.w3.org/2000/svg">
                         <path class="wrap__title-icon  wrap__title-icon--benefits"
@@ -324,39 +321,75 @@
                     <div class="benefits__item">
                         <div class="benefits__svg-container">
                             <svg width="79" height="76" viewBox="0 0 79 76" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M46.9222 30.0762L54.9823 10.754C55.405 9.74169 56.9002 9.75106 57.3082 10.768L64.8284 29.5232" stroke="#F7D70A" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"/>
-                                <path d="M49.7074 23.6135H62.1311" stroke="#F7D70A" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"/>
-                                <path d="M71.5529 36.2007L71.5915 43.1021C71.5529 43.8763 70.7086 44.2764 70.149 43.7834L62.8178 37.3544C61.9663 36.6085 60.9 36.2007 59.7976 36.2007H39.0707C36.27 36.2007 34 33.7721 34 30.7757V8.42506C34 5.42863 36.27 3 39.0707 3H71.9293C74.73 3 77 5.42863 77 8.42506V30.7731C77 33.7695 74.3537 36.1982 71.5529 36.1982V36.2007Z" stroke="#F7D70A" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"/>
-                                <path d="M33.7942 32H18.1887C15.3228 32 13 34.488 13 37.5577V60.4523C13 63.522 15.7079 66.01 18.5737 66.01L18.5342 73.0801C18.5737 73.8733 19.4377 74.2831 20.0104 73.7781L27.512 67.1919C28.3833 66.4278 29.4744 66.01 30.6025 66.01H51.8113C54.6772 66.01 57 63.522 57 60.4523V38.2716" stroke="#F7D70A" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"/>
+                                <path d="M46.9222 30.0762L54.9823 10.754C55.405 9.74169 56.9002 9.75106 57.3082 10.768L64.8284 29.5232"
+                                      stroke="#F7D70A" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"/>
+                                <path d="M49.7074 23.6135H62.1311" stroke="#F7D70A" stroke-width="3" stroke-miterlimit="10"
+                                      stroke-linecap="round"/>
+                                <path d="M71.5529 36.2007L71.5915 43.1021C71.5529 43.8763 70.7086 44.2764 70.149 43.7834L62.8178 37.3544C61.9663 36.6085 60.9 36.2007 59.7976 36.2007H39.0707C36.27 36.2007 34 33.7721 34 30.7757V8.42506C34 5.42863 36.27 3 39.0707 3H71.9293C74.73 3 77 5.42863 77 8.42506V30.7731C77 33.7695 74.3537 36.1982 71.5529 36.1982V36.2007Z"
+                                      stroke="#F7D70A" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"/>
+                                <path d="M33.7942 32H18.1887C15.3228 32 13 34.488 13 37.5577V60.4523C13 63.522 15.7079 66.01 18.5737 66.01L18.5342 73.0801C18.5737 73.8733 19.4377 74.2831 20.0104 73.7781L27.512 67.1919C28.3833 66.4278 29.4744 66.01 30.6025 66.01H51.8113C54.6772 66.01 57 63.522 57 60.4523V38.2716"
+                                      stroke="#F7D70A" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"/>
                                 <path d="M4 20L17 23" stroke="#F7D70A" stroke-width="3" stroke-linecap="round"/>
                                 <path d="M2 6L19 18" stroke="#F7D70A" stroke-width="3" stroke-linecap="round"/>
                                 <path d="M17 2L23 14" stroke="#F7D70A" stroke-width="3" stroke-linecap="round"/>
-                                <path d="M26.1574 44H44.1833" stroke="#F7D70A" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"/>
-                                <path d="M43.6458 58.2116C43.6458 58.2116 31.3394 56.9697 31.3394 44.1312" stroke="#F7D70A" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"/>
-                                <path d="M26.1574 58.2116C26.1574 58.2116 38.4638 56.9697 38.4638 44.1312" stroke="#F7D70A" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"/>
+                                <path d="M26.1574 44H44.1833" stroke="#F7D70A" stroke-width="3" stroke-miterlimit="10"
+                                      stroke-linecap="round"/>
+                                <path d="M43.6458 58.2116C43.6458 58.2116 31.3394 56.9697 31.3394 44.1312" stroke="#F7D70A"
+                                      stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"/>
+                                <path d="M26.1574 58.2116C26.1574 58.2116 38.4638 56.9697 38.4638 44.1312" stroke="#F7D70A"
+                                      stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"/>
                             </svg>
                         </div>
                         <div class="benefits__item-text">
                             <h4 class="title title--item-benefit">Широкий выбор языков</h4>
-                            <p class="text text--item-benefit">Английский, немецкий, итальянский, японский, китайский, корейский, греческий - ассортимент на любой вкус</p>
+                            <p class="text text--item-benefit">Английский, немецкий, французский, итальянский, японский,
+                                китайский,
+                                корейский, греческий - ассортимент на любой вкус</p>
                         </div>
                     </div>
                     <div class="benefits__item">
                         <div class="benefits__svg-container">
-                            <svg class="benefits__item-icon" width="67" height="70" viewBox="0 0 67 70" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path class="benefits__item-icon" d="M5.03015 61.9751L11.0804 55.9248C11.272 55.7332 11.3838 55.476 11.3931 55.2051L11.5143 51.6917C11.6214 48.5867 12.9027 45.6379 15.0997 43.441L21.9593 36.5813C22.9611 35.5795 24.5853 35.5795 25.587 36.5813V36.5813C26.5888 37.5831 26.5888 39.2072 25.587 40.209L23.7732 42.0228" stroke="#F7D70A" stroke-width="3" stroke-linecap="round"/>
-                                <path class="benefits__item-icon" d="M56.8154 72.2114L50.2196 65.6156C49.992 65.388 49.6792 65.2663 49.3576 65.2803V65.2803C45.0846 65.4661 40.8087 64.9878 36.6824 63.8624L36.2586 63.7468" stroke="#F7D70A" stroke-width="3" stroke-linecap="round"/>
-                                <path class="benefits__item-icon" d="M16.2155 73.1603L22.1735 67.2022C22.4244 66.9514 22.7611 66.805 23.1157 66.7928L28.3932 66.6108C30.3104 66.5447 32.1673 65.924 33.7389 64.8239L40.6883 59.9593C42.115 58.9606 42.294 56.9158 41.0626 55.6844V55.6844C40.2901 54.9119 39.139 54.6591 38.1139 55.0368L34.0516 56.5334" stroke="#F7D70A" stroke-width="3" stroke-linecap="round"/>
-                                <path class="benefits__item-icon" d="M71.9308 57.0959L64.9952 50.1603C64.7893 49.9545 64.667 49.6797 64.6518 49.389L64.2937 42.5306C64.0856 38.5462 62.8105 34.691 60.6018 31.3682L56.0445 24.5122C54.5674 22.29 51.4255 21.9767 49.5387 23.8636V23.8636C48.4354 24.9668 48.03 26.5884 48.4843 28.0811L49.8624 32.6091" stroke="#F7D70A" stroke-width="3" stroke-linecap="round"/>
-                                <path class="benefits__item-icon" d="M49.5 14.2545C49.5 14.2545 43 9.15698 43 5.65699C43 1.25699 47.3333 1.58784 49.5 2.75451" stroke="#F7D70A" stroke-width="3" stroke-linecap="round"/>
-                                <path class="benefits__item-icon" d="M49.5 14.2545C49.5 14.2545 56 9.15698 56 5.65699C56 1.25699 51.6667 1.58784 49.5 2.75451" stroke="#F7D70A" stroke-width="3" stroke-linecap="round"/>
-                                <path class="benefits__item-icon" d="M24.0754 42.3249L31.0284 35.3719C32.1971 34.2032 34.092 34.2032 35.2607 35.3719V35.3719C36.4294 36.5406 36.4294 38.4355 35.2607 39.6042L28.8928 45.9721" stroke="#F7D70A" stroke-width="3" stroke-linecap="round"/>
-                                <path class="benefits__item-icon" d="M28.9123 45.9526L37.9815 36.8834C38.9832 35.8817 40.6074 35.8817 41.6091 36.8834V36.8834C42.6109 37.8852 42.6109 39.5093 41.6091 40.5111L33.2421 48.8782" stroke="#F7D70A" stroke-width="3" stroke-linecap="round"/>
-                                <path class="benefits__item-icon" d="M32.5401 49.5806L39.4931 42.6275C40.6618 41.4588 42.5567 41.4588 43.7254 42.6275V42.6275C44.8941 43.7962 44.8941 45.6911 43.7254 46.8598L34.0516 56.5336" stroke="#F7D70A" stroke-width="3" stroke-linecap="round"/>
-                                <path class="benefits__item-icon" d="M35.3516 28.9815L28.0963 21.7261C26.5936 20.2235 26.5936 17.7872 28.0963 16.2846V16.2846C29.5989 14.782 32.0352 14.782 33.5378 16.2846L49.5601 32.3069" stroke="#F7D70A" stroke-width="3" stroke-linecap="round"/>
-                                <path class="benefits__item-icon" d="M25.6778 30.1907L19.6317 24.1446C18.1291 22.642 18.1291 20.2057 19.6317 18.7031V18.7031C21.1343 17.2004 23.5706 17.2004 25.0732 18.7031L35.3516 28.9815" stroke="#F7D70A" stroke-width="3" stroke-linecap="round"/>
-                                <path class="benefits__item-icon" d="M21.1432 36.5391L17.2132 32.6091C15.7106 31.1064 15.7106 28.6702 17.2132 27.1675V27.1675C18.7159 25.6649 21.1521 25.6649 22.6548 27.1675L26.5848 31.0975" stroke="#F7D70A" stroke-width="3" stroke-linecap="round"/>
-                                <path class="benefits__item-icon" d="M16.004 42.283L14.7948 41.0738C13.2922 39.5712 13.2922 37.1349 14.7948 35.6323V35.6323C16.2974 34.1296 18.7337 34.1296 20.2363 35.6323L21.4455 36.8415" stroke="#F7D70A" stroke-width="3" stroke-linecap="round"/>
+                            <svg class="benefits__item-icon" width="67" height="70" viewBox="0 0 67 70" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path class="benefits__item-icon"
+                                      d="M5.03015 61.9751L11.0804 55.9248C11.272 55.7332 11.3838 55.476 11.3931 55.2051L11.5143 51.6917C11.6214 48.5867 12.9027 45.6379 15.0997 43.441L21.9593 36.5813C22.9611 35.5795 24.5853 35.5795 25.587 36.5813V36.5813C26.5888 37.5831 26.5888 39.2072 25.587 40.209L23.7732 42.0228"
+                                      stroke="#F7D70A" stroke-width="3" stroke-linecap="round"/>
+                                <path class="benefits__item-icon"
+                                      d="M56.8154 72.2114L50.2196 65.6156C49.992 65.388 49.6792 65.2663 49.3576 65.2803V65.2803C45.0846 65.4661 40.8087 64.9878 36.6824 63.8624L36.2586 63.7468"
+                                      stroke="#F7D70A" stroke-width="3" stroke-linecap="round"/>
+                                <path class="benefits__item-icon"
+                                      d="M16.2155 73.1603L22.1735 67.2022C22.4244 66.9514 22.7611 66.805 23.1157 66.7928L28.3932 66.6108C30.3104 66.5447 32.1673 65.924 33.7389 64.8239L40.6883 59.9593C42.115 58.9606 42.294 56.9158 41.0626 55.6844V55.6844C40.2901 54.9119 39.139 54.6591 38.1139 55.0368L34.0516 56.5334"
+                                      stroke="#F7D70A" stroke-width="3" stroke-linecap="round"/>
+                                <path class="benefits__item-icon"
+                                      d="M71.9308 57.0959L64.9952 50.1603C64.7893 49.9545 64.667 49.6797 64.6518 49.389L64.2937 42.5306C64.0856 38.5462 62.8105 34.691 60.6018 31.3682L56.0445 24.5122C54.5674 22.29 51.4255 21.9767 49.5387 23.8636V23.8636C48.4354 24.9668 48.03 26.5884 48.4843 28.0811L49.8624 32.6091"
+                                      stroke="#F7D70A" stroke-width="3" stroke-linecap="round"/>
+                                <path class="benefits__item-icon"
+                                      d="M49.5 14.2545C49.5 14.2545 43 9.15698 43 5.65699C43 1.25699 47.3333 1.58784 49.5 2.75451"
+                                      stroke="#F7D70A" stroke-width="3" stroke-linecap="round"/>
+                                <path class="benefits__item-icon"
+                                      d="M49.5 14.2545C49.5 14.2545 56 9.15698 56 5.65699C56 1.25699 51.6667 1.58784 49.5 2.75451"
+                                      stroke="#F7D70A" stroke-width="3" stroke-linecap="round"/>
+                                <path class="benefits__item-icon"
+                                      d="M24.0754 42.3249L31.0284 35.3719C32.1971 34.2032 34.092 34.2032 35.2607 35.3719V35.3719C36.4294 36.5406 36.4294 38.4355 35.2607 39.6042L28.8928 45.9721"
+                                      stroke="#F7D70A" stroke-width="3" stroke-linecap="round"/>
+                                <path class="benefits__item-icon"
+                                      d="M28.9123 45.9526L37.9815 36.8834C38.9832 35.8817 40.6074 35.8817 41.6091 36.8834V36.8834C42.6109 37.8852 42.6109 39.5093 41.6091 40.5111L33.2421 48.8782"
+                                      stroke="#F7D70A" stroke-width="3" stroke-linecap="round"/>
+                                <path class="benefits__item-icon"
+                                      d="M32.5401 49.5806L39.4931 42.6275C40.6618 41.4588 42.5567 41.4588 43.7254 42.6275V42.6275C44.8941 43.7962 44.8941 45.6911 43.7254 46.8598L34.0516 56.5336"
+                                      stroke="#F7D70A" stroke-width="3" stroke-linecap="round"/>
+                                <path class="benefits__item-icon"
+                                      d="M35.3516 28.9815L28.0963 21.7261C26.5936 20.2235 26.5936 17.7872 28.0963 16.2846V16.2846C29.5989 14.782 32.0352 14.782 33.5378 16.2846L49.5601 32.3069"
+                                      stroke="#F7D70A" stroke-width="3" stroke-linecap="round"/>
+                                <path class="benefits__item-icon"
+                                      d="M25.6778 30.1907L19.6317 24.1446C18.1291 22.642 18.1291 20.2057 19.6317 18.7031V18.7031C21.1343 17.2004 23.5706 17.2004 25.0732 18.7031L35.3516 28.9815"
+                                      stroke="#F7D70A" stroke-width="3" stroke-linecap="round"/>
+                                <path class="benefits__item-icon"
+                                      d="M21.1432 36.5391L17.2132 32.6091C15.7106 31.1064 15.7106 28.6702 17.2132 27.1675V27.1675C18.7159 25.6649 21.1521 25.6649 22.6548 27.1675L26.5848 31.0975"
+                                      stroke="#F7D70A" stroke-width="3" stroke-linecap="round"/>
+                                <path class="benefits__item-icon"
+                                      d="M16.004 42.283L14.7948 41.0738C13.2922 39.5712 13.2922 37.1349 14.7948 35.6323V35.6323C16.2974 34.1296 18.7337 34.1296 20.2363 35.6323L21.4455 36.8415"
+                                      stroke="#F7D70A" stroke-width="3" stroke-linecap="round"/>
                             </svg>
                         </div>
                         <div class="benefits__item-text">
@@ -367,24 +400,33 @@
                     <div class="benefits__item">
                         <div class="benefits__svg-container">
                             <svg width="67" height="70" viewBox="0 0 67 70" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M51.8678 22.2831C51.3938 22.3534 51.042 22.7377 51.0445 23.1947L51.0787 29.8143C51.0396 30.5172 50.1845 30.8804 49.6176 30.4329L42.1927 23.3915C41.3303 22.7143 40.2504 22.3441 39.1338 22.3441H18.1419C15.3053 22.3441 13.0062 20.1391 13.0062 17.4186V7.25138C13.0062 4.5309 15.3053 2.32593 18.1419 2.32593H51.4207C54.2573 2.32593 56.5563 4.5309 56.5563 7.25138V17.421C56.5563 19.8743 54.377 21.9106 51.8678 22.2855V22.2831Z" stroke="#F7D70A" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"/>
-                                <path d="M22.9012 15.5907C24.0711 15.5907 25.0195 14.6812 25.0195 13.5592C25.0195 12.4372 24.0711 11.5276 22.9012 11.5276C21.7314 11.5276 20.783 12.4372 20.783 13.5592C20.783 14.6812 21.7314 15.5907 22.9012 15.5907Z" stroke="#F7D70A" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"/>
-                                <path d="M34.8094 15.5907C35.9793 15.5907 36.9277 14.6812 36.9277 13.5592C36.9277 12.4372 35.9793 11.5276 34.8094 11.5276C33.6395 11.5276 32.6911 12.4372 32.6911 13.5592C32.6911 14.6812 33.6395 15.5907 34.8094 15.5907Z" stroke="#F7D70A" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"/>
-                                <path d="M46.7151 15.5907C47.885 15.5907 48.8334 14.6812 48.8334 13.5592C48.8334 12.4372 47.885 11.5276 46.7151 11.5276C45.5452 11.5276 44.5969 12.4372 44.5969 13.5592C44.5969 14.6812 45.5452 15.5907 46.7151 15.5907Z" stroke="#F7D70A" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"/>
-                                <path d="M33.3582 31.9443C33.3582 31.9443 23.4265 23.5649 8.41551 27.4945C7.79249 27.6585 7.36249 28.2022 7.36249 28.8208V62.1226C7.36249 63.0365 8.27869 63.702 9.19244 63.4442C12.9599 62.378 22.1145 60.9627 32.5983 67.8799C32.8793 68.065 33.2604 67.8729 33.2629 67.5448C33.2775 62.2257 33.3582 31.5202 33.3582 31.9419V31.9443Z" stroke="#F7D70A" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"/>
-                                <path d="M33.2629 68.3273H3.69277C2.57379 68.3273 1.66492 67.458 1.66492 66.3824V33.7085C1.66492 32.6354 2.57134 31.7637 3.69277 31.7637H7.33803" stroke="#F7D70A" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"/>
-                                <path d="M52.0217 26.5009C53.9543 26.618 56.0066 26.9297 58.164 27.4944C58.787 27.6584 59.217 28.202 59.217 28.8206V62.1225C59.217 63.0364 58.3008 63.7018 57.387 63.4441C53.6196 62.3779 44.4649 60.9626 33.9811 67.8798C33.7002 68.0649 33.319 67.8728 33.3166 67.5447C33.3019 62.2256 33.2213 31.52 33.2213 31.9418C33.2213 31.9418 37.729 28.1388 45.2614 26.8594" stroke="#F7D70A" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"/>
-                                <path d="M33.3191 68.3273H62.8891C64.0081 68.3273 64.917 67.458 64.917 66.3824V33.7085C64.917 32.6354 64.0106 31.7637 62.8891 31.7637H59.2439" stroke="#F7D70A" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"/>
+                                <path d="M51.8678 22.2831C51.3938 22.3534 51.042 22.7377 51.0445 23.1947L51.0787 29.8143C51.0396 30.5172 50.1845 30.8804 49.6176 30.4329L42.1927 23.3915C41.3303 22.7143 40.2504 22.3441 39.1338 22.3441H18.1419C15.3053 22.3441 13.0062 20.1391 13.0062 17.4186V7.25138C13.0062 4.5309 15.3053 2.32593 18.1419 2.32593H51.4207C54.2573 2.32593 56.5563 4.5309 56.5563 7.25138V17.421C56.5563 19.8743 54.377 21.9106 51.8678 22.2855V22.2831Z"
+                                      stroke="#F7D70A" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"/>
+                                <path d="M22.9012 15.5907C24.0711 15.5907 25.0195 14.6812 25.0195 13.5592C25.0195 12.4372 24.0711 11.5276 22.9012 11.5276C21.7314 11.5276 20.783 12.4372 20.783 13.5592C20.783 14.6812 21.7314 15.5907 22.9012 15.5907Z"
+                                      stroke="#F7D70A" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"/>
+                                <path d="M34.8094 15.5907C35.9793 15.5907 36.9277 14.6812 36.9277 13.5592C36.9277 12.4372 35.9793 11.5276 34.8094 11.5276C33.6395 11.5276 32.6911 12.4372 32.6911 13.5592C32.6911 14.6812 33.6395 15.5907 34.8094 15.5907Z"
+                                      stroke="#F7D70A" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"/>
+                                <path d="M46.7151 15.5907C47.885 15.5907 48.8334 14.6812 48.8334 13.5592C48.8334 12.4372 47.885 11.5276 46.7151 11.5276C45.5452 11.5276 44.5969 12.4372 44.5969 13.5592C44.5969 14.6812 45.5452 15.5907 46.7151 15.5907Z"
+                                      stroke="#F7D70A" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"/>
+                                <path d="M33.3582 31.9443C33.3582 31.9443 23.4265 23.5649 8.41551 27.4945C7.79249 27.6585 7.36249 28.2022 7.36249 28.8208V62.1226C7.36249 63.0365 8.27869 63.702 9.19244 63.4442C12.9599 62.378 22.1145 60.9627 32.5983 67.8799C32.8793 68.065 33.2604 67.8729 33.2629 67.5448C33.2775 62.2257 33.3582 31.5202 33.3582 31.9419V31.9443Z"
+                                      stroke="#F7D70A" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"/>
+                                <path d="M33.2629 68.3273H3.69277C2.57379 68.3273 1.66492 67.458 1.66492 66.3824V33.7085C1.66492 32.6354 2.57134 31.7637 3.69277 31.7637H7.33803"
+                                      stroke="#F7D70A" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"/>
+                                <path d="M52.0217 26.5009C53.9543 26.618 56.0066 26.9297 58.164 27.4944C58.787 27.6584 59.217 28.202 59.217 28.8206V62.1225C59.217 63.0364 58.3008 63.7018 57.387 63.4441C53.6196 62.3779 44.4649 60.9626 33.9811 67.8798C33.7002 68.0649 33.319 67.8728 33.3166 67.5447C33.3019 62.2256 33.2213 31.52 33.2213 31.9418C33.2213 31.9418 37.729 28.1388 45.2614 26.8594"
+                                      stroke="#F7D70A" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"/>
+                                <path d="M33.3191 68.3273H62.8891C64.0081 68.3273 64.917 67.458 64.917 66.3824V33.7085C64.917 32.6354 64.0106 31.7637 62.8891 31.7637H59.2439"
+                                      stroke="#F7D70A" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"/>
                             </svg>
                         </div>
                         <div class="benefits__item-text">
                             <h4 class="title title--item-benefit">Удобная платформа обучения</h4>
-                            <p class="text text--item-benefit">Все под рукой: учебные материалы, домашние задания, чат с преподавателями.</p>
+                            <p class="text text--item-benefit">Все под рукой: учебные материалы, домашние задания, чат с
+                                преподавателями</p>
                         </div>
                     </div>
                     <div class="benefits__item">
                         <div class="benefits__svg-container">
-                            <svg class="benefits__item-icon" width="67" height="70" viewBox="0 0 67 70" fill="none"
+                            <svg class="benefits__item-icon" width="75" height="65" viewBox="0 0 75 65" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                                 <path d="M47.6928 48.2717H5.01979C3.35109 48.2717 2 46.9759 2 45.3755V4.91038C2 3.30996 3.35109 2.01416 5.01979 2.01416H69.9284C71.5971 2.01416 72.9482 3.30996 72.9482 4.91038V45.3755C72.9482 46.9759 71.5971 48.2717 69.9284 48.2717H65.2399"
                                       stroke="#F7D70A" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"/>
@@ -396,27 +438,22 @@
                                       stroke="#F7D70A" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"/>
                                 <path d="M64.8759 49.64L70.0653 60.3556C70.1557 60.543 69.9699 60.7445 69.7647 60.6789L66.4151 59.6268C65.9924 59.4933 65.5331 59.6971 65.3645 60.0931L64.0207 63.2448C63.9401 63.4346 63.6616 63.4416 63.5688 63.2565L58.8265 53.7336"
                                       stroke="#F7D70A" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"/>
-                                <path d="M12.9505 12.0548H61.3332" stroke="#F7D70A" stroke-width="3"
-                                      stroke-miterlimit="10"
+                                <path d="M12.9505 12.0548H61.3332" stroke="#F7D70A" stroke-width="3" stroke-miterlimit="10"
                                       stroke-linecap="round"/>
-                                <path d="M12.8283 18.3369H53.4124" stroke="#F7D70A" stroke-width="3"
-                                      stroke-miterlimit="10"
+                                <path d="M12.8283 18.3369H53.4124" stroke="#F7D70A" stroke-width="3" stroke-miterlimit="10"
                                       stroke-linecap="round"/>
-                                <path d="M12.8283 24.6191H44.8807" stroke="#F7D70A" stroke-width="3"
-                                      stroke-miterlimit="10"
+                                <path d="M12.8283 24.6191H44.8807" stroke="#F7D70A" stroke-width="3" stroke-miterlimit="10"
                                       stroke-linecap="round"/>
-                                <path d="M12.8283 30.9014H38.7874" stroke="#F7D70A" stroke-width="3"
-                                      stroke-miterlimit="10"
+                                <path d="M12.8283 30.9014H38.7874" stroke="#F7D70A" stroke-width="3" stroke-miterlimit="10"
                                       stroke-linecap="round"/>
-                                <path d="M12.8283 37.1835H38.7874" stroke="#F7D70A" stroke-width="3"
-                                      stroke-miterlimit="10"
+                                <path d="M12.8283 37.1835H38.7874" stroke="#F7D70A" stroke-width="3" stroke-miterlimit="10"
                                       stroke-linecap="round"/>
                             </svg>
                         </div>
                         <div class="benefits__item-text">
                             <h4 class="title title--item-benefit">Сертификат по окончанию обучения</h4>
                             <p class="text text--item-benefit">По окончанию обучения каждый студент получает именной
-                                сертификат, с печатью школы о прохождении выбранной программы обучения.</p>
+                                сертификат, с печатью школы о прохождении выбранной программы обучения</p>
                         </div>
                     </div>
                 </div><!--benefits__info end-->
@@ -425,33 +462,60 @@
                     <div class="swiper swiper--benefits">
                         <div class="swiper-wrapper">
                             <!-- Slides -->
-                            <div class="swiper-slide"><img class="benefits__image-img"
-                                                           src="assets/images/benefits-img_0.png" alt="учитесь прилежно">
-                            </div>
-                            <div class="swiper-slide"><img class="benefits__image-img"
-                                                           src="assets/images/benefits-img_1.png" alt="учитесь прилежно">
-                            </div>
-                            <div class="swiper-slide"><img class="benefits__image-img"
-                                                           src="assets/images/benefits-img_2.png" alt="учитесь прилежно">
-                            </div>
-                            <div class="swiper-slide"><img class="benefits__image-img"
-                                                           src="assets/images/benefits-img_3.png" alt="учитесь прилежно">
-                            </div>
-                            <div class="swiper-slide"><img class="benefits__image-img"
-                                                           src="assets/images/benefits-img_4.png" alt="учитесь прилежно">
-                            </div>
-                            <div class="swiper-slide"><img class="benefits__image-img"
-                                                           src="assets/images/benefits-img_5.png" alt="учитесь прилежно">
-                            </div>
-                            <div class="swiper-slide"><img class="benefits__image-img"
-                                                           src="assets/images/benefits-img_6.png" alt="учитесь прилежно">
-                            </div>
-                            <div class="swiper-slide"><img class="benefits__image-img"
-                                                           src="assets/images/benefits-img_7.png" alt="учитесь прилежно">
-                            </div>
-                            <div class="swiper-slide"><img class="benefits__image-img"
-                                                           src="assets/images/benefits-img_8.png" alt="учитесь прилежно">
-                            </div>
+                            <picture class="swiper-slide  swiper-slide--benefits">
+                                <source class="benefits__image-img" type="image/webp"
+                                        srcset="assets/images/benefits-img_0.webp">
+                                <img class="benefits__image-img" src="assets/images/benefits-img_0.png"
+                                     alt="учитесь прилежно">
+                            </picture>
+                            <picture class="swiper-slide  swiper-slide--benefits">
+                                <source class="benefits__image-img" type="image/webp"
+                                        srcset="assets/images/benefits-img_1.webp">
+                                <img class="benefits__image-img" src="assets/images/benefits-img_1.png"
+                                     alt="учитесь прилежно">
+                            </picture>
+                            <picture class="swiper-slide  swiper-slide--benefits">
+                                <source class="benefits__image-img" type="image/webp"
+                                        srcset="assets/images/benefits-img_2.webp">
+                                <img class="benefits__image-img"
+                                     src="assets/images/benefits-img_2.png" alt="учитесь прилежно">
+                            </picture>
+                            <picture class="swiper-slide  swiper-slide--benefits">
+                                <source class="benefits__image-img" type="image/webp"
+                                        srcset="assets/images/benefits-img_3.webp">
+                                <img class="benefits__image-img"
+                                     src="assets/images/benefits-img_3.png" alt="учитесь прилежно">
+                            </picture>
+                            <picture class="swiper-slide  swiper-slide--benefits">
+                                <source class="benefits__image-img" type="image/webp"
+                                        srcset="assets/images/benefits-img_4.webp">
+                                <img class="benefits__image-img"
+                                     src="assets/images/benefits-img_4.png" alt="учитесь прилежно">
+                            </picture>
+                            <picture class="swiper-slide  swiper-slide--benefits">
+                                <source class="benefits__image-img" type="image/webp"
+                                        srcset="assets/images/benefits-img_5.webp">
+                                <img class="benefits__image-img"
+                                     src="assets/images/benefits-img_5.png" alt="учитесь прилежно">
+                            </picture>
+                            <picture class="swiper-slide  swiper-slide--benefits">
+                                <source class="benefits__image-img" type="image/webp"
+                                        srcset="assets/images/benefits-img_6.webp">
+                                <img class="benefits__image-img"
+                                     src="assets/images/benefits-img_6.png" alt="учитесь прилежно">
+                            </picture>
+                            <picture class="swiper-slide  swiper-slide--benefits">
+                                <source class="benefits__image-img" type="image/webp"
+                                        srcset="assets/images/benefits-img_7.webp">
+                                <img class="benefits__image-img"
+                                     src="assets/images/benefits-img_7.png" alt="учитесь прилежно">
+                            </picture>
+                            <picture class="swiper-slide  swiper-slide--benefits">
+                                <source class="benefits__image-img" type="image/webp"
+                                        srcset="assets/images/benefits-img_8.webp">
+                                <img class="benefits__image-img"
+                                     src="assets/images/benefits-img_8.png" alt="учитесь прилежно">
+                            </picture>
                         </div>
                     </div>
                 </div><!--benefits__image end-->
@@ -460,54 +524,63 @@
     </section>
     
     <main class="main">
-    
         <!--card-section-->
-        <section class="card-section"  id="scroll-card">
+        <section class="card-section" id="scroll-card">
+            <div class="yep-images">
+                <div class="yep-images__images  yep-images__images--footer "></div>
+            </div>
             <div class="container">
                 <div class="card-section__items">
-                    <div class="card-section__item  wow animate__animated animate__bounceInDown" data-card="0-zero">
-                        <div class="card-section__images">
-                            <img class="card-section__img" src="assets/images/card_1.png" alt="учись удобно">
-                        </div>
+                    <div class="card-section__item  wow animate__animated animate__bounceInDown" data-mod="modal"
+                         data-numb="0">
+                        <picture class="card-section__images">
+                            <source class="card-section__img" type="image/webp" srcset="assets/images/modal_1.webp">
+                            <img class="card-section__img" src="assets/images/modal_1.png" alt="учись удобно">
+                        </picture>
                         <div class="card-section__info">
                             <p class="title title--card-section">Иностранный язык для младших классов</p>
                         </div>
                     </div>
-                    <div class="card-section__item  wow animate__animated animate__bounceInDown"  data-card="1-one">
-                        <div class="card-section__images">
-                            <img class="card-section__img" src="assets/images/card_2.png" alt="учись удобно">
-                        </div>
+                    <div class="card-section__item  wow animate__animated animate__bounceInDown" data-mod="modal"
+                         data-numb="1">
+                        <picture class="card-section__images">
+                            <source class="card-section__img" type="image/webp" srcset="assets/images/modal_2.webp">
+                            <img class="card-section__img" src="assets/images/modal_2.png" alt="учись удобно">
+                        </picture>
                         <div class="card-section__info">
                             <p class="title title--card-section">Обучение для взрослых</p>
                         </div>
                     </div>
-                    <div class="card-section__item  wow animate__animated animate__bounceInDown"  data-card="2-two">
-                        <div class="card-section__images">
-                            <img class="card-section__img" src="assets/images/card_3.png" alt="учись удобно">
-                        </div>
+                    <div class="card-section__item  wow animate__animated animate__bounceInDown" data-mod="modal"
+                         data-numb="2">
+                        <picture class="card-section__images">
+                            <source class="card-section__img" type="image/webp" srcset="assets/images/modal_3.webp">
+                            <img class="card-section__img" src="assets/images/modal_3.png" alt="учись удобно">
+                        </picture>
                         <div class="card-section__info">
                             <p class="title title--card-section">Иностранный язык
                                 для средней школы</p>
                         </div>
                     </div>
-                    <div class="card-section__item  wow animate__animated animate__bounceInUp"  data-card="3-thri">
-                        <div class="card-section__images">
-                            <img class="card-section__img" src="assets/images/card_4.png" alt="учись удобно">
-                        </div>
+                    <div class="card-section__item  wow animate__animated animate__bounceInUp" data-mod="modal"
+                         data-numb="3">
+                        <picture class="card-section__images">
+                            <source class="card-section__img" type="image/webp" srcset="assets/images/modal_4.webp">
+                            <img class="card-section__img" src="assets/images/modal_4.png" alt="учись удобно">
+                        </picture>
                         <div class="card-section__info">
                             <p class="title title--card-section">Иностранный язык для дошколят</p>
                         </div>
                     </div>
-                    <div class="card-section__item  wow animate__animated animate__bounceInUp"  data-card="4-four">
-                        <div class="card-section__images">
-                            <img class="card-section__img" src="assets/images/card_5.png" alt="учись удобно">
-                        </div>
+                    <div class="card-section__item  wow animate__animated animate__bounceInUp" data-mod="modal"
+                         data-numb="4">
+                        <picture class="card-section__images">
+                            <source class="card-section__img" type="image/webp" srcset="assets/images/modal_5.webp">
+                            <img class="card-section__img" src="assets/images/modal_5.png" alt="учись удобно">
+                        </picture>
                         <div class="card-section__info">
                             <p class="title title--card-section">Подготовка к ЕГЭ/ОГЭ</p>
                         </div>
-                    </div>
-                    <div class="yep-images  yep-images--card-section">
-                        <img class="yep__img" src="assets/images/yep-vertical-transform.png" alt="да">
                     </div>
                 </div><!--card-section__items end-->
             </div><!--container end-->
@@ -542,186 +615,9 @@
                                   fill="#F7D70A"/>
                         </svg>
                     </div>
-                    <div class="interrogation__questions">
-                        <div class="form__choice" data-question="Какой язык Вы рассматриваете для изучения?">
-                            <div class="form__info">
-                                <p class="title  title--interrogation">Какой язык Вы рассматриваете для изучения?</p>
-                            </div>
-                            <div class="form__wrap-choice">
-                                <input class="form__input-interrogation" type="radio"
-                                       value="Английский" id="english"
-                                       name="Какой язык Вы рассматриваете для изучения?">
-                                <label class="form__label-interrogation" for="english">Английский</label>
-                            </div>
-                            <div class="form__wrap-choice">
-                                <input class="form__input-interrogation" type="radio"
-                                       value="Немецкий" id="deutsch" name="Какой язык Вы рассматриваете для изучения?">
-                                <label class="form__label-interrogation" for="deutsch">Немецкий</label>
-                            </div>
-                            <div class="form__wrap-choice">
-                                <input class="form__input-interrogation" type="radio"
-                                       value="Итальянский" id="italian" name="Какой язык Вы рассматриваете для изучения?">
-                                <label class="form__label-interrogation" for="italian">Итальянский</label>
-                            </div>
-                            <div class="form__wrap-choice">
-                                <input class="form__input-interrogation" type="radio"
-                                       value="Японский" id="japanese" name="Какой язык Вы рассматриваете для изучения?">
-                                <label class="form__label-interrogation" for="japanese">Японский</label>
-                            </div>
-                            <div class="form__wrap-choice">
-                                <input class="form__input-interrogation" type="radio"
-                                       value="Китайский" id="chinece" name="Какой язык Вы рассматриваете для изучения?">
-                                <label class="form__label-interrogation" for="chinece">Китайский</label>
-                            </div>
-                            <div class="form__wrap-choice">
-                                <input class="form__input-interrogation" type="radio"
-                                       value="Корейский" id="korean" name="Какой язык Вы рассматриваете для изучения?">
-                                <label class="form__label-interrogation" for="korean">Корейский</label>
-                            </div>
-                            <div class="form__wrap-choice">
-                                <input class="form__input-interrogation" type="radio"
-                                       value="Греческий" id="greek" name="Какой язык Вы рассматриваете для изучения?">
-                                <label class="form__label-interrogation" for="greek">Греческий</label>
-                            </div>
-                        </div>
-                        <div class="form__choice" data-question="Для кого рассматриваете возможность обучения?">
-                            <div class="form__info">
-                                <p class="title  title--interrogation">Для кого рассматриваете возможность обучения?</p>
-                            </div>
-                            <div class="form__wrap-choice">
-                                <input class="form__input-interrogation" type="radio"
-                                       value="Для себя" id="owen"
-                                       name="Для кого рассматриваете возможность обучения?">
-                                <label class="form__label-interrogation" for="owen">Для себя</label>
-                            </div>
-                            <div class="form__wrap-choice">
-                                <input class="form__input-interrogation" type="radio"
-                                       value="Для ребенка" id="my-child" name="Для кого рассматриваете возможность обучения?">
-                                <label class="form__label-interrogation" for="my-child">Для ребенка</label>
-                            </div>
+                    <div class="interrogation__questions" id="questions-interrogation">
     
-                        </div>
-                        <div class="form__choice" data-question="Был ли у Вас опыт изучения желаемого языка?">
-                            <div class="form__info">
-                                <p class="title  title--interrogation">Был ли у Вас опыт изучения желаемого языка?</p>
-                            </div>
-                            <div class="form__wrap-choice">
-                                <input class="form__input-interrogation" type="radio"
-                                       value="Да, занимаюсь им уже продолжительное время" id="yes"
-                                       name="Был ли у Вас опыт изучения желаемого языка?">
-                                <label class="form__label-interrogation" for="yes">Да, занимаюсь им уже продолжительное время</label>
-                            </div>
-                            <div class="form__wrap-choice">
-                                <input class="form__input-interrogation" type="radio"
-                                       value="Да, ходил в языковую школу, помню базу" id="base" name="Был ли у Вас опыт изучения желаемого языка?">
-                                <label class="form__label-interrogation" for="base">Да, ходил в языковую школу, помню базу</label>
-                            </div>
-                            <div class="form__wrap-choice">
-                                <input class="form__input-interrogation" type="radio"
-                                       value="Да, но только в школе, мало что помню" id="forget" name="Был ли у Вас опыт изучения желаемого языка?">
-                                <label class="form__label-interrogation" for="forget">Да, но только в школе, мало что помню</label>
-                            </div>
-                            <div class="form__wrap-choice">
-                                <input class="form__input-interrogation" type="radio"
-                                       value="Да, но совсем ничего не помню" id="forgotten" name="Был ли у Вас опыт изучения желаемого языка?">
-                                <label class="form__label-interrogation" for="forgotten">Да, но совсем ничего не помню</label>
-                            </div>
-                            <div class="form__wrap-choice">
-                                <input class="form__input-interrogation" type="radio"
-                                       value="Нет, не было" id="no-experience" name="Был ли у Вас опыт изучения желаемого языка?">
-                                <label class="form__label-interrogation" for="no-experience">Нет, не было</label>
-                            </div>
-                            <div class="form__wrap-choice">
-                                <input class="form__input-interrogation" type="radio"
-                                       value="Другое" id="othered" name="Был ли у Вас опыт изучения желаемого языка?">
-                                <label class="form__label-interrogation" for="othered">Другое</label>
-                            </div>
-                        </div>
-                        <div class="form__choice" data-question="Был ли опыт изучения языка у Вашего ребенка?">
-                            <div class="form__info">
-                                <p class="title  title--interrogation">Был ли опыт изучения языка у Вашего ребенка?</p>
-                            </div>
-                            <div class="form__wrap-choice">
-                                <input class="form__input-interrogation" type="radio"
-                                       value="Да, занимались в школе и на курсах, есть база" id="have-base"
-                                       name="Был ли опыт изучения языка у Вашего ребенка?">
-                                <label class="form__label-interrogation" for="have-base">Да, занимались в школе и на курсах, есть база</label>
-                            </div>
-                            <div class="form__wrap-choice">
-                                <input class="form__input-interrogation" type="radio"
-                                       value="Да, учили только в школе, но требуется помощь" id="need-help" name="Был ли опыт изучения языка у Вашего ребенка?">
-                                <label class="form__label-interrogation" for="need-help">Да, учили только в школе, но требуется помощь</label>
-                            </div>
-                            <div class="form__wrap-choice">
-                                <input class="form__input-interrogation" type="radio"
-                                       value="Нет, не было" id="not-have" name="Был ли опыт изучения языка у Вашего ребенка?">
-                                <label class="form__label-interrogation" for="not-have">Нет, не было</label>
-                            </div>
-                            <div class="form__wrap-choice">
-                                <input class="form__input-interrogation" type="radio"
-                                       value="Другое" id="different" name="Был ли опыт изучения языка у Вашего ребенка?">
-                                <label class="form__label-interrogation" for="different">Другое</label>
-                            </div>
-                        </div>
-                        <div class="form__choice" data-question="Для чего вы хотели бы изучать иностранный язык?">
-                            <div class="form__info">
-                                <p class="title  title--interrogation">Для чего вы хотели бы изучать иностранный язык?</p>
-                            </div>
-                            <div class="form__wrap-choice">
-                                <input class="form__input-interrogation" type="radio"
-                                       value="Нет определенной цели, для саморазвития" id="have-no-aim"
-                                       name="Для чего вы хотели бы изучать иностранный язык?">
-                                <label class="form__label-interrogation" for="have-no-aim">Нет определенной цели, для саморазвития</label>
-                            </div>
-                            <div class="form__wrap-choice">
-                                <input class="form__input-interrogation" type="radio"
-                                       value="Для путешествий" id="for-journey" name="Для чего вы хотели бы изучать иностранный язык?">
-                                <label class="form__label-interrogation" for="for-journey">Для путешествий</label>
-                            </div>
-                            <div class="form__wrap-choice">
-                                <input class="form__input-interrogation" type="radio"
-                                       value="Для переезда в другую страну" id="for-country" name="Для чего вы хотели бы изучать иностранный язык?">
-                                <label class="form__label-interrogation" for="for-country">Для переезда в другую страну</label>
-                            </div>
-                            <div class="form__wrap-choice">
-                                <input class="form__input-interrogation" type="radio"
-                                       value="Для работы" id="for-job" name="Для чего вы хотели бы изучать иностранный язык?">
-                                <label class="form__label-interrogation" for="for-job">Для работы</label>
-                            </div>
-                            <div class="form__wrap-choice">
-                                <input class="form__input-interrogation" type="radio"
-                                       value="Другое" id="for-othered" name="Для чего вы хотели бы изучать иностранный язык?">
-                                <label class="form__label-interrogation" for="for-othered">Другое</label>
-                            </div>
-                        </div>
-                        <div class="form__choice" data-question="Для чего Вы хотели бы чтобы Ваш ребенок изучал иностранный язык?">
-                            <div class="form__info">
-                                <p class="title  title--interrogation">Для чего Вы хотели бы чтобы Ваш ребенок изучал
-                                    иностранный язык?</p>
-                            </div>
-                            <div class="form__wrap-choice">
-                                <input class="form__input-interrogation" type="radio"
-                                       value="Заложить хорошую языковую базу для будущего" id="future"
-                                       name="Для чего Вы хотели бы чтобы Ваш ребенок изучал иностранный язык?">
-                                <label class="form__label-interrogation" for="future">Заложить хорошую языковую базу для будущего</label>
-                            </div>
-                            <div class="form__wrap-choice">
-                                <input class="form__input-interrogation" type="radio"
-                                       value="Улучшить школьную успеваемость" id="academic-performance" name="Для чего Вы хотели бы чтобы Ваш ребенок изучал иностранный язык?">
-                                <label class="form__label-interrogation" for="academic-performance">Улучшить школьную успеваемость</label>
-                            </div>
-                            <div class="form__wrap-choice">
-                                <input class="form__input-interrogation" type="radio"
-                                       value="Подготовить ребенка к занятиям в школе" id="preparation" name="Для чего Вы хотели бы чтобы Ваш ребенок изучал иностранный язык?">
-                                <label class="form__label-interrogation" for="preparation">Подготовить ребенка к занятиям в школе</label>
-                            </div>
-                            <div class="form__wrap-choice">
-                                <input class="form__input-interrogation" type="radio"
-                                       value="Другое" id="for-different" name="Для чего Вы хотели бы чтобы Ваш ребенок изучал иностранный язык?">
-                                <label class="form__label-interrogation" for="for-different">Другое</label>
-                            </div>
-                        </div>
-                        <div class="form__choice" data-question="finish">
+                        <div class="form__choice" id="finish">
                             <form class="form__question" data-form="form" id="form-quiz">
                                 <div class="form__info">
                                     <p class="title  title--interrogation">Оставьте контактные данные,
@@ -730,16 +626,21 @@
                                 <div class="form__wrap-choice">
                                     <input class="form__input-interrogation" type="radio"
                                            value="Заявка опросник:">
-                                    <input class="form__form-input" type="text"placeholder="Как вас зовут?" id="nameQuiz" name="Имя">
+    
+                                    <input class="form__form-input" type="text" placeholder="Как вас зовут?" id="nameQuiz"
+                                           name="Имя">
                                 </div>
                                 <div class="form__wrap-choice">
-                                    <input class="form__form-input" type="text" placeholder="+7 ___-___-__" id="phoneQuiz" name="Телефон">
+                                    <input class="form__form-input" type="text" placeholder="+7 ___-___-__" id="phoneQuiz"
+                                           name="Телефон">
                                 </div>
                                 <div class="form__action">
-                                    <input class="form__form-input  form__form-input--button" type="submit" value="Получить">
+                                    <input class="form__form-input  form__form-input--button" type="submit"
+                                           value="Получить">
                                 </div>
                                 <div class="form__info">
-                                    <p class="text text--interrogation-form"  data-privacy="privacy">Политика конфиденциальности
+                                    <p class="text text--interrogation-form" data-mod="privacy">Политика
+                                        конфиденциальности
                                     </p>
                                 </div>
                             </form>
@@ -771,10 +672,12 @@
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="our-teachers__card">
-                                    <div class="our-teachers__card-photo">
+                                    <picture class="our-teachers__card-photo">
+                                        <source class="card-section__img" type="image/webp"
+                                                srcset="assets/images/teacher_1.webp">
                                         <img class="our-teachers__img" src="assets/images/teacher_1.png"
                                              alt="Наш преподаватель">
-                                    </div>
+                                    </picture>
                                     <div class="our-teachers__description">
                                         <div class="our-teachers__head">
                                             <h5 class="title title--name-teachers">Ковалева Евгения Николаевна</h5>
@@ -798,10 +701,12 @@
                             </div>
                             <div class="swiper-slide">
                                 <div class="our-teachers__card">
-                                    <div class="our-teachers__card-photo">
+                                    <picture class="our-teachers__card-photo">
+                                        <source class="card-section__img" type="image/webp"
+                                                srcset="assets/images/teacher_2.webp">
                                         <img class="our-teachers__img" src="assets/images/teacher_2.png"
                                              alt="Наш преподаватель">
-                                    </div>
+                                    </picture>
                                     <div class="our-teachers__description">
                                         <div class="our-teachers__head">
                                             <h5 class="title title--name-teachers">Образ Анна Юрьевна</h5>
@@ -827,10 +732,12 @@
                             </div>
                             <div class="swiper-slide">
                                 <div class="our-teachers__card">
-                                    <div class="our-teachers__card-photo">
+                                    <picture class="our-teachers__card-photo">
+                                        <source class="card-section__img" type="image/webp"
+                                                srcset="assets/images/teacher_3.webp">
                                         <img class="our-teachers__img" src="assets/images/teacher_3.png"
                                              alt="Наш преподаватель">
-                                    </div>
+                                    </picture>
                                     <div class="our-teachers__description">
                                         <div class="our-teachers__head">
                                             <h5 class="title title--name-teachers">Толстова Анна Александровна</h5>
@@ -856,10 +763,12 @@
                             </div>
                             <div class="swiper-slide">
                                 <div class="our-teachers__card">
-                                    <div class="our-teachers__card-photo">
+                                    <picture class="our-teachers__card-photo">
+                                        <source class="card-section__img" type="image/webp"
+                                                srcset="assets/images/teacher_4.webp">
                                         <img class="our-teachers__img" src="assets/images/teacher_4.png"
                                              alt="Наш преподаватель">
-                                    </div>
+                                    </picture>
                                     <div class="our-teachers__description">
                                         <div class="our-teachers__head">
                                             <h5 class="title title--name-teachers">Сато Юлия Анатольевна</h5>
@@ -886,10 +795,12 @@
                             </div>
                             <div class="swiper-slide">
                                 <div class="our-teachers__card">
-                                    <div class="our-teachers__card-photo">
+                                    <picture class="our-teachers__card-photo">
+                                        <source class="card-section__img" type="image/webp"
+                                                srcset="assets/images/teacher_5.webp">
                                         <img class="our-teachers__img" src="assets/images/teacher_5.png"
                                              alt="Наш преподаватель">
-                                    </div>
+                                    </picture>
                                     <div class="our-teachers__description">
                                         <div class="our-teachers__head">
                                             <h5 class="title title--name-teachers">Миленина Альбина Дмитриевна</h5>
@@ -916,10 +827,12 @@
                             </div>
                             <div class="swiper-slide">
                                 <div class="our-teachers__card">
-                                    <div class="our-teachers__card-photo">
+                                    <picture class="our-teachers__card-photo">
+                                        <source class="card-section__img" type="image/webp"
+                                                srcset="assets/images/teacher_6.webp">
                                         <img class="our-teachers__img" src="assets/images/teacher_6.png"
                                              alt="Наш преподаватель">
-                                    </div>
+                                    </picture>
                                     <div class="our-teachers__description">
                                         <div class="our-teachers__head">
                                             <h5 class="title title--name-teachers">Хот Диана Инверовна</h5>
@@ -959,7 +872,7 @@
         </section>
     
         <!--register-section-->
-        <section class="register-section"  id="scroll-middle-register">
+        <section class="register-section" id="scroll-middle-register">
             <div class="container">
                 <div class="register-section__wrap">
                     <div class="wrap__animation">
@@ -999,14 +912,18 @@
                                     <input class="form__input" type="text" name="Email" placeholder="Ваш E-mail">
                                     <input class="btn btn--form  wow animate__animated animate__rubberBand" type="submit"
                                            value="Получить" data-button>
-                                    <div class="text text--form"  data-privacy="privacy">Политика конфиденциальности
+                                    <div class="text text--form" data-mod="privacy">Политика конфиденциальности
                                     </div>
                                 </form>
                             </div>
-                            <div class="register-section__view  register-section__view--footer  wow animate__animated animate__fadeIn">
-                                <img class="register-section__img  register-section__img--position" src="assets/images/form-girl.png"
+                            <picture
+                                    class="register-section__view  register-section__view--footer  wow animate__animated animate__fadeIn">
+                                <source class="register-section__img  register-section__img--position" type="image/webp"
+                                        srcset="assets/images/form-girl.webp">
+                                <img class="register-section__img  register-section__img--position"
+                                     src="assets/images/form-girl.png"
                                      alt="Учитесь с выгодой">
-                            </div>
+                            </picture>
                         </div>
                     </div>
                 </div><!--register-section__wrap end-->
@@ -1016,6 +933,9 @@
         <!--comments-->
         <section class="comments">
             <div class="container  comments__container">
+                <div class="yep-images">
+                    <div class="yep-images__images  yep-images__images--comments"></div>
+                </div>
                 <div class="wrap">
                     <div class="wrap__holder">
                         <h2 class="title title--our-teachers">Отзывы студентов</h2>
@@ -1031,15 +951,13 @@
                     </div>
                 </div><!--wrap end-->
                 <div class="comments__cards">
-                    <div class="yep-images  yep-images--comments">
-                        <img class="yep__img" src="assets/images/yep-vertical.png" alt="да">
-                    </div>
                     <div class="swiper  swiper--length  swiper--comments">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="comments__card">
-                                    <p class="text text--comment">Хорошие учителя хорошие кабинеты задают немного учителя всегда помогут, объяснят если что-то не понятно игры разговоры на английском
-                                        Рекомендую!!! Очень счастлива, что я там учусь</p>
+                                    <p class="text text--comment">Хорошие учителя хорошие кабинеты задают немного учителя
+                                        всегда помогут, объяснят если что-то не понятно игры разговоры на английском
+                                        Рекомендую!!! Очень счастлива, что я там учусь!</p>
                                     <div class="comment__author-photo">
                                         <div class="comment__info">
                                             <p class="title title--comment-name">Ева М.</p>
@@ -1050,8 +968,13 @@
                             </div>
                             <div class="swiper-slide">
                                 <div class="comments__card">
-                                    <p class="text text--comment">Сын занимается третий год, и ещё попросил купить абонемент на всё лето на онлайн занятия.
-                                        В школе постоянно менялись учителя, и замены болеющим не находили по месяцу - занятия в "Bendfort" очень выручают, и помощь с домашками не требуется. Преподаватели - классные, и у каждого своя "изюминка", кроме английского, ребёнок узнаёт столько всего нового. Очень нравятся и мероприятия выходного дня, и когда на занятия приходит настоящий англичанин Энди, мистер Кинг, носитель языка</p>
+                                    <p class="text text--comment">Сын занимается третий год, и ещё попросил купить абонемент
+                                        на всё лето на онлайн занятия.
+                                        В школе постоянно менялись учителя, и замены болеющим не находили по месяцу -
+                                        занятия в "Bendfort" очень выручают, и помощь с домашками не требуется.
+                                        Преподаватели - классные, и у каждого своя "изюминка", кроме английского, ребёнок
+                                        узнаёт столько всего нового. Очень нравятся и мероприятия выходного дня, и когда на
+                                        занятия приходит настоящий англичанин Энди, мистер Кинг, носитель языка.</p>
                                     <div class="comment__author-photo">
                                         <div class="comment__info">
                                             <p class="title title--comment-name">Ксения Т.</p>
@@ -1062,7 +985,10 @@
                             </div>
                             <div class="swiper-slide">
                                 <div class="comments__card">
-                                    <p class="text text--comment">Мы пробовали в разных языковых школах нашего города, но больше всего нам понравилось именно в "Бендфорт". Тут работают все молодые педагоги с опытом, любят детей, но в то же время не дают послаблений! Вы лучшие!!! Учимся у вас уже 4 года и не жалеем!</p>
+                                    <p class="text text--comment">Мы пробовали в разных языковых школах нашего города, но
+                                        больше всего нам понравилось именно в "Бендфорт". Тут работают все молодые педагоги
+                                        с опытом, любят детей, но в то же время не дают послаблений! Вы лучшие!!! Учимся у
+                                        вас уже 4 года и не жалеем!</p>
                                     <div class="comment__author-photo">
                                         <div class="comment__info">
                                             <p class="title title--comment-name">Зинаида В. .</p>
@@ -1073,8 +999,11 @@
                             </div>
                             <div class="swiper-slide">
                                 <div class="comments__card">
-                                    <p class="text text--comment">Сыну очень нравится! Учится два года и всегда с удовольствием ходит на занятия!! Очень позитивные преподаватели, которые умеют мотивировать и влюблять!
-                                        Благодаря занятиям здесь, в обычной школе язык даётся легко и с интересом! Надеюсь и дальше так пойдёт! Спасибо!!</p>
+                                    <p class="text text--comment">Сыну очень нравится! Учится два года и всегда с
+                                        удовольствием ходит на занятия!! Очень позитивные преподаватели, которые умеют
+                                        мотивировать и влюблять!
+                                        Благодаря занятиям здесь, в обычной школе язык даётся легко и с интересом! Надеюсь и
+                                        дальше так пойдёт! Спасибо!!!</p>
                                     <div class="comment__author-photo">
                                         <div class="comment__info">
                                             <p class="title title--comment-name">Татьяна Р.</p>
@@ -1085,7 +1014,10 @@
                             </div>
                             <div class="swiper-slide">
                                 <div class="comments__card">
-                                    <p class="text text--comment">На первый год в этой школе. Когда начался в общеобразовательной школе английский стало понятно, что ребенок не понимает и на платных уроках тоже. Обратились в Бендфорт, ребенок с радостью учится и закрепляет школьные знания. Индивидуальный подход к детям. Очень радует </p>
+                                    <p class="text text--comment">На первый год в этой школе. Когда начался в
+                                        общеобразовательной школе английский стало понятно, что ребенок не понимает и на
+                                        платных уроках тоже. Обратились в Бендфорт, ребенок с радостью учится и закрепляет
+                                        школьные знания. Индивидуальный подход к детям. Очень радует! </p>
                                     <div class="comment__author-photo">
                                         <div class="comment__info">
                                             <p class="title title--comment-name">Анна Т.</p>
@@ -1096,7 +1028,9 @@
                             </div>
                             <div class="swiper-slide">
                                 <div class="comments__card">
-                                    <p class="text text--comment">Мои дети учатся в ЯЦ Бендфорт, нам ооочень нравится! Лучшие педагоги, грамотный подход к детям! В школе улучшились результаты благодаря Бендфорту. Будем заниматься только у вас!!!! Спасибо вам!!!</p>
+                                    <p class="text text--comment">Мои дети учатся в ЯЦ Бендфорт, нам ооочень нравится!
+                                        Лучшие педагоги, грамотный подход к детям! В школе улучшились результаты благодаря
+                                        Бендфорту. Будем заниматься только у вас!!!! Спасибо вам!!!</p>
                                     <div class="comment__author-photo">
                                         <div class="comment__info">
                                             <p class="title title--comment-name">Зинаида В.</p>
@@ -1121,7 +1055,10 @@
         </section>
     
         <!--always-question-->
-        <section class="always-question"  id="scroll-question">
+        <section class="always-question" id="scroll-question">
+            <div class="yep-images">
+                <div class="yep-images__images  yep-images__images--footer "></div>
+            </div>
             <div class="container">
                 <div class="wrap">
                     <div class="wrap__holder  wrap__holder--always-question">
@@ -1138,159 +1075,167 @@
                     </div>
                 </div><!--wrap end-->
                 <div class="always-question__tabs">
-                    <div class="always-question__tabs">
-                        <div class="always-question__tab">
-                            <div class="always-question__wrap" data-tabs="tab_1">
-                                <div class="title  title--always-question">В чем особенность обучения в Bendfort?</div>
-                                <div class="always-question__holder">
-                                    <div class="always-question__button">
-                                        <svg class="always__question__cross" width="17" height="17" viewBox="0 0 17 17"
-                                             fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path class="always__question__cross" d="M16 1L1 16" stroke="black"/>
-                                            <path class="always__question__cross" d="M1 1L16 16" stroke="black"/>
-                                        </svg>
-                                    </div>
+                    <div class="always-question__tab">
+                        <div class="always-question__wrap" data-tabs="tab_1">
+                            <div class="title  title--always-question">В чем особенность обучения в Bendfort?</div>
+                            <div class="always-question__holder">
+                                <div class="always-question__button">
+                                    <svg class="always__question__cross" width="17" height="17" viewBox="0 0 17 17"
+                                         fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="always__question__cross" d="M16 1L1 16" stroke="black"/>
+                                        <path class="always__question__cross" d="M1 1L16 16" stroke="black"/>
+                                    </svg>
                                 </div>
                             </div>
-                            <div class="always-question__info" id="tab_1">
-                                <p class="text  text--always-question">Многолетний опыт. Большое количество языковых программ, форматов обучения, а также собственная программа адаптированная под каждый возраст и уровень владения языком. Благодаря регулярным занятиям Вы уже за пару месяцев заметно улучшите свой английский!</p>
-                            </div>
-    
                         </div>
-                        <div class="always-question__tab">
-                            <div class="always-question__wrap" data-tabs="tab_2">
-                                <div class="title  title--always-question" >Есть ли тестирование уровня языка?</div>
-                                <div class="always-question__holder">
-                                    <div class="always-question__button">
-                                        <svg class="always__question__cross" width="17" height="17" viewBox="0 0 17 17"
-                                             fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path class="always__question__cross" d="M16 1L1 16" stroke="black"/>
-                                            <path class="always__question__cross" d="M1 1L16 16" stroke="black"/>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="always-question__info" id="tab_2">
-                                <p class="text  text--always-question">Конечно! Каждый ученик проходит тестирование с преподавателем, по результатам которого он приглашается в подходящую по уровню и графику группу.</p>
-                            </div>
-    
-                        </div>
-                        <div class="always-question__tab">
-                            <div class="always-question__wrap" data-tabs="tab_3">
-                                <div class="title  title--always-question">Какой уровень профессиональной
-                                    подготовки у ваших преподавателей?
-                                </div>
-                                <div class="always-question__holder">
-                                    <div class="always-question__button">
-                                        <svg class="always__question__cross" width="17" height="17" viewBox="0 0 17 17"
-                                             fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path class="always__question__cross" d="M16 1L1 16" stroke="black"/>
-                                            <path class="always__question__cross" d="M1 1L16 16" stroke="black"/>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="always-question__info" id="tab_3">
-                                <p class="text  text--always-question">Наши преподаватели - наша гордость, абсолютно все педагоги обладают высшим лингвистическим-педагогическим образованием. Перед началом работы в Bendfort каждый педагог проходит внутреннюю аттестацию и стажировку, мы уверены, что у нас работают - профессионалы!</p>
-                            </div>
-    
-                        </div>
-                        <div class="always-question__tab">
-                            <div class="always-question__wrap" data-tabs="tab_4">
-                                <div class="title  title--always-question">Точно ли я достигну результата?</div>
-                                <div class="always-question__holder">
-                                    <div class="always-question__button">
-                                        <svg class="always__question__cross" width="17" height="17" viewBox="0 0 17 17"
-                                             fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path class="always__question__cross" d="M16 1L1 16" stroke="black"/>
-                                            <path class="always__question__cross" d="M1 1L16 16" stroke="black"/>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="always-question__info" id="tab_4">
-                                <p class="text  text--always-question">Все зависит от цели, если Ваша цель — заговорить на иностранном, мы Вам точно поможем ее достигнуть. Теория вместе с практикой дают необыкновенный результат, зачастую, ученики сами удивляются своему прогрессу, обучаясь в Bendfort.</p>
-                            </div>
-    
-                        </div>
-                        <div class="always-question__tab">
-                            <div class="always-question__wrap" data-tabs="tab_5">
-                                <div class="title  title--always-question">Как именно мне отслеживать свой прогресс?</div>
-                                <div class="always-question__holder">
-                                    <div class="always-question__button">
-                                        <svg class="always__question__cross" width="17" height="17" viewBox="0 0 17 17"
-                                             fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path class="always__question__cross" d="M16 1L1 16" stroke="black"/>
-                                            <path class="always__question__cross" d="M1 1L16 16" stroke="black"/>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="always-question__info" id="tab_5">
-                                <p class="text  text--always-question">Вы сможете отслеживать свой прогресс по результатам промежуточных тестирований, которые проводят педагоги, а также по собственным ощущениям, Bendfort гарантирует увеличение словарного запаса, устранение пробелов в грамматике и лексике.</p>
-                            </div>
-    
-                        </div>
-                        <div class="always-question__tab">
-                            <div class="always-question__wrap" data-tabs="tab_6">
-                                <div class="title  title--always-question">Получу ли я сертификат после обучения,
-                                    который подтвердит мои навыки?
-                                </div>
-                                <div class="always-question__holder">
-                                    <div class="always-question__button">
-                                        <svg class="always__question__cross" width="17" height="17" viewBox="0 0 17 17"
-                                             fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path class="always__question__cross" d="M16 1L1 16" stroke="black"/>
-                                            <path class="always__question__cross" d="M1 1L16 16" stroke="black"/>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="always-question__info" id="tab_6">
-                                <p class="text  text--always-question">Да! По окончанию обучения Вы получите сертификат внутреннего образца школы Bendfort! </p>
-                            </div>
-    
-                        </div>
-                        <div class="always-question__tab">
-                            <div class="always-question__wrap" data-tabs="tab_7">
-                                <div class="title  title--always-question">Могу ли я взять паузу в обучении?</div>
-                                <div class="always-question__holder">
-                                    <div class="always-question__button">
-                                        <svg class="always__question__cross" width="17" height="17" viewBox="0 0 17 17"
-                                             fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path class="always__question__cross" d="M16 1L1 16" stroke="black"/>
-                                            <path class="always__question__cross" d="M1 1L16 16" stroke="black"/>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="always-question__info" id="tab_7">
-                                <p class="text  text--always-question">При индивидуальных занятиях - да, можете. Вы сами определяете комфортный для себя темп обучения. Но, чтобы достичь результатов, мы советуем заниматься регулярно.</p>
-                            </div>
-    
-                        </div>
-                        <div class="always-question__tab">
-                            <div class="always-question__wrap" data-tabs="tab_8">
-                                <div class="title  title--always-question">Если мне не понравится обучение,
-                                    я смогу вернуть деньги?
-                                </div>
-                                <div class="always-question__holder">
-                                    <div class="always-question__button">
-                                        <svg class="always__question__cross" width="17" height="17" viewBox="0 0 17 17"
-                                             fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path class="always__question__cross" d="M16 1L1 16" stroke="black"/>
-                                            <path class="always__question__cross" d="M1 1L16 16" stroke="black"/>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="always-question__info" id="tab_8">
-                                <p class="text  text--always-question">Вы сможете вернуть деньги за непройденные уроки. Если что-то пойдет не так, Вы всегда сможете связаться с нашей командой поддержки, которая поможет решить проблему, а при необходимости деньги. </p>
-                            </div>
-    
+                        <div class="always-question__info" id="tab_1">
+                            <p class="text  text--always-question">Многолетний опыт. Большое количество языковых
+                                программ, форматов обучения, а также собственная программа, адаптированная под каждый
+                                возраст и уровень владения языком. Благодаря регулярным занятиям Вы уже за пару месяцев
+                                заметно улучшите свой иностранный!</p>
                         </div>
                     </div>
-    
+                    <div class="always-question__tab">
+                        <div class="always-question__wrap" data-tabs="tab_2">
+                            <div class="title  title--always-question">Есть ли тестирование уровня языка?</div>
+                            <div class="always-question__holder">
+                                <div class="always-question__button">
+                                    <svg class="always__question__cross" width="17" height="17" viewBox="0 0 17 17"
+                                         fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="always__question__cross" d="M16 1L1 16" stroke="black"/>
+                                        <path class="always__question__cross" d="M1 1L16 16" stroke="black"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="always-question__info" id="tab_2">
+                            <p class="text  text--always-question">Конечно! Каждый ученик проходит тестирование с
+                                преподавателем, по результатам которого он приглашается в подходящую по уровню и графику
+                                группу</p>
+                        </div>
+                    </div>
+                    <div class="always-question__tab">
+                        <div class="always-question__wrap" data-tabs="tab_3">
+                            <div class="title  title--always-question">Какой уровень профессиональной
+                                подготовки у ваших преподавателей?
+                            </div>
+                            <div class="always-question__holder">
+                                <div class="always-question__button">
+                                    <svg class="always__question__cross" width="17" height="17" viewBox="0 0 17 17"
+                                         fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="always__question__cross" d="M16 1L1 16" stroke="black"/>
+                                        <path class="always__question__cross" d="M1 1L16 16" stroke="black"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="always-question__info" id="tab_3">
+                            <p class="text  text--always-question">Наши преподаватели - наша гордость, абсолютно все
+                                педагоги обладают высшим лингвистическим/педагогическим образованием. Перед началом
+                                работы в Bendfort каждый педагог проходит внутреннюю аттестацию и стажировку, мы
+                                уверены, что у нас работают - профессионалы!</p>
+                        </div>
+                    </div>
+                    <div class="always-question__tab">
+                        <div class="always-question__wrap" data-tabs="tab_4">
+                            <div class="title  title--always-question">Точно ли я достигну результата?</div>
+                            <div class="always-question__holder">
+                                <div class="always-question__button">
+                                    <svg class="always__question__cross" width="17" height="17" viewBox="0 0 17 17"
+                                         fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="always__question__cross" d="M16 1L1 16" stroke="black"/>
+                                        <path class="always__question__cross" d="M1 1L16 16" stroke="black"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="always-question__info" id="tab_4">
+                            <p class="text  text--always-question">Все зависит от цели, если Ваша цель — заговорить на
+                                иностранном, мы Вам точно поможем ее достигнуть. Теория вместе с практикой дают
+                                необыкновенный результат, зачастую, ученики сами удивляются своему прогрессу, обучаясь в
+                                Bendfort</p>
+                        </div>
+                    </div>
+                    <div class="always-question__tab">
+                        <div class="always-question__wrap" data-tabs="tab_5">
+                            <div class="title  title--always-question">Как именно мне отслеживать свой прогресс?</div>
+                            <div class="always-question__holder">
+                                <div class="always-question__button">
+                                    <svg class="always__question__cross" width="17" height="17" viewBox="0 0 17 17"
+                                         fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="always__question__cross" d="M16 1L1 16" stroke="black"/>
+                                        <path class="always__question__cross" d="M1 1L16 16" stroke="black"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="always-question__info" id="tab_5">
+                            <p class="text  text--always-question">Вы сможете отслеживать свой прогресс по результатам
+                                промежуточных тестирований, которые проводят педагоги, а также по собственным ощущениям,
+                                Bendfort гарантирует увеличение словарного запаса, устранение пробелов в грамматике и
+                                лексике</p>
+                        </div>
+                    </div>
+                    <div class="always-question__tab">
+                        <div class="always-question__wrap" data-tabs="tab_6">
+                            <div class="title  title--always-question">Получу ли я сертификат после обучения,
+                                который подтвердит мои навыки?
+                            </div>
+                            <div class="always-question__holder">
+                                <div class="always-question__button">
+                                    <svg class="always__question__cross" width="17" height="17" viewBox="0 0 17 17"
+                                         fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="always__question__cross" d="M16 1L1 16" stroke="black"/>
+                                        <path class="always__question__cross" d="M1 1L16 16" stroke="black"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="always-question__info" id="tab_6">
+                            <p class="text  text--always-question">Да! По окончанию обучения Вы получите сертификат
+                                внутреннего образца школы Bendfort! </p>
+                        </div>
+                    </div>
+                    <div class="always-question__tab">
+                        <div class="always-question__wrap" data-tabs="tab_7">
+                            <div class="title  title--always-question">Могу ли я взять паузу в обучении?</div>
+                            <div class="always-question__holder">
+                                <div class="always-question__button">
+                                    <svg class="always__question__cross" width="17" height="17" viewBox="0 0 17 17"
+                                         fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="always__question__cross" d="M16 1L1 16" stroke="black"/>
+                                        <path class="always__question__cross" d="M1 1L16 16" stroke="black"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="always-question__info" id="tab_7">
+                            <p class="text  text--always-question">При индивидуальных занятиях - да, можете. Вы сами
+                                определяете комфортный для себя темп обучения. Но, чтобы достичь результатов, мы
+                                советуем заниматься регулярно</p>
+                        </div>
+                    </div>
+                    <div class="always-question__tab">
+                        <div class="always-question__wrap" data-tabs="tab_8">
+                            <div class="title  title--always-question">Если мне не понравится обучение,
+                                я смогу вернуть деньги?
+                            </div>
+                            <div class="always-question__holder">
+                                <div class="always-question__button">
+                                    <svg class="always__question__cross" width="17" height="17" viewBox="0 0 17 17"
+                                         fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="always__question__cross" d="M16 1L1 16" stroke="black"/>
+                                        <path class="always__question__cross" d="M1 1L16 16" stroke="black"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="always-question__info" id="tab_8">
+                            <p class="text  text--always-question">Вы сможете вернуть деньги за не пройденные уроки. Если
+                                что-то пойдет не так, Вы всегда сможете связаться с нашей командой поддержки, которая
+                                поможет решить проблему, а при необходимости деньги</p>
+                        </div>
+                    </div>
                 </div><!--always-question__tabs end-->
             </div><!--container end-->
         </section>
@@ -1298,21 +1243,22 @@
     </main>
     
     
-    <section class="modal " id="modal">
+    <section class="modal  closest" id="modal">
     <div class="modal__window">
         <div class="swiper  swiper--card">
-            <div class="close"  id="close-modal">
+            <div class="close"  data-close="modal">
                 <svg class="close__svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M23 1.00049L1 23.0005" stroke="black" stroke-linecap="round"/>
                     <path d="M1 1.00049L23 23.0005" stroke="#33363F" stroke-linecap="round"/>
                 </svg>
             </div>
             <div class="swiper-wrapper">
-                <div class="modal__box  swiper-slide"  id="0-zero">
-                    <div class="modal__image">
+                <div class="modal__box  swiper-slide"  id="0">
+                    <picture class="modal__image">
+                        <source class="modal__img" type="image/webp" srcset="../assets/images/modal_1.webp">
                         <img class="modal__img" src="../assets/images/modal_1.png" alt="Уроки для младших классов" >
-                        <div class="title title--modal">Уроки для младших классов</div>
-                    </div>
+                        <p class="title title--modal">Уроки для младших классов</p>
+                    </picture>
                     <div class="modal__info">
                         <div class="modal__schedule">
                             <svg class="modal__svg" width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1323,14 +1269,14 @@
                                 <path d="M15.5 24.5422V27.1256" stroke="#F7D70A" stroke-width="3" stroke-linecap="round"/>
                                 <path d="M6.45801 15.5005L3.87467 15.5005" stroke="#F7D70A" stroke-width="3" stroke-linecap="round"/>
                                 </svg>
-                                <p class="text text--modal">2 раза в неделю по 55 минут</p>
+                                <p class="text text--modal">2 раза в неделю по 60 минут</p>
                         </div>
                         <div class="modal__schedule">
                                 <svg class="modal__svg" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M6.66699 17.0132C6.66699 15.2029 6.66699 14.2977 7.03294 13.5021C7.39889 12.7064 8.08615 12.1173 9.46066 10.9392L10.794 9.79631C13.2784 7.6668 14.5206 6.60205 16.0003 6.60205C17.48 6.60205 18.7222 7.6668 21.2067 9.79631L22.54 10.9392C23.9145 12.1173 24.6018 12.7064 24.9677 13.5021C25.3337 14.2977 25.3337 15.2029 25.3337 17.0132V22.6671C25.3337 25.1812 25.3337 26.4383 24.5526 27.2194C23.7716 28.0004 22.5145 28.0004 20.0003 28.0004H12.0003C9.48617 28.0004 8.22909 28.0004 7.44804 27.2194C6.66699 26.4383 6.66699 25.1812 6.66699 22.6671V17.0132Z" stroke="#F7D70A" stroke-width="3"/>
                                 <path d="M19.3337 28.0005V21.0005C19.3337 20.4482 18.8859 20.0005 18.3337 20.0005H13.667C13.1147 20.0005 12.667 20.4482 12.667 21.0005V28.0005" stroke="#F7D70A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
-                                <p class="text text--modal">Оффлайн</p>
+                                <p class="text text--modal">Офлайн</p>
                         </div>
                         <div class="modal__schedule">
                                 <svg class="modal__svg" width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1342,19 +1288,19 @@
                                 </svg>
                                 <p class="text text--modal">12 академических часов в месяц</p>
                         </div>
-                        <div class="text text--descripition">
-                            Интерактивные, игровые занятия в Языковом центре Bendfort помогут Вашему ребенку адаптироваться к изучению нового, но очень важного предмета - иностранного языка! В процессе обучения, преподаватели помогут Вашему ребенку освоить навыки чтения, письма и конечно же говорения! Практические занятия по лексике и грамматике помогут справиться с школьной программой и освоить культуру иностранной речи.
-                        </div>
-                        <div class="text text--specify">
+                        <p class="text text--descripition">
+                            Интерактивные, игровые занятия в Языковом центре Bendfort помогут Вашему ребенку адаптироваться к изучению нового, но очень важного предмета - иностранного языка! В процессе обучения, преподаватели помогут Вашему ребенку освоить навыки чтения, письма и конечно же говорения! Практические занятия по лексике и грамматике помогут справиться с школьной программой и освоить культуру иностранной речи.</p>
+                        <p class="text text--specify">
                             График занятий адаптирован для эффективного изучения английского, при этом не перегружая ребенка.
-                        </div>
+                        </p>
                     </div>
                 </div>
-                <div class="modal__box  swiper-slide" id="1-one">
-                    <div class="modal__image">
+                <div class="modal__box  swiper-slide" id="1">
+                    <picture class="modal__image">
+                        <source class="modal__img" type="image/webp" srcset="../assets/images/modal_2.webp">
                         <img class="modal__img" src="../assets/images/modal_2.png" alt="Обучение для взрослых" >
-                        <div class="title title--modal">Обучение для взрослых</div>
-                    </div>
+                        <p class="title title--modal">Обучение для взрослых</p>
+                    </picture>
                     <div class="modal__info">
                         <div class="modal__schedule">
                             <svg class="modal__svg" width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1365,14 +1311,14 @@
                                 <path d="M15.5 24.5422V27.1256" stroke="#F7D70A" stroke-width="3" stroke-linecap="round"/>
                                 <path d="M6.45801 15.5005L3.87467 15.5005" stroke="#F7D70A" stroke-width="3" stroke-linecap="round"/>
                             </svg>
-                            <p class="text text--modal">2 раза в неделю по 55 минут</p>
+                            <p class="text text--modal">2 раза в неделю по 60 минут</p>
                         </div>
                         <div class="modal__schedule">
                             <svg class="modal__svg" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M6.66699 17.0132C6.66699 15.2029 6.66699 14.2977 7.03294 13.5021C7.39889 12.7064 8.08615 12.1173 9.46066 10.9392L10.794 9.79631C13.2784 7.6668 14.5206 6.60205 16.0003 6.60205C17.48 6.60205 18.7222 7.6668 21.2067 9.79631L22.54 10.9392C23.9145 12.1173 24.6018 12.7064 24.9677 13.5021C25.3337 14.2977 25.3337 15.2029 25.3337 17.0132V22.6671C25.3337 25.1812 25.3337 26.4383 24.5526 27.2194C23.7716 28.0004 22.5145 28.0004 20.0003 28.0004H12.0003C9.48617 28.0004 8.22909 28.0004 7.44804 27.2194C6.66699 26.4383 6.66699 25.1812 6.66699 22.6671V17.0132Z" stroke="#F7D70A" stroke-width="3"/>
                                 <path d="M19.3337 28.0005V21.0005C19.3337 20.4482 18.8859 20.0005 18.3337 20.0005H13.667C13.1147 20.0005 12.667 20.4482 12.667 21.0005V28.0005" stroke="#F7D70A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            <p class="text text--modal">Оффлайн</p>
+                            <p class="text text--modal">Офлайн</p>
                         </div>
                         <div class="modal__schedule">
                             <svg class="modal__svg" width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1384,21 +1330,22 @@
                             </svg>
                             <p class="text text--modal">12 академических часов в месяц</p>
                         </div>
-                        <div class="text text--descripition">
+                        <p class="text text--descripition">
                             Иностранный в современном мире - необходимость. Языковой центр Bendfort поможет в изучении иностранного языка под любые цели. Обучение ведется для любого уровня владения языком. Вас ожидают практические и теоретические занятия по улучшению грамматики, лексики. Снятие языкового барьера, увеличение словарного запаса, восприятие разговорной речи - результаты обучения в языковом центре!
-                        </div>
-                        <div class="text text--specify">
-                            Занятия ведутся в небольших группах, для отработки разговорных навыков
-                        </div>
+                        </p>
+                        <p class="text text--specify">
+                            Занятия ведутся в небольших группах, для отработки разговорных навыков!
+                        </p>
                     </div>
                 </div>
-                <div class="modal__box  swiper-slide" id="2-two">
-                    <div class="modal__image">
+                <div class="modal__box  swiper-slide" id="2">
+                    <picture class="modal__image">
+                        <source class="modal__img" type="image/webp" srcset="../assets/images/modal_3.webp">
                         <img class="modal__img" src="../assets/images/modal_3.png" alt="Иностранный 
                         для средней школы" >
-                        <div class="title title--modal">Иностранный 
-                            для средней школы</div>
-                    </div>
+                        <p class="title title--modal">Иностранный
+                            для средней школы</p>
+                    </picture>
                     <div class="modal__info">
                         <div class="modal__schedule">
                             <svg class="modal__svg" width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1409,14 +1356,14 @@
                                 <path d="M15.5 24.5422V27.1256" stroke="#F7D70A" stroke-width="3" stroke-linecap="round"/>
                                 <path d="M6.45801 15.5005L3.87467 15.5005" stroke="#F7D70A" stroke-width="3" stroke-linecap="round"/>
                             </svg>
-                            <p class="text text--modal">2 раза в неделю по 55 минут</p>
+                            <p class="text text--modal">2 раза в неделю по 60 минут</p>
                         </div>
                         <div class="modal__schedule">
                             <svg class="modal__svg" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M6.66699 17.0132C6.66699 15.2029 6.66699 14.2977 7.03294 13.5021C7.39889 12.7064 8.08615 12.1173 9.46066 10.9392L10.794 9.79631C13.2784 7.6668 14.5206 6.60205 16.0003 6.60205C17.48 6.60205 18.7222 7.6668 21.2067 9.79631L22.54 10.9392C23.9145 12.1173 24.6018 12.7064 24.9677 13.5021C25.3337 14.2977 25.3337 15.2029 25.3337 17.0132V22.6671C25.3337 25.1812 25.3337 26.4383 24.5526 27.2194C23.7716 28.0004 22.5145 28.0004 20.0003 28.0004H12.0003C9.48617 28.0004 8.22909 28.0004 7.44804 27.2194C6.66699 26.4383 6.66699 25.1812 6.66699 22.6671V17.0132Z" stroke="#F7D70A" stroke-width="3"/>
                                 <path d="M19.3337 28.0005V21.0005C19.3337 20.4482 18.8859 20.0005 18.3337 20.0005H13.667C13.1147 20.0005 12.667 20.4482 12.667 21.0005V28.0005" stroke="#F7D70A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            <p class="text text--modal">Оффлайн</p>
+                            <p class="text text--modal">Офлайн</p>
                         </div>
                         <div class="modal__schedule">
                             <svg class="modal__svg" width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1428,24 +1375,24 @@
                             </svg>
                             <p class="text text--modal">12 академических часов в месяц</p>
                         </div>
-                        <div class="text text--descripition">
+                        <p class="text text--descripition">
                             Программы Языкового центра Bendfort адаптированы
                             под любой уровень владения языком. Образовательные курсы способствуют развитию навыков чтения, письма, говорения. Кроме снятия языкового барьера, увеличения словарного запаса, обучение способствует улучшению успеваемости в школе, а также развитию социальных
-                            и коммуникативных навыков
-                        </div>
-                        <div class="text text--specify">
-                            Также в Языковом центре Bendfort проводятся мастер-классы, тематические вечера, которые позволяют ребенку осваивать практический английский, развивая кругозор
-                            и желания изучения иностранных языков.
-                        </div>
+                            и коммуникативных навыков.
+                        </p>
+                        <p class="text text--specify">
+                            Также в Языковом центре Bendfort проводятся мастер-классы, тематические вечера, которые позволяют ребенку осваивать практический английский, развивая кругозор.
+                        </p>
                     </div>
                 </div>
-                <div class="modal__box  swiper-slide" id="3-thri">
-                    <div class="modal__image">
+                <div class="modal__box  swiper-slide" id="3">
+                    <picture class="modal__image">
+                        <source class="modal__img" type="image/webp" srcset="../assets/images/modal_4.webp">
                         <img class="modal__img" src="../assets/images/modal_4.png" alt="Иностранный
                         для дошколят" >
-                        <div class="title title--modal">Иностранный
-                            для дошколят</div>
-                    </div>
+                        <p class="title title--modal">Иностранный
+                            для дошколят</p>
+                    </picture>
                     <div class="modal__info">
                         <div class="modal__schedule">
                             <svg class="modal__svg" width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1456,14 +1403,14 @@
                                 <path d="M15.5 24.5422V27.1256" stroke="#F7D70A" stroke-width="3" stroke-linecap="round"/>
                                 <path d="M6.45801 15.5005L3.87467 15.5005" stroke="#F7D70A" stroke-width="3" stroke-linecap="round"/>
                             </svg>
-                            <p class="text text--modal">2 раза в неделю по 55 минут</p>
+                            <p class="text text--modal">2 раза в неделю по 45 минут</p>
                         </div>
                         <div class="modal__schedule">
                             <svg class="modal__svg" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M6.66699 17.0132C6.66699 15.2029 6.66699 14.2977 7.03294 13.5021C7.39889 12.7064 8.08615 12.1173 9.46066 10.9392L10.794 9.79631C13.2784 7.6668 14.5206 6.60205 16.0003 6.60205C17.48 6.60205 18.7222 7.6668 21.2067 9.79631L22.54 10.9392C23.9145 12.1173 24.6018 12.7064 24.9677 13.5021C25.3337 14.2977 25.3337 15.2029 25.3337 17.0132V22.6671C25.3337 25.1812 25.3337 26.4383 24.5526 27.2194C23.7716 28.0004 22.5145 28.0004 20.0003 28.0004H12.0003C9.48617 28.0004 8.22909 28.0004 7.44804 27.2194C6.66699 26.4383 6.66699 25.1812 6.66699 22.6671V17.0132Z" stroke="#F7D70A" stroke-width="3"/>
                                 <path d="M19.3337 28.0005V21.0005C19.3337 20.4482 18.8859 20.0005 18.3337 20.0005H13.667C13.1147 20.0005 12.667 20.4482 12.667 21.0005V28.0005" stroke="#F7D70A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            <p class="text text--modal">Оффлайн</p>
+                            <p class="text text--modal">Офлайн</p>
                         </div>
                         <div class="modal__schedule">
                             <svg class="modal__svg" width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1475,19 +1422,20 @@
                             </svg>
                             <p class="text text--modal">12 академических часов в месяц</p>
                         </div>
-                        <div class="text text--descripition">
+                        <p class="text text--descripition">
                             Хотели бы подготовить ребенка к школе? Заложить качественную языковую базу? Языковой центр Bendfort в этом поможет! Преподаватели в игровой форме обучения помогут Вашему ребенку в развитии важных коммуникативных и познавательных навыков. Мы уверены, что сможем привить ребенку любовь к обучению языков, а также поможем получить прочные базовые знания английского!
-                        </div>
-                        <div class="text text--specify">
-                            Обучение ведётся на адаптированных под возраст учебных материалах
-                        </div>
+                        </p>
+                        <p class="text text--specify">
+                            Обучение ведётся на адаптированных под возраст учебных материалах!
+                        </p>
                     </div>
                 </div>
-                <div class="modal__box  swiper-slide" id="4-four">
-                    <div class="modal__image">
+                <div class="modal__box  swiper-slide" id="4">
+                    <picture class="modal__image">
+                        <source class="modal__img" type="image/webp" srcset="../assets/images/modal_5.webp">
                         <img class="modal__img" src="../assets/images/modal_5.png" alt="Подготовка к ЕГЭ/ОГЭ" >
-                        <div class="title title--modal">Подготовка к ЕГЭ/ОГЭ</div>
-                    </div>
+                        <p class="title title--modal">Подготовка к ЕГЭ/ОГЭ</p>
+                    </picture>
                     <div class="modal__info">
                         <div class="modal__schedule">
                             <svg class="modal__svg" width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1498,14 +1446,14 @@
                                 <path d="M15.5 24.5422V27.1256" stroke="#F7D70A" stroke-width="3" stroke-linecap="round"/>
                                 <path d="M6.45801 15.5005L3.87467 15.5005" stroke="#F7D70A" stroke-width="3" stroke-linecap="round"/>
                             </svg>
-                            <p class="text text--modal">2 раза в неделю по 55 минут</p>
+                            <p class="text text--modal">2 раза в неделю по 60 минут</p>
                         </div>
                         <div class="modal__schedule">
                             <svg class="modal__svg" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M6.66699 17.0132C6.66699 15.2029 6.66699 14.2977 7.03294 13.5021C7.39889 12.7064 8.08615 12.1173 9.46066 10.9392L10.794 9.79631C13.2784 7.6668 14.5206 6.60205 16.0003 6.60205C17.48 6.60205 18.7222 7.6668 21.2067 9.79631L22.54 10.9392C23.9145 12.1173 24.6018 12.7064 24.9677 13.5021C25.3337 14.2977 25.3337 15.2029 25.3337 17.0132V22.6671C25.3337 25.1812 25.3337 26.4383 24.5526 27.2194C23.7716 28.0004 22.5145 28.0004 20.0003 28.0004H12.0003C9.48617 28.0004 8.22909 28.0004 7.44804 27.2194C6.66699 26.4383 6.66699 25.1812 6.66699 22.6671V17.0132Z" stroke="#F7D70A" stroke-width="3"/>
                                 <path d="M19.3337 28.0005V21.0005C19.3337 20.4482 18.8859 20.0005 18.3337 20.0005H13.667C13.1147 20.0005 12.667 20.4482 12.667 21.0005V28.0005" stroke="#F7D70A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            <p class="text text--modal">Оффлайн</p>
+                            <p class="text text--modal">Офлайн</p>
                         </div>
                         <div class="modal__schedule">
                             <svg class="modal__svg" width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1517,17 +1465,17 @@
                             </svg>
                             <p class="text text--modal">12 академических часов в месяц</p>
                         </div>
-                        <div class="text text--descripition">
+                        <p class="text text--descripition">
                             Успешная сдача ЕГЭ/ОГЭ - возможность, которую предоставляет Языковой центр Bendfort для всех будущих абитуриентов! Образовательная программа ориентирована на подготовку ко всем направлениям для сдачи экзаменов: лексика, грамматика, аудирование, чтение, говорение.
-                        </div>
-                        <div class="text text--specify">
+                        </p>
+                        <p class="text text--specify">
                             Занятия проводятся 2 раза в неделю, что позволяет оптимально проходить подготовку, не перегружая голову и успешно усваивая новые знания!
-                        </div>
+                        </p>
                     </div>
                 </div>
             </div>
             <div class="modal__action">
-                <button class="btn btn--modal" data-modal="scroll-middle-register">Записаться</button>
+                <button class="btn btn--modal" data-scroll="scroll-middle-register">Записаться</button>
             </div>
             <div class="modal__pagination">
                 <div class="modal__pagination-arrow-click  modal__pagination-arrow-click--left">
@@ -1546,20 +1494,21 @@
         </div>
     </div>
     </section>    
-        <div class="popup" data-popup>
-            <div class="logo logo--popup">
-                <img class="logo__img" src="assets/images/Logo.png" alt="Логотип">
-            </div>
+        <div class="popup" id="popup">
+            <picture class="logo logo--popup">
+                <source class="logo__img" type="image/webp" srcset="../assets/images/Logo.webp">
+                <img class="logo__img" src="../assets/images/Logo.png" alt="Логотип">
+            </picture>
             <p class="popup__title" data-title>Спасибо!</p>
             <p class="popup__text " data-text>заявка принята!</p>
-            <p class="popup__text popup__text--phone " data-tell-phone>вам перезвонят</p>
+            <p class="popup__text popup__text--phone" data-tell-phone>вам перезвонят</p>
         </div>
     
     
-    <div class="modal " id="privacy">
+    <div class="modal  closest" id="privacy">
       <div class="modal__window">
         <div class="modal__box  modal__box--mobile">
-          <div class="close"  id="close-privacy">
+          <div class="close"  data-close="privacy">
               <svg class="close__svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M23 1.00049L1 23.0005" stroke="black" stroke-linecap="round"/>
                   <path d="M1 1.00049L23 23.0005" stroke="#33363F" stroke-linecap="round"/>
@@ -1569,8 +1518,8 @@
               <h1 class="title title--privacy">Политика конфиденциальности персональных данных</h1>
               <p class="text text--privacy">Настоящая Политика конфиденциальности персональных данных (далее – Политика конфиденциальности) действует в
               отношении всей информации, которую сайт Школа иностранных языков Bendfort, (далее – Bendfort) расположенный на
-              доменном имени https://bendfortschool.ru/ (а также его субдоменах), может получить о Пользователе во время использования
-              сайта https://bendfortschool.ru/ (а также его субдоменов), его программ и его продуктов.</p>
+              доменном имени https://krasnodar.bendfortschool.ru/ (а также его субдоменах), может получить о Пользователе во время использования
+              сайта https://krasnodar.bendfortschool.ru/ (а также его субдоменов), его программ и его продуктов.</p>
     
               <h2 class="title title--privacy" >1. Определение терминов</h2>
     
@@ -1594,7 +1543,7 @@
               наличия иного законного основания.</p>
     
               <p class="text text--privacy">1.1.5. «Сайт Школа иностранных языков Bendfort» - это совокупность связанных между собой веб-страниц, размещенных в сети Интернет по уникальному
-              адресу (URL):https://bendfortschool.ru/, а также его субдоменах.</p>
+              адресу (URL):https://krasnodar.bendfortschool.ru/, а также его субдоменах.</p>
     
               <p class="text text--privacy">1.1.6. «Субдомены»  - это страницы или совокупность страниц, расположенные на доменах третьего уровня,
               принадлежащие сайту Школа иностранных языков Bendfort, а также другие временные страницы, внизу который указана контактная
@@ -1800,19 +1749,19 @@
               <p class="text text--privacy">10.3. Все предложения или вопросы касательно настоящей Политики конфиденциальности следует сообщать по
               адресу: Bf@724200.ru</p>
     
-              <p class="text text--privacy">10.4. Действующая Политика конфиденциальности размещена на странице по адресу https://bendfortschool</p>
+              <p class="text text--privacy">10.4. Действующая Политика конфиденциальности размещена на странице по адресу https://krasnodar.bendfortschool.ru/</p>
           </div>
           <div class="modal__action  modal__action--privacy">
-                <button class="btn btn--modal" data-modal="scroll-middle-register">Записаться</button>
+                <button class="btn btn--modal" data-scroll="scroll-middle-register">Записаться</button>
           </div>
         </div>
       </div>
     </div>
     
-    <div class="modal " id="doc">
+    <div class="modal  closest" id="doc">
       <div class="modal__window">
         <div class="modal__box  modal__box--doc">
-          <div class="close"  id="close-doc">
+          <div class="close"  data-close="doc">
               <svg class="close__svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M23 1.00049L1 23.0005" stroke="black" stroke-linecap="round"/>
                   <path d="M1 1.00049L23 23.0005" stroke="#33363F" stroke-linecap="round"/>
@@ -1820,7 +1769,7 @@
           </div>
           <div class="modal__info  modal__info--document">
               <h2 class="title title--document">Cведение об образовательной организации</h2>
-              <p class="text text--document">В данном разделе Вы можете ознакомиться c нормативными документами и локальными актами ООО «Центр Развития Бендфорт», которыми мы руководствуемся в нашей деятельности.</p>    
+              <p class="text text--document">В данном разделе Вы можете ознакомиться c нормативными документами и локальными актами ООО «Центр Развития Бендфорт», которыми мы руководствуемся в нашей деятельности</p>
               <ul class="document">
                 <li class="document__list">
                   <div class="document__image">
@@ -1865,104 +1814,12 @@
               </ul>
           </div>
           <div class="modal__action  modal__action--privacy">
-                <button class="btn btn--modal" data-modal="scroll-middle-register">Записаться</button>
+                <button class="btn btn--modal" data-scroll="scroll-middle-register">Записаться</button>
           </div>
         </div>
       </div>
-    </div>    
-    <div class="modal " id="management">
-      <div class="modal__window">
-        <div class="modal__box  modal__box--doc">
-            <div class="close"  id="close-management">
-                <svg class="close__svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M23 1.00049L1 23.0005" stroke="black" stroke-linecap="round"/>
-                    <path d="M1 1.00049L23 23.0005" stroke="#33363F" stroke-linecap="round"/>
-                </svg>
-            </div>
-            <div class="management">
-                <h2 class="title title--management-main">Руководство</h2>
-                <div class="management__cards">
-                    <div class="management__card">
-                        <div class="management__card-photo">
-                            <img class="management__img" src="assets/images/management_1.png" alt="Наш руководитель" >
-                        </div>
-                        <div class="management__description">
-                            <div class="management__head">
-                                <h5 class="title title--management">Донцова Наталья Александровна</h5>
-                                <p class="text text--management">Генеральный директор</p>
-                            </div>
-                            <div class="management__info">
-                              <p class="text text--management-item">Телефон: 8 (904) 230-05-15</p>
-                              <p class="text text--management-item">Адрес: ул. Первомайская, 9</p>
-                              <p class="text text--management-item">Почта: dir@724200.ru</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="management__card">
-                      <div class="management__card-photo">
-                          <img class="management__img" src="assets/images/management_2.png" alt="Наш руководитель" >
-                      </div>
-                      <div class="management__description">
-                          <div class="management__head">
-                              <h5 class="title title--management">Петрова 
-                                Ольга Сафарбековна</h5>
-                              <p class="text text--management">Руководитель структурного подразделения Языковая Школа «Бендфорт»</p>
-                          </div>
-                          <div class="management__info">
-                            <p class="text text--management-item">Телефон: 8 (8212) 72-43-00</p>
-                            <p class="text text--management-item">Адрес: ул. Первомайская, 9</p>
-                            <p class="text text--management-item">Почта: dir@724200.ru</p>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="management__card">
-                    <div class="management__card-photo">
-                        <img class="management__img" src="assets/images/management_3.png" alt="Наш руководитель" >
-                    </div>
-                    <div class="management__description">
-                        <div class="management__head">
-                            <h5 class="title title--management">Равко 
-                              Татьяна Валерьевна</h5>
-                            <p class="text text--management">Руководитель Отдела продаж</p>
-                        </div>
-                        <div class="management__info">
-                          <p class="text text--management-item">Телефон: 8 (8212) 72-42-00</p>
-                          <p class="text text--management-item">Адрес: ул. Первомайская, 9</p>
-                          <p class="text text--management-item">Почта: dir@724200.ru</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="management__card">
-                  <div class="management__card-photo">
-                      <img class="management__img" src="assets/images/management_4.png" alt="Наш руководитель" >
-                  </div>
-                  <div class="management__description">
-                      <div class="management__head">
-                          <h5 class="title title--management">Ветошкина
-                            Зинаида Николаевна</h5>
-                          <p class="text text--management">Менеджер по работе с клиентами</p>
-                      </div>
-                      <div class="management__info">
-                        <p class="text text--management-item">Телефон: 8 (8212) 72-42-00</p>
-                        <p class="text text--management-item">Адрес: ул. Первомайская, 9</p>
-                        <p class="text text--management-item">Почта: dir@724200.ru</p>
-                      </div>
-                    </div>
-                  </div>
-                </div><!--management__cards end-->
-                <p class="text text--management-item">В соответствии со ст. 51 п. 3 «Закона об образовании» №273-ФЗ от 29.12.2012 г. все сотрудники администрации и педагоги школы ежегодно проходят профилактический медицинский осмотр.</p>
-            </div><!--modal__info end-->   
-        </div>
-      </div>
-    </div>
-</div>
-
-    <footer class="footer   footer--position" >
-    
-        <div class="yep-images  yep-images--footer">
-            <img class="yep__img" src="../assets/images/yep-vertical-transform.png" alt="да">
-        </div>
-    
+    </div>    <footer class="footer   footer--position" >
+        <!--container-->
         <div class="container">
     
             <!--register-section-->
@@ -2007,19 +1864,20 @@
                                     <input class="form__input" type="text" name="Email" placeholder="Ваш E-mail">
                                     <input class="btn btn--form  wow animate__animated animate__rubberBand" type="submit"
                                             value="Получить" data-button>
-                                    <div class="text text--form"  data-privacy="privacy">Политика конфиденциальности
+                                    <div class="text text--form"  data-mod="privacy">Политика конфиденциальности
                                     </div>
                                 </form>
                             </div>
-                            <div class="register-section__view  register-section__view--footer  wow animate__animated animate__fadeIn">
+                            <picture class="register-section__view  register-section__view--footer  wow animate__animated animate__fadeIn">
+                                <source class="register-section__img" type="image/webp" srcset="../assets/images/form-women.webp">
                                 <img class="register-section__img" src="../assets/images/form-women.png"
                                      alt="Учитесь с выгодой">
-                            </div>
+                            </picture>
                         </div>
                     </div>
-                </div><!--register-section__wrap end--></div>
+                </div><!--register-section__wrap end-->
+            </div><!--register-section end-->
     
-            <!--footer-->
             <div class="footer__nav">
                 <ul class="menu  menu--footer">
     
@@ -2037,10 +1895,7 @@
                             </svg>
                             <ul class="subnav  subnav--footer">
                                 <li class="menu__list">
-                                    <a class="subnav_link" href="#" data-doc="doc">Cведения об образовательной организации</a>
-                                </li>
-                                <li class="menu__list">
-                                    <a class="subnav_link" href="#" data-management="management">Руководство</a>
+                                    <a class="subnav_link" href="#" data-mod="doc">Cведения об образовательной организации</a>
                                 </li>
                             </ul>
                         </div>
@@ -2058,12 +1913,10 @@
                 </div>
                 <div class="footer__phone">
                     <a class="phone" href="tel:+78612139797" >+7 861 213-97-97</a>
-                    <p class="text text--year" id="year-full"></p>
+                    <time class="text text--year" id="year-full"></time>
                 </div>
             </div>
-        </div>
+        </div><!--container end-->
     </footer>
-
-    <script src="assets/js/app.js"></script>
 </body>
 </html>

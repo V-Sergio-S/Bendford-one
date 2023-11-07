@@ -5,6 +5,9 @@
 
   color: $white;
 
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+
   @include breakpoint ( $tapik-bp) {
     font-size: 20px;
   }
@@ -36,7 +39,7 @@
 
   &--other {
     margin-bottom:40px;
-    max-width: 520px;
+    max-width: 518px;
 
     font-weight: 700;
 

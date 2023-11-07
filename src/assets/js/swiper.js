@@ -37,6 +37,7 @@ const commentsSwiper = new Swiper(".swiper--comments", {
 
 const ourTeachersSwiper = new Swiper(".swiper--our-teachers", {
     slidesPerView: 4,
+    spaceBetween: 15,
     navigation: {
         nextEl: ".our-teachers--arrow--next",
         prevEl: ".our-teachers--arrow--prev",

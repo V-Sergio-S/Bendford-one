@@ -23,16 +23,18 @@
   position: relative;
   list-style: none;
 
-  &:hover {
-    .menu__link,
+  &:hover,
+  &:active {
     .menu__svg path{
-    stroke: $yellow;
-    color: $yellow;
-  }
-  .menu__wrapp > .subnav{
-    display: block;
+      stroke: $yellow;
+    }
+    .menu__svg {
+      transform: rotate(180deg);
+    }
+    .menu__wrapp > .subnav{
+    display: flex;
 }
-  } 
+  }
 
   &--main {
     height: 49px;
@@ -111,10 +113,19 @@
   color: $black;
 
   transition: .4s ease color;
+
+  -webkit-tap-highlight-color: transparent;
+
+  &:hover,
+  &:active {
+    color: $yellow;
+  }
 }
 
 .menu__svg {
   margin-left: 6px;
+
+  transition: .4s ease transform;
 }
 .menu__svg path {
   transition: .4s ease stroke;

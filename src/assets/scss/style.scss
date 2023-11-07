@@ -16,29 +16,34 @@ img {
     max-width: 100%;
     height: auto;
   }
+
   
 @font-face {
     font-family: MYRIAD;
     src: url("../fonts/MYRIADPRO-BOLD.woff2");
     font-weight: 700;
+    font-display: swap;
 }
 
 @font-face {
     font-family: MYRIAD;
     src: url("../fonts/MYRIADPRO-REGULAR.woff2");
     font-weight: 600;
+    font-display: swap;
 }
 
 @font-face {
     font-family: MYRIAD;
     src: url("../fonts/MYRIADPRO-SEMIBOLD.woff2");
     font-weight: 400;
+    font-display: swap;
 }
 
 @font-face {
     font-family: Ubuntu;
     src: url("../fonts/Ubuntu-Regular.woff2");
     font-weight: 400;
+    font-display: swap;
 }
 
 @keyframes slalom {
@@ -56,11 +61,11 @@ body {
     font-weight: 400;
     font-size: 17px;
 
-    &.no-scroll,
-    &.show-sidebar {
+    &.no-scroll{
         overflow: hidden;
     }
 }
+
 
 @import 'blocks/main';
 @import 'blocks/container';
@@ -79,11 +84,9 @@ body {
 @import 'blocks/about';
 @import 'blocks/burger';
 @import 'blocks/benefits';
-@import 'blocks/yep-section';
 @import 'blocks/wrap';
 @import 'blocks/card-section';
 @import 'blocks/our-teachers';
-@import 'blocks/management';
 @import 'blocks/comments';
 @import 'blocks/always-question';
 @import 'blocks/interrogation';

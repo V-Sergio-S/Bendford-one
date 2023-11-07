@@ -1,6 +1,7 @@
 
 .always-question {
-  padding: 170px 0 342px 0;
+  position: relative;
+  padding: 150px 0 282px 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13,7 +14,6 @@
 }
 
 .always-question__tabs {
-  position: relative;
   max-width: 846px;
   margin: 67px 0 76px;
   display: flex;
@@ -76,13 +76,16 @@
   cursor: pointer;
   transition: .4s ease background, .4s ease transform;
 
+  -webkit-tap-highlight-color: transparent;
 
-  &:hover {
+  &:hover,
+  &:active {
     background-color: $buttonTab;
     transform: rotate(0);
   }
 
   &:hover .always__question__cross,
+  &:active .always__question__cross,
   &--active .always__question__cross {
     stroke: white;
   }

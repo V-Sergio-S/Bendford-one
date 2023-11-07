@@ -9,9 +9,9 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 5;
-  height: calc(100vh - 230px);
-  transform: translateY(-500%);
+  z-index: 6;
+  height: calc(100vh - 140px);
+  transform: translateY(-2500%);
   transition: transform .4s linear;
 
   @include breakpoint ($tapik-bp) {
@@ -31,7 +31,7 @@
       top: 43px;
     }
 
-    .show-sidebar & {
+    &.is-active {
       transform: translateY(0%);
 
     }

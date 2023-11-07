@@ -1,6 +1,6 @@
 
 .register-section {
-  padding: 104px 0 53px 0;
+  padding: 94px 0 43px 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -20,7 +20,7 @@
   }
 
   @include breakpoint ( $tablet-bp) {
-    top: calc(-14% - 206px);
+    top: calc(-18% - 206px);
     left: calc(50% - 207px);
   }
 
@@ -42,6 +42,7 @@
   border-radius: 20px;
   background: url(../images/path-to.png), lightgray -0.206px -7px / 100% 101% no-repeat;
   background-size: 65%;
+  background-attachment: fixed;
 
   @include breakpoint ( $tapik-bp) {
     padding-right: 18px;
@@ -51,18 +52,22 @@
 }
 
 .register-section__box {
-  max-width: 770px;
-  height: 450px;
+  width: 770px;
+  height: 444px;
 
   border-radius: 20px;
   background: linear-gradient(341deg, #F6D365 0%, #FBB471 50%, #FF8A68 100%);
   box-shadow: 0 13px 26px 0 rgba(0, 0, 0, 0.6);
+  background-attachment: fixed;
 
   &--other {
+    height: 458px;
     background: linear-gradient(353deg, #FFD347 0%, #E87265 50.52%, #D11483 100%);
   }
 
   @include breakpoint ( $tablet-bp) {
+    max-width: 770px;
+    width: 100%;
     height: 100%;
   }
 }
@@ -110,7 +115,7 @@
 }
 
 .registration-section__form {
-  padding: 33px;
+  padding: 30px;
 
   @include breakpoint ( $tablet-bp) {
     padding: 25px 5px 10px 15px;
@@ -126,7 +131,6 @@
 
 
   &--footer {
-    width: 393px;
 
     @include breakpoint ( $tablet-bp) {
       display: none;
