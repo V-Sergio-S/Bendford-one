@@ -7,7 +7,7 @@
     }
 
     $project_name = 'BendfordSchool';
-    $admin_email = 'wptuorexpert@tuorexpert.ru';
+    $admin_email = 'request@bendfortschool.ru';
     $form_subject = 'Bendford';
     $form_text = 'Заявка с сайта ';
     $message = '';
